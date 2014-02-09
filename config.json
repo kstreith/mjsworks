@@ -1,0 +1,17 @@
+{
+  "locals": {
+    "url": "http://mjsworks.com/"
+  },
+  "plugins": [
+    "wintersmith-nunjucks"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}
