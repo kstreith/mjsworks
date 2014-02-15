@@ -8,6 +8,13 @@
   padding-top: 30px;
 }
 
+.header {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 35px;
+  float: left;
+}
+
+
 body {
   background-color: #e8e7e5;
 }

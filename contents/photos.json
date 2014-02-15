@@ -1,4 +1,30 @@
 {
    "template": "photos.html",
-   "photos": [{"file":"IMG_0696.jpg","title":"Peering In"}, {"file":"IMG_0747.jpg","title":"Peeking Through"}]
-}
+   "series": [
+      {"title": "Trapped", "id": "gal1",
+       "photos": [
+          {"file":"IMG_0696.jpg","title":"Peering In"},
+          {"file":"IMG_0747.jpg","title":"Peeking Through"},
+          {"file":"IMG_0664.jpg","title":"Peeking Through"},
+          {"file":"IMG_0682.jpg","title":"Peeking Through"},
+          {"file":"IMG_0703.jpg","title":"Peeking Through"},
+          {"file":"IMG_0708.jpg","title":"Peeking Through"},
+          {"file":"IMG_0712.jpg","title":"Peeking Through"},
+          {"file":"IMG_0724.jpg","title":"Peeking Through"},
+          {"file":"IMG_0728.jpg","title":"Peeking Through"},
+          {"file":"IMG_0733.jpg","title":"Peeking Through"},
+          {"file":"IMG_0734.jpg","title":"Peeking Through"}
+       ]
+      },
+      {"title": "Plants", "id": "gal2",
+       "photos": [
+          {"file":"DSCN0172.jpg","title":"Peeking Through"},
+          {"file":"DSCN0242.jpg","title":"Peeking Through"},
+          {"file":"DSCN0308.jpg","title":"Peeking Through"},
+          {"file":"DSCN0377.jpg","title":"Peeking Through"},
+          {"file":"DSCN0396.jpg","title":"Peeking Through"},
+          {"file":"DSCN0398.jpg","title":"Peeking Through"}
+       ]
+      }
+   ]
+ }
