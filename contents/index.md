@@ -2,4 +2,4 @@
 template: index.html
 ---
 
-Marcia's Art Website here
+Artist bio here.

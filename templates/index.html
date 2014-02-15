@@ -1,8 +1,27 @@
 <html>
 <head>
 <title>MJS Works</title>
+<link rel="stylesheet" href="/css/responsive-nav.css">
+<script src="/js/responsive-nav.min.js"></script>
 </head>
 <body>
+<nav class="nav-collapse">
+  <ul>
+     <li><a href="#">Artist Bio</a></li>
+     <li><a href="#">Photos</a></li>
+     <li><a href="#">Painting</a></li>
+     <li><a href="#">Upcoming Shows</a></li>
+     <li><a href="#">Works For Sale</a></li>
+  </ul>
+</nav>
+<div style="clear: both"></div>
+<div class="content">
 {{ page.html }}
+</div>
+<script>
+  (function () {
+    var nav = responsiveNav(".nav-collapse");
+  }());
+</script>
 </body>
 </html>
