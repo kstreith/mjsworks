@@ -1,10 +1,11 @@
 /*! responsive-nav.js 1.0.25 by @viljamis */
 
 .nav-collapse {
-  font-family: "Maven Pro", "Myriad Pro", Arial, Helvetica, sans-serif 
-  font-weight: 500;
-  font-size: 13px;
-  text-transform: uppercase;
+  /*font-family: "Maven Pro", "Myriad Pro", Arial, Helvetica, sans-serif */
+  font-family: 'caviar_dreamsregular';
+  /*font-weight: 500;*/
+  font-size: 15px;
+  /*text-transform: uppercase;*/
 }
 
 .nav-collapse ul {
@@ -91,12 +92,12 @@
 
 .nav-collapse .active {
   color: #fff;
-  background-color: #71798c;
+  background-color: #874AB2;
 }
 
 .nav-collapse a:hover {
   color: #fff;
-  background-color: #71798c;
+  background-color: #874AB2;
 }
 
 .nav-collapse a {
