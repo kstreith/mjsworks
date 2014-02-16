@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Painting - MJS Works
+{% endblock %}
+
+{% block nav %}
+{{ nav('painting') }}
+{% endblock %}
+
+{% block content %}
+<div class="content photocontent">
+{% for series in page.metadata.series %}
+<div class="photoseriestitle">{{ series.title }}</div>
+<div>
+{% for photo in series.photos %}
+<a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
+  <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
+</a>
+{% endfor %}
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (function () {
+    $(function () {
+       $(".swipebox").swipebox();
+    });
+  }());
+</script>
+{% endblock %}

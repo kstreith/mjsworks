@@ -1,0 +1,10 @@
+{
+   "template": "painting.html",
+   "series": [
+      {"title": "Trapped", "id": "gal1",
+       "photos": [
+          {"file":"IMG_0696.jpg","title":"Peering In"}
+       ]
+      }
+   ]
+ }
