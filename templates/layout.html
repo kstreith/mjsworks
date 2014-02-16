@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive-nav.css">
+  <link rel="stylesheet" href="/css/swipebox.css">
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <script src="/js/jquery.swipebox.js"></script>
+  <script src="/js/responsive-nav.min.js"></script>
+</head>
+<body>
+<div class="header">MJS Works</div>
+{% macro nav(page) %}
+<nav class="nav-collapse">
+  <ul>
+     <li><a href="/" {% if page == "home" %}class="active"{%endif%}>Artist Bio</a></li>
+     <li><a href="/photos.html" {% if page == "photos" %}class="active"{%endif%}>Photos</a></li>
+     <li><a href="#" {% if page == "painting" %}class="active"{%endif%}>Painting</a></li>
+     <li><a href="#" {% if page == "shows" %}class="active"{%endif%}>Upcoming Shows</a></li>
+     <li><a href="#" {% if page == "sale" %}class="active"{%endif%}>Works For Sale</a></li>
+  </ul>
+  <div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div>
+</nav>
+{% endmacro %}
+{% block nav %}{% endblock %}
+<div style="clear: both"></div>
+{% block content %}{% endblock %}
+<div class="footer">
+ <div>Contact Via</div>
+ <a href="mailto:info@mjsworks.com"><img src="/img/email.png" /></a>
+ <a href="https://www.facebook.com/mjsworks"><img src="/img/facebook_1.png" /></a>
+ <a href="https://twitter.com/mjsworks"><img src="/img/twitter_2.png" /></a>
+</div>
+<script>
+  (function () {
+    var nav = responsiveNav(".nav-collapse");
+  }());
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

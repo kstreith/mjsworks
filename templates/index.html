@@ -1,39 +1,16 @@
-<html>
-<head>
-<title>MJS Works</title>
-<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/responsive-nav.css">
-<script src="/js/responsive-nav.min.js"></script>
-</head>
-<body>
-<div class="header">MJS Works</div>
-<nav class="nav-collapse">
-  <ul>
-     <li><a href="/" class="active">Artist Bio</a></li>
-     <li><a href="/photos.html">Photos</a></li>
-     <li><a href="#">Painting</a></li>
-     <li><a href="#">Upcoming Shows</a></li>
-     <li><a href="#">Works For Sale</a></li>
-  </ul>
-  <div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div>
-</nav>
-<div style="clear: both"></div>
+{% extends "layout.html" %}
+
+{% block title %}
+MJS Works
+{% endblock %}
+
+{% block nav %}
+{{ nav('home') }}
+{% endblock %}
+
+{% block content %}
 <div class="content">
 <div class="leftsidebar"><img class="sideimg" src="/img/home-image.jpg" /></div>
 {{ page.html }}
 </div>
-<div class="footer">
- <div>Contact Via</div>
- <a href="mailto:info@mjsworks.com"><img src="/img/email.png" /></a>
- <a href="https://www.facebook.com/mjsworks"><img src="/img/facebook_1.png" /></a>
- <a href="https://twitter.com/mjsworks"><img src="/img/twitter_2.png" /></a>
-</div>
-<script>
-  (function () {
-    var nav = responsiveNav(".nav-collapse");
-  }());
-</script>
-</body>
-</html>
+{% endblock %}
