@@ -18,3 +18,7 @@
 body {
   background-color: #e8e7e5;
 }
+
+a.swipebox {
+  text-decoration: none;
+}
