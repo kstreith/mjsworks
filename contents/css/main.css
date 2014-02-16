@@ -22,3 +22,45 @@ body {
 a.swipebox {
   text-decoration: none;
 }
+
+.logoContainer {
+  clear: both;
+  display: none;
+}
+
+.leftsidebar {
+  width: 30%;
+}
+
+.sideimg {
+  float: left;
+  max-width: 100%;
+  height: auto;  
+  padding-right: 10px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    width: 200px;
+    margin: auto;
+    float: none;
+  }
+
+  .content {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+
+  .logoContainer {
+    display: block;
+  }
+}
+
+
