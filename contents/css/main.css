@@ -46,11 +46,6 @@ a.swipebox {
   text-decoration: none;
 }
 
-.logoContainer {
-  clear: both;
-  display: none;
-}
-
 .leftsidebar {
   width: 30%;
 }
@@ -67,30 +62,12 @@ a.swipebox {
   height: auto;
 }
 
-@media screen and (min-width: 760px) {
-  .header {
-    width: 200px;
-    margin: auto;
-    float: none;
-  }
-
-  .content {
-    margin: auto;
-    width: 80%;
-    max-width: 1400px;
-    min-width: 740px;
-  }
-
-  .logoContainer {
-    display: block;
-  }
-}
-
 .content {
   background-color: white;
-  min-height: 500px;
-  box-sizing: border-box;
+  min-height: 520px;
+  min-width: 300px;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 30px;
 }
 
@@ -115,3 +92,37 @@ a.swipebox {
 .photocontent .photoseriestitle:first-child {
   padding-top: 0px;
 }
+
+.content p:nth-of-type(1) {
+  margin: 0px;
+}
+
+.logocontainer {
+  clear: both;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    width: 200px;
+    margin: auto;
+    float: none;
+  }
+
+  .content {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+
+  .logoContainer {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+}
+

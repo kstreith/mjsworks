@@ -20,8 +20,8 @@
      <li><a href="#" {% if page == "shows" %}class="active"{%endif%}>Upcoming Shows</a></li>
      <li><a href="#" {% if page == "sale" %}class="active"{%endif%}>Works For Sale</a></li>
   </ul>
-  <div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div>
 </nav>
+<div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div>
 {% endmacro %}
 {% block nav %}{% endblock %}
 <div style="clear: both"></div>
@@ -34,7 +34,7 @@
 </div>
 <script>
   (function () {
-    var nav = responsiveNav(".nav-collapse");
+    var nav = responsiveNav(".nav-collapse", {insert: "before"});
   }());
 </script>
 {% block scripts %}{% endblock %}
