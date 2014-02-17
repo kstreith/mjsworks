@@ -68,7 +68,7 @@ a.swipebox {
   min-width: 300px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 15px;
 }
 
 .footer {
@@ -115,6 +115,7 @@ a.swipebox {
     width: 80%;
     max-width: 1400px;
     min-width: 740px;
+    padding: 30px;
   }
 
   .logoContainer {
