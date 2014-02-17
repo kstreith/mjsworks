@@ -1,0 +1,129 @@
+/* Custom Styles */
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('/font/CaviarDreams-webfont.eot');
+    src: url('/font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/CaviarDreams-webfont.woff') format('woff'),
+         url('/font/CaviarDreams-webfont.ttf') format('truetype'),
+         url('/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'caviar_dreamsregular';
+            src: url('/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    }
+}
+
+.photo {
+  padding: 10px;
+}
+
+.photocontent {
+  padding-top: 30px;
+}
+
+.header {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 35px;
+  float: left;
+  color: 874AB2;
+}
+
+
+body {
+  background-color: #e8e7e5;
+  background-image: url("/img/subtle_white_feathers.png");
+  font-family: 'caviar_dreamsregular';
+  font-size: 24px;
+}
+
+a.swipebox {
+  text-decoration: none;
+}
+
+.leftsidebar {
+  width: 30%;
+}
+
+.sideimg {
+  float: left;
+  max-width: 100%;
+  height: auto;  
+  padding-right: 10px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  background-color: white;
+  min-height: 520px;
+  min-width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.footer {
+  font-size: 14px;
+  width: 155px;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.photocontent .photoseriestitle {
+  padding-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+} 
+
+.photocontent .photoseriestitle:first-child {
+  padding-top: 0px;
+}
+
+.content p:nth-of-type(1) {
+  margin: 0px;
+}
+
+.logocontainer {
+  clear: both;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    width: 200px;
+    margin: auto;
+    float: none;
+  }
+
+  .content {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+    padding: 30px;
+  }
+
+  .logoContainer {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+}
+
