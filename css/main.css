@@ -23,6 +23,15 @@
   padding: 10px;
 }
 
+.photobox {
+  display: inline-block;
+  width: 270px;
+}
+
+.photoinstruction {
+  font-size: 50%;
+}
+
 .photocontent {
   padding-top: 30px;
 }
