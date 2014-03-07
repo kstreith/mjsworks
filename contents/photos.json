@@ -1,6 +1,12 @@
 {
    "template": "photos.html",
    "series": [
+      {"title": "Painter's Palette", "id": "gal4",
+       "photos": [
+          {"file":"IMG_1336.jpg","title":"Spring Rain"},
+          {"file":"IMG_1483.jpg","title":"Painters Dream"}
+       ]
+      },
       {"title": "Trapped", "id": "gal1",
        "photos": [
           {"file":"IMG_0696.jpg","title":"Peering In"},
@@ -27,6 +33,8 @@
       },
       {"title": "Atmosphere", "id": "gal3",
        "photos": [
+          {"file":"IMG_1179.jpg","title":"Intruder"},
+          {"file":"IMG_1180.jpg","title":"Forgotten"},
           {"file":"IMG_0944.jpg","title":"Looking Out"},
           {"file":"IMG_0945.jpg","title":"Awakening"},
           {"file":"IMG_0948.jpg","title":"Traveler"},

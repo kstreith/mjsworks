@@ -12,11 +12,14 @@ Photos - MJS Works
 <div class="content photocontent">
 {% for series in page.metadata.series %}
 <div class="photoseriestitle">{{ series.title }}</div>
+<div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
 <div>
 {% for photo in series.photos %}
-<a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
-  <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
-</a>
+<div class="photobox">
+  <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
+    <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
+  </a>
+</div>
 {% endfor %}
 </div>
 {% endfor %}
