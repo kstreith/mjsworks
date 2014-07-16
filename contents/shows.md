@@ -2,6 +2,22 @@
 template: shows.html
 ---
 
+July 2014 to Present  
+Red Door Gallery  
+Rolesville, NC
+
+The Red Door Gallery is open Mondays and Fridays (11-6). My photos and encaustic paintings are displayed and I have a small studio in the back.
+
+----------
+September 6th, 7th 2014  
+[Tour of Artists](http://wakeforestguild.com/participating-artists/)   
+Wake Forest, NC  
+
+Come see and meet all of the local artists in Wake Forest, including me. My works will be on display in the Storytellers Bookshop, come take a look or come to purchase.
+
+
+
+----------
 
 May 2014  
 Storytellers Bookshop    

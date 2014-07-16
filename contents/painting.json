@@ -1,9 +1,15 @@
 {
    "template": "painting.html",
    "series": [
-      {"title": "Trapped", "id": "gal1",
+      {"title": "Encaustic Paintings", "id": "gal1",
        "photos": [
-          {"file":"IMG_0696.jpg","title":"Peering In"}
+          {"file":"2014-04-21 13.41.00.jpg","title":"Flowers","sold":true},
+          {"file":"2014-04-28 13.07.01.jpg","title":"Sailor"},
+          {"file":"2014-05-14 18.32.02.jpg","title":"Mountains"},
+          {"file":"IMG_2174.jpg","title":"Mother Bird"},
+          {"file":"IMG_2054.jpg","title":"Piano Man","sold":true},
+          {"file":"2014-07-14 12.00.42.jpg","title":"Growing"},
+          {"file":"IMG_2585.jpg","title":"Water Lillies"}
        ]
       }
    ]
