@@ -23,11 +23,6 @@
   padding: 10px;
 }
 
-.photobox {
-  display: inline-block;
-  width: 270px;
-}
-
 .photoinstruction {
   font-size: 50%;
 }
@@ -100,6 +95,32 @@ a.swipebox {
 
 .photocontent .photoseriestitle:first-child {
   padding-top: 0px;
+}
+
+.photoblock {
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+}
+
+.photoblock img {
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.photoblocktext {
+  text-align: center;
+  color: black;
+  font-size: 0.75em;
+}
+
+.photoblocktext.sold {
+  color: red;
 }
 
 .content p:nth-of-type(1) {
