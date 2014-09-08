@@ -2,19 +2,27 @@
 template: shows.html
 ---
 
-July 2014 to Present  
-Red Door Gallery  
-Rolesville, NC
+September 11th-14th, 2014   
+SparkCon   
+Raleigh, NC   
 
-The Red Door Gallery is open Mondays and Fridays (11-6). My photos and encaustic paintings are displayed and I have a small studio in the back.
+One of my pictures was selected to be part of the Photography Exhibition at SparkCon. The theme is, "What does North Carolina mean to you?". Come take a look.
 
 ----------
+
 September 6th, 7th 2014  
 [Tour of Artists](http://wakeforestguild.com/participating-artists/)   
 Wake Forest, NC  
 
 Come see and meet all of the local artists in Wake Forest, including me. My works will be on display in the Storytellers Bookshop, come take a look or come to purchase.
 
+----------
+
+July 2014 to September 2014  
+Red Door Gallery  
+Rolesville, NC
+
+The Red Door Gallery is open Mondays and Fridays (11-6). My photos and encaustic paintings are displayed and I have a small studio in the back.
 
 
 ----------

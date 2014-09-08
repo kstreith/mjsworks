@@ -23,6 +23,8 @@ Painting - MJS Works
   <div class="photoblocktext">{{ photo.title }}</div>
   {% if photo.sold %}
   <div class="photoblocktext sold">Sold</div>
+  {% else %}
+  <div class="photoblocktext">${{photo.price}} - {{ photo.size}}</div>
   {% endif %}
 </div>
 {% endfor %}
