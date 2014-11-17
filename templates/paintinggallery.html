@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Painting - MJS Works
+{% endblock %}
+
+{% block nav %}
+{{ nav('painting') }}
+{% endblock %}
+
+{% block content %}
+
+<div class="content photocontent">
+<a class="gallerylink" href="/painting.html">Back to Gallery Listing</a>
+{% for series in page.metadata.series %}
+<div class="photoseriestitle">{{ series.title }}</div>
+<div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
+<div>
+{% for photo in series.photos %}
+<div class="photoblock">
+  <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
+    <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
+  </a>
+  <div class="photoblocktext">{{ photo.title }}</div>
+  {% if photo.sold %}
+  <div class="photoblocktext sold">Sold</div>
+  {% else %}
+  <div class="photoblocktext">${{photo.price}} - {{ photo.size}}</div>
+  {% endif %}
+</div>
+{% endfor %}
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (function () {
+    $(function () {
+       $(".swipebox").swipebox();
+    });
+  }());
+</script>
+{% endblock %}

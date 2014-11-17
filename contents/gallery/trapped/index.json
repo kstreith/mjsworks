@@ -1,0 +1,19 @@
+{
+   "template": "photosgallery.html",
+   "series": [
+      {"title": "Trapped", "id": "gal1",
+       "photos": [
+          {"file":"IMG_0696.jpg","title":"Peering In"},
+          {"file":"IMG_0747.jpg","title":"Peeking Through"},
+          {"file":"IMG_0664.jpg","title":"Caged"},
+          {"file":"IMG_0682.jpg","title":"Wall"},
+          {"file":"IMG_0703.jpg","title":"Ladder"},
+          {"file":"IMG_0708.jpg","title":"Barn"},
+          {"file":"IMG_0712.jpg","title":"Chewed"},
+          {"file":"IMG_0728.jpg","title":"Kept"},
+          {"file":"IMG_0733.jpg","title":"Chained"},
+          {"file":"IMG_0734.jpg","title":"Loose"}
+       ]
+      }
+   ]
+ }

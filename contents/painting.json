@@ -1,26 +1,17 @@
 {
    "template": "painting.html",
    "series": [
-      {"title": "Encaustic Paintings", "id": "gal1",
-       "photos": [
-          {"file":"IMG_3663.jpg","title":"Ava's Pond","size":"11x14","price":125},
-          {"file":"IMG_3675.jpg","title":"Boat","size":"8x10","price":80},
-          {"file":"IMG_3682.jpg","title":"Lighthouse","size":"8x10","price":80},
-          {"file":"IMG_3696.jpg","title":"Farmhouse","size":"8x10","price":80},
-          {"file":"IMG_3004.jpg","title":"In the Woods","size":"8x10","price":80},
-          {"file":"IMG_2996.jpg","title":"Frog","size":"6x6","price":60},
-          {"file":"IMG_2992.jpg","title":"Jungle","size":"6x6","price":60},
-          {"file":"IMG_2991.jpg","title":"Birds in Flight","size":"6x6","price":60},
-          {"file":"IMG_2999.jpg","title":"Rose","size":"6x6","price":60},
-          {"file":"2014-04-28 13.07.01.jpg","title":"Sailor","size":"6x6","price":60},
-          {"file":"2014-05-14 18.32.02.jpg","title":"Mountains","size":"8x10","price":80},
-          {"file":"IMG_2174.jpg","title":"Mother Bird","size":"6x6","price":60},
-          {"file":"2014-07-18 13.02.57.jpg","title":"Fireflies","sold":true},
-          {"file":"2014-04-21 13.41.00.jpg","title":"Flowers","sold":true},
-          {"file":"IMG_2054.jpg","title":"Piano Man","sold":true},
-          {"file":"2014-07-14 12.00.42.jpg","title":"Growing","sold":true},
-          {"file":"IMG_2585.jpg","title":"Water Lillies","sold":true}
-       ]
+      {"title": "Dreamscapes", 
+       "file": "IMG_3675.jpg",
+       "link": "dreamscapes"
+      },
+      {"title": "Mixed Media", 
+       "file": "IMG_2999.jpg",
+       "link": "mixed-media"
+      },
+      {"title": "Color Study", 
+       "file": "IMG_4012.jpg",
+       "link": "color-study"
       }
    ]
  }

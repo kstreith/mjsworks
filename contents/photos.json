@@ -1,60 +1,25 @@
 {
    "template": "photos.html",
    "series": [
-      {"title": "Sights", "id": "gal5",
-       "photos": [
-          {"file":"IMG_1759.jpg","title":"Feeding Time"},
-          {"file":"IMG_1823.jpg","title":"Signs"},
-          {"file":"IMG_2565.jpg","title":"Pipes"},
-          {"file":"IMG_2568.jpg","title":"Sound Waves"}
-       ]
+      {"title": "Sights",
+       "file": "IMG_1759.jpg",
+       "link": "sights"
       },
-      {"title": "Painter's Palette", "id": "gal4",
-       "photos": [
-          {"file":"IMG_1336.jpg","title":"Spring Rain"},
-          {"file":"IMG_1483.jpg","title":"Painters Dream"},
-          {"file":"IMG_1485.jpg","title":"Swimming"},
-          {"file":"IMG_1581.jpg","title":"Through the Looking Glass"},
-          {"file":"IMG_1585.jpg","title":"Flying High"},
-          {"file":"IMG_2004.jpg","title":"Hangover"},
-          {"file":"IMG_2018.jpg","title":"Brush Strokes"},
-          {"file":"IMG_2048.jpg","title":"Dancer"}
-       ]
+      {"title": "Painter's Palette",
+       "file": "IMG_1336.jpg",
+       "link": "painter-palette"
       },
-      {"title": "Trapped", "id": "gal1",
-       "photos": [
-          {"file":"IMG_0696.jpg","title":"Peering In"},
-          {"file":"IMG_0747.jpg","title":"Peeking Through"},
-          {"file":"IMG_0664.jpg","title":"Caged"},
-          {"file":"IMG_0682.jpg","title":"Wall"},
-          {"file":"IMG_0703.jpg","title":"Ladder"},
-          {"file":"IMG_0708.jpg","title":"Barn"},
-          {"file":"IMG_0712.jpg","title":"Chewed"},
-          {"file":"IMG_0728.jpg","title":"Kept"},
-          {"file":"IMG_0733.jpg","title":"Chained"},
-          {"file":"IMG_0734.jpg","title":"Loose"}
-       ]
+      {"title": "Trapped",
+       "file": "IMG_0696.jpg",
+       "link": "trapped"
       },
-      {"title": "Plants", "id": "gal2",
-       "photos": [
-          {"file":"DSCN0172.jpg","title":"Dew"},
-          {"file":"DSCN0242.jpg","title":"Sweet Honey"},
-          {"file":"DSCN0308.jpg","title":"Towers"},
-          {"file":"DSCN0377.jpg","title":"Bowing"},
-          {"file":"DSCN0396.jpg","title":"Welcome"},
-          {"file":"DSCN0398.jpg","title":"Walk in the Garden"}
-       ]
+      {"title": "Plants",
+       "file": "DSCN0172.jpg",
+       "link": "plants"
       },
-      {"title": "Atmosphere", "id": "gal3",
-       "photos": [
-          {"file":"IMG_1179.jpg","title":"Intruder"},
-          {"file":"IMG_1180.jpg","title":"Forgotten"},
-          {"file":"IMG_0944.jpg","title":"Looking Out"},
-          {"file":"IMG_0945.jpg","title":"Awakening"},
-          {"file":"IMG_0948.jpg","title":"Traveler"},
-          {"file":"IMG_0999.jpg","title":"Landing"},
-          {"file":"IMG_1086.jpg","title":"Focus"}
-       ]
+      {"title": "Atmosphere",
+       "file": "IMG_1179.jpg",
+       "link": "atmosphere"
       }
    ]
  }

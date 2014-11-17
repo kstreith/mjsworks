@@ -4,5 +4,11 @@
     "underscore": "1.4.x",
     "typogr": "0.5.x"
   },
-  "repository": "none"
+  "repository": "none",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.1",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-uglifyjs": "^0.5.0"
+  }
 }

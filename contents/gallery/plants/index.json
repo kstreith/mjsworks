@@ -1,0 +1,15 @@
+{
+   "template": "photosgallery.html",
+   "series": [
+      {"title": "Plants", "id": "gal2",
+       "photos": [
+          {"file":"DSCN0172.jpg","title":"Dew"},
+          {"file":"DSCN0242.jpg","title":"Sweet Honey"},
+          {"file":"DSCN0308.jpg","title":"Towers"},
+          {"file":"DSCN0377.jpg","title":"Bowing"},
+          {"file":"DSCN0396.jpg","title":"Welcome"},
+          {"file":"DSCN0398.jpg","title":"Walk in the Garden"}
+       ]
+      }
+   ]
+ }

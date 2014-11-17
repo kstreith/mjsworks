@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Painting - MJS Works
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block content %}
+<div class="content gallerycontent">
+  <a style="float:left" href="{{previousImage}}.html">Previous</a>
+  <a style="float:right" href="{{nextImage}}.html">Next</a>
+<div class="galleryimage">
+  <div class="galleryimagetitle">{{galleryImage.title }}</div>
+  <img src="../../photos/images/{{galleryImage.file}}" />
+</div>
+</div>
+{% endblock %}

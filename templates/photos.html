@@ -10,21 +10,14 @@ Photos - MJS Works
 
 {% block content %}
 <div class="content photocontent">
-{% for series in page.metadata.series %}
-<div class="photoseriestitle">{{ series.title }}</div>
-<div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
-<div>
-{% for photo in series.photos %}
+<div class="photoseriestitle">Galleries</div>
+<div class="photoinstruction">Click to view images for gallery</div>
+{% for photo in page.metadata.series %}
 <div class="photoblock">
-  <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
+  <a href="/gallery/{{ photo.link }}/index.html" title="{{ photo.title }}">
     <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
   </a>
   <div class="photoblocktext">{{ photo.title }}</div>
-  {% if photo.sold %}
-  <div class="photoblocktext sold">Sold</div>
-  {% endif %}
-</div>
-{% endfor %}
 </div>
 {% endfor %}
 </div>

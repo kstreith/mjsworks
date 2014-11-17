@@ -1,0 +1,16 @@
+{
+   "template": "photosgallery.html",
+   "series": [
+      {"title": "Atmosphere", "id": "gal3",
+       "photos": [
+          {"file":"IMG_1179.jpg","title":"Intruder"},
+          {"file":"IMG_1180.jpg","title":"Forgotten"},
+          {"file":"IMG_0944.jpg","title":"Looking Out"},
+          {"file":"IMG_0945.jpg","title":"Awakening"},
+          {"file":"IMG_0948.jpg","title":"Traveler"},
+          {"file":"IMG_0999.jpg","title":"Landing"},
+          {"file":"IMG_1086.jpg","title":"Focus"}
+       ]
+      }
+   ]
+ }

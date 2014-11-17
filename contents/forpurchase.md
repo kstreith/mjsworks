@@ -8,8 +8,8 @@ My encaustic paintings and photos are available for purchase at [Storytellers Bo
 
   Pricing
   ----------
-  - 6x6 Encaustic Painting - $60
-  - 8x10 Encaustic Painting - $80 
+  - 6x6 Encaustic Painting - $60-$70
+  - 8x10 Encaustic Painting - $80-$125 
 
 Commissioned Work
 -----------------

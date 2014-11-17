@@ -1,0 +1,13 @@
+{
+   "template": "photosgallery.html",
+   "series": [
+      {"title": "Sights", "id": "gal5",
+       "photos": [
+          {"file":"IMG_1759.jpg","title":"Feeding Time"},
+          {"file":"IMG_1823.jpg","title":"Signs"},
+          {"file":"IMG_2565.jpg","title":"Pipes"},
+          {"file":"IMG_2568.jpg","title":"Sound Waves"}
+       ]
+      }
+   ]
+ }
