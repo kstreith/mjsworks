@@ -6,15 +6,16 @@
   <title>
 MJS Works
 </title>
+  <style>
+    body {
+      background-color: black;
+      background-image: url("/img/dark_wood.png");
+    }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Artistic works of Marcia Jo Streithorst">
   <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/responsive-nav.css">
-  <link rel="stylesheet" href="/css/swipebox.css">
-  <script src="/js/jquery-2.1.0.min.js"></script>
-  <script src="/js/jquery.swipebox.js"></script>
-  <script src="/js/responsive-nav.min.js"></script>
+  <link rel="stylesheet" href="/css/all.min.css">
 </head>
 <body>
 <div class="header">MJS Works</div>
@@ -23,25 +24,35 @@ MJS Works
 
 <nav class="nav-collapse">
   <ul>
-     <li><a href="/" class="active">Artist Bio</a></li>
-     <li><a href="/photos.html" >Photos</a></li>
-     <li><a href="/painting.html" >Painting</a></li>
-     <li><a href="/shows.html" >Upcoming Shows</a></li>
-     <li><a href="/forpurchase.html" >Works For Sale</a></li>
+     <li class="larger"><a href="/" class="active">Artist Bio</a></li>
+     <li class="larger"><a href="/photos.html" >Photos</a></li>
+     <li class="larger"><a href="/painting.html" >Paintings</a></li>
+     <li class="larger"><a href="/newsletter.html" >Newsletter</a></li>
+     <li><a href="/shows.html" >Shows</a></li>
+     <li><a href="/forpurchase.html" >Buy</a></li>
   </ul>
 </nav>
-<div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div>
+<!-- <div class="logoContainer"><img class="logo" src="/img/mjsworks-logo4.jpg" /></div> -->
 
 
 <div style="clear: both"></div>
 
 <div class="content">
-<div class="leftsidebar"><img class="sideimg" src="/img/home-image.jpg" /></div>
-<p>The artistic works of Marcia Jo Streithorst.</p>
-<p>As an artist, I create original works of art that deconstruct the mundane and ordinary into something new and surprising. Photography is my preferred medium to work in but I also like to paint and use other mediums as well. Most of my work is abstract which focus on the shapes and composition within the pieces. I received a Bachelor of Fine Arts from Wright State University and have been working in the creative field ever since. I am an active member of the <a href="http://wakeforestguild.com/our-members/streithorst_marcia_mg/">Wake Forest Artist Guild</a>. </p>
-<p>I also create mixed media functional works of art and wearable knitted goods for the non-profit group <a href="http://www.threadsofgrace.org/">Threads of Grace</a>. These goods can be purchased at <a href="http://www.storystorewf.com/">Storytellers Bookshop in Wake Forest, NC</a>.</p>
-<p>You can e-mail me at info@mjsworks.com or find me on Twitter at @mjsworks.</p>
+<p><strong>The artistic works of Marcia Jo Streithorst</strong>.</p>
+<p>My passion is inspiring the viewer’s imagination.  My love of photography combined with a new fascination for the tactile experience of encaustics gives my latest artworks a dreamlike quality evoking visions of fairy tale worlds that appear almost real, like dreams just beginning to take shape. With encaustic the surface can be smooth or heavily textured, but that surreal glow will always draw you in. It’s what made me fall in love with beeswax painting!</p>
+<p>I received a Bachelor of Fine Arts from Wright State University in 2003 and have worked in creative venues since that time. Since my move to NC last year I have become a member of the Wake Forest artist guild, had work shown during the Tour of Artist, SparkCon and my photo <em>Spring rain</em> was part of the <em>In the Abstract</em> show at the Kiernan Gallery. </p>
+<p>You can e-mail me at <a href="mailto:info@mjsworks.com">info@mjsworks.com</a> or find me on Twitter at <a href="https://twitter.com/mjsworks">@mjsworks</a>.</p>
 
+<div id="slidy-container">
+  <figure id="slidy">
+    <img src="photos/rotate/SpringRain.jpg" alt data-caption="Spring Rain">
+    <img src="photos/rotate/Lighthouse.jpg" alt data-caption="Lighthouse">
+    <img src="photos/rotate/BlueWaves.jpg" alt data-caption="Blue Waves">
+    <img src="photos/rotate/Rose.jpg" alt data-caption="Rose">
+    <img src="photos/rotate/FeedingTime.jpg" alt data-caption="Feeding Time">
+  </figure>
+</div>
+<!-- <div class="leftsidebar"><img class="sideimg" src="/img/home-image.jpg" /></div> -->
 </div>
 
 <div class="footer">
@@ -50,6 +61,7 @@ MJS Works
  <a href="https://www.facebook.com/mjsworks"><img src="/img/facebook_1.png" /></a>
  <a href="https://twitter.com/mjsworks"><img src="/img/twitter_2.png" /></a>
 </div>
+<script src="/js/all.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -65,6 +77,8 @@ MJS Works
     var nav = responsiveNav(".nav-collapse", {insert: "before"});
   }());
 </script>
+
+<script>cssSlidy();</script>
 
 </body>
 </html>

@@ -8,27 +8,32 @@
 
 <url>
   <loc>http://mjsworks.com/</loc>
-  <lastmod>2014-04-21T02:02:57+00:00</lastmod>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://mjsworks.com/photos.html</loc>
-  <lastmod>2014-04-21T02:02:57+00:00</lastmod>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://mjsworks.com/painting.html</loc>
-  <lastmod>2014-04-21T02:02:57+00:00</lastmod>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://mjsworks.com/newsletter.html</loc>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://mjsworks.com/shows.html</loc>
-  <lastmod>2014-04-21T02:02:57+00:00</lastmod>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://mjsworks.com/forpurchase.html</loc>
-  <lastmod>2014-04-21T02:02:57+00:00</lastmod>
+  <lastmod>2014-11-16T02:02:57+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 </urlset>
