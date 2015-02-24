@@ -2,9 +2,10 @@
 template: forpurchase.html
 ---
 
-Storytellers Bookshop    
+Going Local NC    
 ---------
-My encaustic paintings and photos are available for purchase at [Storytellers Bookshop in Wake Forest, NC](http://www.storystorewf.com/)
+My encaustic paintings and photos are available for purchase at [Going Local NC](https://www.facebook.com/goinglocalnc). Going Local NC is located at 10940 Raven Ridge Rd / Falls River Town Center
+Raleigh, North Carolina
 
   Pricing
   ----------

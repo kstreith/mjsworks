@@ -2,6 +2,22 @@
 template: shows.html
 ---
 
+March 2015  
+FALC Juried Show at Page Walker Manor  
+Cary, NC
+
+One of my encaustic paintings was selected for the juried show.
+
+----------
+
+January 3rd-April 2nd, 2015  
+Reflections Gallery at WakeMed  
+Cary, NC
+
+Two of my encaustic paintings were selected for this show. You can view these at WakeMed in Cary, NC and purchase if you like.
+
+----------
+
 September 11th-14th, 2014   
 SparkCon   
 Raleigh, NC   
