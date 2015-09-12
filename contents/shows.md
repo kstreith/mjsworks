@@ -2,6 +2,21 @@
 template: shows.html
 ---
 
+September 19th, 20th 2015  
+[Tour of Artists](http://wakeforestguild.com/participating-artists/)   
+Wake Forest, NC  
+
+A two day art extravaganza where I will demoing my encausting painting methods. Come meet the other members of the Wake Forest Artist's Guild as well. My work is displayed and will be available for purchase at the Artists Loft above the Wake Forest Coffee Shop. 
+
+----------
+June 2015  
+United Arts Council
+Raleigh, NC
+
+My encausting painting was exhibited along with the Visual Arts Exchange abstract group.
+
+----------
+
 March 2015  
 FALC Juried Show at Page Walker Manor  
 Cary, NC

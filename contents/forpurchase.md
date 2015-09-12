@@ -2,10 +2,9 @@
 template: forpurchase.html
 ---
 
-Going Local NC    
+Artists Loft at Wake Forest Coffee Shop    
 ---------
-My encaustic paintings and photos are available for purchase at [Going Local NC](https://www.facebook.com/goinglocalnc). Going Local NC is located at 10940 Raven Ridge Rd / Falls River Town Center
-Raleigh, North Carolina
+My encaustic paintings and photos are available for purchase at [Wake Forest Coffee Shop](https://www.facebook.com/goinglocalnc), specifically the Artists Loft on the second floor. Wake Forest Coffee Shop is located at 156 S. White Street Wake Forest, North Carolina 
 
   Pricing
   ----------

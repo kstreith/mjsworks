@@ -84,15 +84,15 @@
 
 @media screen and (min-width: 760px) {
     .nav-collapse li {
-        width:16%;
-        *width: 16%;
-        _width: 16%
+        width:20%;
+        *width: 20%;
+        _width: 20%
     }
 
     .nav-collapse li.larger {
-        width:17%;
-        *width: 17%;
-        _width: 17%
+        width:20%;
+        *width: 20%;
+        _width: 20%
     }
 }
 
