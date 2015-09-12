@@ -1,0 +1,12 @@
+{
+   "template": "paintinggallery.html",
+   "series": [
+      {"title": "Textures", "id": "gal1",
+       "photos": [
+          {"file":"IMG_4848.jpg","title":"Getting From Point A to Point B","size":"9x12","price":108},
+          {"file":"IMG_4861.jpg","title":"Golden Sky","size":"11x14","price":155},
+          {"file":"IMG_4883.jpg","title":"Crimson Peak","size":"11x14","price":155}
+       ]
+      }
+   ]
+ }

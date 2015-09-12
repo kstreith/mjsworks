@@ -4,6 +4,7 @@
       {"title": "Mixed Media", "id": "gal1",
        "photos": [
           {"file":"IMG_3663.jpg","title":"Ava's Pond","size":"11x14","price":125},
+          {"file":"IMG_4825.jpg","title":"Fading Beauty","size":"6x12","price":70},
           {"file":"IMG_2991.jpg","title":"Birds in Flight","size":"6x6","price":60},
           {"file":"IMG_2999.jpg","title":"Rose","size":"6x6","price":60}
        ]
