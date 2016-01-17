@@ -2,6 +2,37 @@
 template: shows.html
 ---
 
+June to July, 2016  
+Solo Show  
+Hager Smith  
+Raleigh, NC
+
+Put detail here.
+
+----------
+December 3rd to January 14th, 2015  
+[The National Arts Program 13th Annual Exhibit](https://www.raleighnc.gov/parks/content/Arts/Articles/BlockGallery.html)  
+The Block Gallery  
+Raleigh, NC
+
+Put detail here.
+
+----------
+November 6th to December 4th, 2015  
+Anything Goes Show  
+Litmus Gallery  
+Raleigh, NC
+
+Put detail here.
+
+----------
+October 15th to December 11th, 2015  
+[Arts of the Pamlico, 51st Fine Arts Show](http://www.artsofthepamlico.org/events/25)  
+Washington, NC  
+
+One of my pieces was awarded honorable mention in the mixed media catagory.
+
+----------
 September 19th, 20th 2015  
 [Tour of Artists](http://wakeforestguild.com/participating-artists/)   
 Wake Forest, NC  
@@ -25,7 +56,7 @@ One of my encaustic paintings was selected for the juried show.
 
 ----------
 
-January 3rd-April 2nd, 2015  
+January 3rd to April 2nd, 2015  
 Reflections Gallery at WakeMed  
 Cary, NC
 
@@ -33,7 +64,7 @@ Two of my encaustic paintings were selected for this show. You can view these at
 
 ----------
 
-September 11th-14th, 2014   
+September 11th to 14th, 2014   
 SparkCon   
 Raleigh, NC   
 

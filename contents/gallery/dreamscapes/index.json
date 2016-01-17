@@ -3,10 +3,11 @@
    "series": [
       {"title": "Dreamscapes", "id": "gal1",
        "photos": [
+          {"file":"IMG_4926.jpg","title":"Bamboo Forest","size":"8x10","price":80},
+          {"file":"IMG_5400.jpg","title":"Water Dancing","size":"8x10","price":80},
           {"file":"IMG_3675.jpg","title":"Boat","size":"8x10","price":80},
           {"file":"IMG_3004.jpg","title":"In the Woods","size":"8x10","price":80},
-          {"file":"IMG_2996.jpg","title":"Frog","size":"6x6","price":60},
-          {"file":"IMG_2992.jpg","title":"Jungle","size":"6x6","price":60},
+          {"file":"IMG_2996.jpg","title":"Frog","size":"6x6","price":50},
           {"file":"IMG_3739.jpg","title":"Nightime Forest","size":"8x10","price":80},
           {"file":"2014-07-18 13.02.57.jpg","title":"Fireflies","sold":true},
           {"file":"IMG_3735.jpg","title":"Sleeping Garden","size":"8x10","price":80,"sold":true},

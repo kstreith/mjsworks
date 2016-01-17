@@ -1,8 +1,16 @@
 {
    "template": "painting.html",
    "series": [
+      {"title": "Linear Study", 
+       "file": "IMG_5351.jpg",
+       "link": "linear-study"
+      },
+      {"title": "Tiny Creatures", 
+       "file": "K9279707.jpg",
+       "link": "tiny-creatures"
+      },
       {"title": "Dreamscapes", 
-       "file": "IMG_3675.jpg",
+       "file": "IMG_5400.jpg",
        "link": "dreamscapes"
       },
       {"title": "Mixed Media", 
@@ -10,7 +18,7 @@
        "link": "mixed-media"
       },
       {"title": "Color Study", 
-       "file": "IMG_4019.jpg",
+       "file": "IMG_3959.jpg",
        "link": "color-study"
       },
       {"title": "Textures", 
