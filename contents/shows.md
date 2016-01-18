@@ -4,18 +4,26 @@ template: shows.html
 
 June to July, 2016  
 Solo Show  
-Hager Smith  
+Hager Smith Building  
 Raleigh, NC
 
-Put detail here.
+I'm excited and looking forward to my first solo show. I'm also proud and excited this show will be part of First Friday in downtown Raleigh, can't wait.
 
 ----------
 December 3rd to January 14th, 2015  
-[The National Arts Program 13th Annual Exhibit](https://www.raleighnc.gov/parks/content/Arts/Articles/BlockGallery.html)  
+[The National Arts Program 13th Annual Exhibit](http://www.nationalartsprogram.org/venues/raleigh-wake-county)  
 The Block Gallery  
 Raleigh, NC
 
-Put detail here.
+This show was for Wake County and City of Raleigh employees, which I am a part-time employee.
+
+----------
+November 6th to December 21st, 2015  
+[To: From: Annual Holiday Show + Deck the Gallery](http://visualartexchange.org/2013/10/sale-for-the-season-2/)  
+Visual Art Exchange Gallery  
+Raleigh, NC
+
+This was a holiday show for members of Visual Art Exchange. I was excited this show was part of First Friday in downtown Raleigh. One of my pieces sold during this show.
 
 ----------
 November 6th to December 4th, 2015  
@@ -23,7 +31,7 @@ Anything Goes Show
 Litmus Gallery  
 Raleigh, NC
 
-Put detail here.
+Two of my pieces were accepted into this juried show. This show was part of First Friday in downtown Raleigh. One of my pieces sold during this show.
 
 ----------
 October 15th to December 11th, 2015  
