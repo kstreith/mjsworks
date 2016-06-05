@@ -1,6 +1,10 @@
 {
    "template": "painting.html",
    "series": [
+      {"title": "Landscapes", 
+       "file": "IMG_6029.jpg",
+       "link": "landscapes"
+      },
       {"title": "Linear Study", 
        "file": "IMG_5351.jpg",
        "link": "linear-study"
@@ -22,7 +26,7 @@
        "link": "color-study"
       },
       {"title": "Textures", 
-       "file": "IMG_4883.jpg",
+       "file": "IMG_5436.jpg",
        "link": "textures"
       }	  
    ]

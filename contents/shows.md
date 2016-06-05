@@ -10,6 +10,30 @@ Raleigh, NC
 I'm excited and looking forward to my first solo show. I'm also proud and excited this show will be part of First Friday in downtown Raleigh, can't wait.
 
 ----------
+April 2016  
+[Back to the garden](http://www.cielcharlotte.com/exhibitions.html)  
+[Ciel Gallery](http://www.cielcharlotte.com/)  
+Charlotte, NC 
+
+This was a nationally juried show where my piece, Dreaming of Spring, was accepted and sold.
+
+----------
+April 2016  
+Tiny Treasure Show  
+[Cary Gallery of Artists](http://www.carygalleryofartists.org/)  
+Cary, NC  
+
+This was a juried show where my piece, Water Dancer, was accepted.
+
+----------
+April 2016  
+[Petcasso Exhibit](http://litmusgallery.com/featured-artist/petcasso/)  
+[Litmus Gallery](http://litmusgallery.com/)  
+Raleigh, NC
+
+This was a juried show where proceeds went to benefit Piedmont Farm Animal Refuge. My piece, Dragonfly, was accepted and sold.
+
+----------
 December 3rd to January 14th, 2015  
 [The National Arts Program 13th Annual Exhibit](http://www.nationalartsprogram.org/venues/raleigh-wake-county)  
 The Block Gallery  
