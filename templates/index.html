@@ -10,7 +10,7 @@ MJS Works
 
 {% block content %}
 <div class="content">
-{{ page.html }}
+{{ page.html | safe }}
 <div id="slidy-container">
   <figure id="slidy">
     <img src="photos/rotate/SpringRain.jpg" alt data-caption="Spring Rain">
