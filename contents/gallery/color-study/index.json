@@ -10,8 +10,8 @@
           {"file":"IMG_3993.jpg","title":"Blue Waves","size":"6x6","price":50},
           {"file":"IMG_4012.jpg","title":"Celestial","size":"6x6","price":50},
           {"file":"IMG_4017.jpg","title":"Crossroads","size":"6x6","price":50},
-          {"file":"IMG_4019.jpg","title":"Beginning","size":"6x6","price":50},
           {"file":"IMG_4027.jpg","title":"Road Less Traveled","size":"6x6","price":50},
+          {"file":"IMG_4019.jpg","title":"Beginning","size":"6x6","price":50,"sold":true},
           {"file":"2014-07-14 12.00.42.jpg","title":"Growing","sold":true},
           {"file":"IMG_2585.jpg","title":"Water Lillies","sold":true}
        ]

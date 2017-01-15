@@ -1,6 +1,10 @@
 {
    "template": "painting.html",
    "series": [
+      {"title": "Flora & Fauna", 
+       "file": "IMG_6152.jpg",
+       "link": "flora"
+      },
       {"title": "Landscapes", 
        "file": "IMG_6029.jpg",
        "link": "landscapes"

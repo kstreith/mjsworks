@@ -4,10 +4,10 @@
       {"title": "Landscapes", "id": "gal1",
        "photos": [
           {"file":"IMG_5586.jpg","title":"Windy Way","size":"16x20","price":350},
-          {"file":"IMG_5592.jpg","title":"Walk on the beach","size":"16x20","price":350},
           {"file":"2016-04-19 09.36.01.jpg","title":"Looking for home","size":"16x20","price":350},
           {"file":"IMG_6023.jpg","title":"Mom's Garden","size":"16x20","price":350},
-          {"file":"IMG_6029.jpg","title":"Just Us","size":"16x20","price":350}
+          {"file":"IMG_6029.jpg","title":"Just Us","size":"16x20","price":350},
+          {"file":"IMG_5592.jpg","title":"Walk on the beach","size":"16x20","price":350,"sold":true}
        ]
       }
    ]

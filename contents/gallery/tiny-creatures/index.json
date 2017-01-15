@@ -3,10 +3,10 @@
    "series": [
       {"title": "Tiny Creatures", "id": "gal1",
        "photos": [
-          {"file":"K9279714.jpg","title":"Golden Cage","size":"6x6","price":50},
           {"file":"K9279716.jpg","title":"Seahorse","size":"6x6","price":50},
           {"file":"K9279713.jpg","title":"Fancy Flight","size":"6x6","price":50},
-          {"file":"K9279707.jpg","title":"Dragonfly","size":"6x6","price":50,"sold":true}
+          {"file":"K9279707.jpg","title":"Dragonfly","size":"6x6","price":50,"sold":true},
+          {"file":"K9279714.jpg","title":"Golden Cage","size":"6x6","price":50,"sold":true}
        ]
       }
    ]
