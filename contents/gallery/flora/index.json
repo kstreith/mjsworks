@@ -3,12 +3,14 @@
    "series": [
       {"title": "Flora & Fauna", "id": "gal1",
        "photos": [
+          {"file":"IMG_6204.jpg","title":"Room To Move","size":"16x20","price":-1},
           {"file":"IMG_6041.jpg","title":"Mom's Favorite Flowers","size":"12x12","price":150},
           {"file":"IMG_6050.jpg","title":"My Two Friends","size":"12x12","price":150},
           {"file":"IMG_6080.jpg","title":"Red Poppy","size":"8x8","price":70},
           {"file":"IMG_6132.jpg","title":"Standing Tall","size":"6x12","price":75},
           {"file":"IMG_6147.jpg","title":"Red Family","size":"11x14","price":160},
           {"file":"IMG_6152.jpg","title":"Daises","size":"6x6","price":50},
+          {"file":"IMG_6193.jpg","title":"Three Daises","size":"8x10","price":-1,"sold":true},
           {"file":"IMG_6099.jpg","title":"Hanging Basket","size":"11x14","price":150,"sold":true}
        ]
       }
