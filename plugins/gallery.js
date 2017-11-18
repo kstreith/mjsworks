@@ -1,3 +1,4 @@
+var imageSize = require('image-size');
 var __hasProp = {}.hasOwnProperty,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
@@ -33,7 +34,22 @@ module.exports = function(env, callback) {
     var gallery = {title: galleryName, photos: [], navSection: navSection};
     galleries.push(gallery); 
     seriesPhotos.forEach(function (seriesPhoto) {
-      gallery.photos.push({title:seriesPhoto.title, slug:slugify(seriesPhoto.title), file:seriesPhoto.file, gallery:galleryName, sold:seriesPhoto.sold, size:seriesPhoto.size});
+      if (seriesPhoto.file.toLowerCase().endsWith(".jpg")) {
+        mimeType = "image/jpeg";
+      } else {
+        throw new Error("Unknown file type");
+      }
+      var description = seriesPhoto.description || env.locals.defaultImageDescription;
+      gallery.photos.push({
+        title:seriesPhoto.title,
+        slug:slugify(seriesPhoto.title),
+        file:seriesPhoto.file,
+        gallery:galleryName,
+        sold:seriesPhoto.sold,
+        size:seriesPhoto.size,
+        mimeType: mimeType,
+        description: description
+      });
     });  
   }
   getGalleries = function(contents) {
@@ -86,6 +102,10 @@ module.exports = function(env, callback) {
     GalleryPage.prototype.getView = function() {
       var self = this;
       //console.log('here22 ' + JSON.stringify(self.galleryImage));
+      var imagePath = "contents/photos/images/" + self.galleryImage.file;
+      //console.log('here77 ' + imagePath);
+      var imageDimensions = imageSize(imagePath);
+      //console.log('here88 ' + JSON.stringify(imageDimensions));
       return function(env, locals, contents, templates, callback) {
         var ctx, template;
         template = templates["gallery.html"];
@@ -97,7 +117,8 @@ module.exports = function(env, callback) {
           nextImage: self.next,
           previousImage: self.previous,
           galleryLink: getGalleryLink(self.galleryTitle),
-          navSection: self.navSection
+          navSection: self.navSection,
+          imageDimensions: imageDimensions
         };
         env.utils.extend(ctx, locals);
         return template.render(ctx, callback);

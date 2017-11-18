@@ -1,6 +1,8 @@
 {
   "locals": {
-    "url": "http://mjsworks.com/"
+    "url": "http://mjsworks.com/",
+    "secureUrl": "https://mjsworks.com/",
+    "defaultImageDescription": "Encaustic paintings of Marcia Jo Streithorst, MJS Works"
   },
   "plugins": [
     "wintersmith-nunjucks",
