@@ -163,6 +163,19 @@ a.swipebox {
   max-height: 100%;
 }
 
+.gallerynav a {
+  color: black;
+}
+.galleryimagetitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallerycontent {
+  background-color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 760px) {
   .header {
     width: 300px;
