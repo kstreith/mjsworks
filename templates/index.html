@@ -1,7 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}
-MJS Works
+{{page.title}}
+{% endblock %}
+
+{% block metadata%}
+<meta name="og:title" content="{{page.title}}"></meta>
+<meta name="og:description" content="{{page.metadata.description}}">
+<meta name="description" content="{{page.metadata.description}}">
 {% endblock %}
 
 {% block nav %}

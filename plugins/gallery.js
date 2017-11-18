@@ -13,48 +13,54 @@ function slugify(text)
 
 module.exports = function(env, callback) {
 
-  var GalleryPage, getGalleries, key, options, value;
-  options = {
-    template: 'index.jade',
-    articles: 'articles',
-    first: 'index.html',
-    filename: 'page/%d/index.html',
-    perPage: 2
-  };
+  var GalleryPage, getGalleries;
+  parseGallery = function (metadata, galleryName, galleries) {
+    var template = metadata['template'];
+    var navSection = 'unknown';
+    if (template == 'paintinggallery.html') {
+      navSection = 'painting'
+    }
+    if (template == "feathers.html") {
+      navSection = "feathers"
+    }
+    var series = metadata['series']
+    if (series.length !== 1) {
+      throw new Error("Gallery can only contain one series");
+    }
+    var firstSeries = series[0]
+    //assume one series per gallery
+    var seriesPhotos = firstSeries.photos;
+    var gallery = {title: galleryName, photos: [], navSection: navSection};
+    galleries.push(gallery); 
+    seriesPhotos.forEach(function (seriesPhoto) {
+      gallery.photos.push({title:seriesPhoto.title, slug:slugify(seriesPhoto.title), file:seriesPhoto.file, gallery:galleryName, sold:seriesPhoto.sold, size:seriesPhoto.size});
+    });  
+  }
   getGalleries = function(contents) {
     var galleries = [];
+    console.log('galleries');
     Object.keys(contents.gallery).forEach(function(galleryName) {
       var theGallery = contents.gallery[galleryName];
       var index = theGallery['index.json'];
-      /*for (var a in index) {
-        console.log('here10 ' + a);
-        console.log('here11 ' + index[a]);
-      }*/
       var metadata = index['metadata'];
-      var template = metadata['template'];
-      var navSection = 'unknown';
-      if (template == 'paintinggallery.html') {
-        navSection = 'painting'
-      }
-      var series = metadata['series']
-      if (series.length !== 1) {
-        throw new Error("Gallery can only contain one series");
-      }
-      var firstSeries = series[0]
-      //assume one series per gallery
-      var seriesPhotos = firstSeries.photos;
-      var gallery = {title: galleryName, photos: [], navSection: navSection};
-      galleries.push(gallery); 
-      seriesPhotos.forEach(function (seriesPhoto) {
-        gallery.photos.push({title:seriesPhoto.title, slug:slugify(seriesPhoto.title), file:seriesPhoto.file, gallery:galleryName, sold:seriesPhoto.sold, size:seriesPhoto.size});
-      });
+      parseGallery(metadata, galleryName, galleries);
     });
     return galleries;
   };
+  getFeatherGallery = function(contents, galleries)
+  {
+    console.log('feather gallery');
+    var feathersJson = contents["feathers.json"]
+    var metadata = feathersJson["metadata"]
+    parseGallery(metadata, "feathers", galleries)
+  }
   var getGalleryFile = function (galleryTitle, galleryImageTitle) {
       return 'gallery/' + galleryTitle + '/' + galleryImageTitle + '.html';
   }
   var getGalleryLink = function (galleryTitle) {
+    if (galleryTitle == "feathers") {
+      return "/feathers.html";
+    }
     return '/gallery/' + galleryTitle + '/';    
   }
   GalleryPage = (function(_super) {
@@ -104,6 +110,7 @@ module.exports = function(env, callback) {
   env.registerGenerator('gallery', function(contents, callback) {
     var galleries, i, numPages, page, pageArticles, pages, rv, _i, _j, _k, _len, _len1;
     galleries = getGalleries(contents);
+    getFeatherGallery(contents, galleries);
     pages = [];
     rv = {
       gallery: {},

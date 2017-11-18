@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title %}
-Paintings - MJS Works
+{{page.title}}
 {% endblock %}
 
 {% block nav %}
 {{ nav('painting') }}
+{% endblock %}
+
+{% block metadata%}
+<meta name="og:title" content="{{page.title}}"></meta>
+<meta name="og:description" content="{{page.metadata.description}}">
+<meta name="description" content="{{page.metadata.description}}">
 {% endblock %}
 
 {% block content %}
@@ -21,14 +27,4 @@ Paintings - MJS Works
 </div>
 {% endfor %}
 </div>
-{% endblock %}
-
-{% block scripts %}
-<script>
-  (function () {
-    $(function () {
-       $(".swipebox").swipebox();
-    });
-  }());
-</script>
 {% endblock %}

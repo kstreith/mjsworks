@@ -1,5 +1,7 @@
 ---
 template: forpurchase.html
+title: Works For Sale - MJS Works
+description: The artistic works of Marcia Jo Streithorst
 ---
 
 Artists Loft at Wake Forest Coffee Shop    

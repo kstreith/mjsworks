@@ -1,5 +1,7 @@
 ---
 template: index.html
+title: MJS Works
+description: The artistic works of Marcia Jo Streithorst
 ---
 
 **The artistic works of Marcia Jo Streithorst**.

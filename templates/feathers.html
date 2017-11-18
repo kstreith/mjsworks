@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title %}
-MJS Works
+{{page.title}}
 {% endblock %}
 
 {% block nav %}
 {{ nav('feathers') }}
+{% endblock %}
+
+{% block metadata%}
+<meta name="og:title" content="{{page.title}}"></meta>
+<meta name="og:description" content="{{page.metadata.description}}">
+<meta name="description" content="{{page.metadata.description}}">
 {% endblock %}
 
 {% block content %}
@@ -19,6 +25,10 @@ A portion of the proceeds of the sales from the paintings made with feathers wil
 <div>
 {% for photo in series.photos %}
 <div class="photoblock">
+  <a href="gallery/feathers/{{ env.helpers.slug(photo.title)}}.html" title="{{ photo.title }}">
+      <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
+  </a>
+      
   <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
     <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
   </a>
@@ -32,14 +42,4 @@ A portion of the proceeds of the sales from the paintings made with feathers wil
 {% endfor %}
 </div>
 {% endfor %}
-{% endblock %}
-
-{% block scripts %}
-<script>
-  (function () {
-    $(function () {
-       $(".swipebox").swipebox();
-    });
-  }());
-</script>
 {% endblock %}

@@ -1,5 +1,7 @@
 ---
 template: shows.html
+title: Upcoming Shows - MJS Works
+description: The artistic works of Marcia Jo Streithorst
 ---
 
 June to July, 2016  

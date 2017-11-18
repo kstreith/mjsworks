@@ -4,7 +4,8 @@
   },
   "plugins": [
     "wintersmith-nunjucks",
-    "./plugins/gallery.js"
+    "./plugins/gallery.js",
+    "./plugins/redirect-gone-pages.js"
   ],
   "require": {
     "moment": "moment",

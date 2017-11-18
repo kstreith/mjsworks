@@ -1,11 +1,18 @@
 {% extends "layout.html" %}
 
 {% block title %}
-Painting - MJS Works
+{{galleryImage.title }} - Painting - MJS Works
 {% endblock %}
 
 {% block nav %}
 {{ nav(navSection) }}
+{% endblock %}
+
+{% block metadata%}
+<meta name="og:title" content="{{galleryImage.title }}"></meta>
+<meta name="og:description" content="Encaustic paintings of Marcia Jo Streithorst, MJS Works">
+<meta name="og:image" content="/photos/images/{{galleryImage.file}}">
+<meta name="description" content="Encaustic paintings of Marcia Jo Streithorst, MJS Works">
 {% endblock %}
 
 {% block content %}

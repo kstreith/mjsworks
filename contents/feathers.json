@@ -1,5 +1,7 @@
 {
    "template": "feathers.html",
+   "title": "Feathers - MJS Works",
+   "description": "Encausting paintings of Marcia Jo Streithorst, MJS Works",      
    "series": [
       {"title": "Feathers", "id": "gal1",
        "photos": [
