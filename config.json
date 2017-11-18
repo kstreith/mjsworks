@@ -3,7 +3,8 @@
     "url": "http://mjsworks.com/"
   },
   "plugins": [
-    "wintersmith-nunjucks"
+    "wintersmith-nunjucks",
+    "./plugins/gallery.js"
   ],
   "require": {
     "moment": "moment",

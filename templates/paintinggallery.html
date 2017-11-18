@@ -18,7 +18,7 @@ Painting - MJS Works
 <div>
 {% for photo in series.photos %}
 <div class="photoblock">
-  <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
+  <a href="{{ page.url }}{{ env.helpers.slug(photo.title)}}.html" title="{{ photo.title }}">
     <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
   </a>
   <div class="photoblocktext">{{ photo.title }}</div>
@@ -32,14 +32,4 @@ Painting - MJS Works
 </div>
 {% endfor %}
 </div>
-{% endblock %}
-
-{% block scripts %}
-<script>
-  (function () {
-    $(function () {
-       $(".swipebox").swipebox();
-    });
-  }());
-</script>
 {% endblock %}

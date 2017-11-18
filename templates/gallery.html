@@ -5,15 +5,28 @@ Painting - MJS Works
 {% endblock %}
 
 {% block nav %}
+{{ nav(navSection) }}
 {% endblock %}
 
 {% block content %}
-<div class="content gallerycontent">
-  <a style="float:left" href="{{previousImage}}.html">Previous</a>
-  <a style="float:right" href="{{nextImage}}.html">Next</a>
-<div class="galleryimage">
+<div class="gallerycontent">
+  <div class="gallerynav">
+      <a style="float:left" href="{{previousImage}}.html"><i class="icon-left-circled"></i></a>
+      <a style="float:right" href="{{nextImage}}.html"><i class="icon-right-circled"></i></a>
+  </div>
+  <div class="gallerynav">
+      <a href="{{galleryLink}}"><i class="icon-th-large"></i></a>
+  </div>
   <div class="galleryimagetitle">{{galleryImage.title }}</div>
-  <img src="../../photos/images/{{galleryImage.file}}" />
-</div>
+  <div class="galleryimage">
+    <img src="../../photos/images/{{galleryImage.file}}" />
+  </div>
+  <div class="galleryimagedescription">
+      {% if galleryImage.sold %}
+      <div class="photoblocktext sold">Sold</div>
+      {% else %}
+      <div class="photoblocktext">{{ galleryImage.size}}</div>
+      {% endif %}    
+  </div>
 </div>
 {% endblock %}
