@@ -44,7 +44,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48125849-1', 'mjsworks.com');
+  ga('create', '{{env.helpers.getEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID")}}', '{{env.helpers.getEnvironmentVariable("MJS_WORKS_SITE_DOMAIN")}}');
   ga('send', 'pageview');
 
 </script>

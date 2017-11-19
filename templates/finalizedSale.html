@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Completed Purchase - MJS Works
+{% endblock %}
+
+{% block metadata%}
+<meta property="og:title" content="Completed Purchase - MJS Works"></meta>
+<meta property="og:description" content="Completed Purchase">
+<meta name="description" content="Completed Purchase">
+{% endblock %}
+
+{% block nav %}
+{{ nav('home') }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div id="successfulPurchase" style="display:none">
+        <p>Thank you for purchase, your order number is <span id="orderNumber"></span></p>
+        <p>It make take up to 7 days to be shipped.</p>
+        <p>Once it is shipped, your card will be charged and you will receive an e-mail with a tracking number.</p>
+    </div>
+    <div id="abandonedPurchase" style="display:none">
+        We noticed you cancelled your order, if you have any questions, please e-mail info@mjsworks.com.
+    </div>
+    <div id="rejectedPurchase" style="display:none">
+        It appears Amazon rejected your order, please e-mail info@mjsworks.com.
+    </div>
+    <div id="technicalIssuesPurchase" style="display:none">
+        There was a problem processing your order, it will NOT be processed, please e-mail info@mjsworks.com.
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    var mjsworks = mjsworks || {};
+    mjsworks.mode = "{{env.helpers.getEnvironmentVariable('MJS_WORKS_SITE_MODE')}}";
+</script>
+{%if env.helpers.getEnvironmentVariable('MJS_WORKS_SITE_MODE') === 'local' %}
+  <script src="/js/finalizeAwsSale.js"></script>
+{%else %}
+  <script src="/js/finalizeAwsSale.min.js"></script>
+{% endif %}
+{% endblock %}

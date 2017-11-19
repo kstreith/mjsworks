@@ -40,7 +40,12 @@ module.exports = function(env, callback) {
         rv = {
             gonepages: {},
         }
-        //rv.gonepages["test"] = new RedirectPage("fake/anotherfake/test.html");
+        rv.gonepages["gallery-atmosphere"] = new RedirectPage("gallery/atmosphere/index.html");
+        rv.gonepages["gallery-painter-palette"] = new RedirectPage("gallery/painter-palette/index.html");
+        rv.gonepages["gallery-plants"] = new RedirectPage("gallery/plants/index.html");
+        rv.gonepages["gallery-sights"] = new RedirectPage("gallery/sights/index.html");
+        rv.gonepages["gallery-trapped"] = new RedirectPage("gallery/trapped/index.html");
+        rv.gonepages["photos"] = new RedirectPage("photos.html");
         return callback(null, rv);
     });
     return callback();    

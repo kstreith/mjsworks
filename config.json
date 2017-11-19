@@ -1,11 +1,13 @@
 {
   "locals": {
-    "url": "http://mjsworks.com/",
-    "secureUrl": "https://mjsworks.com/",
-    "defaultImageDescription": "Encaustic paintings of Marcia Jo Streithorst, MJS Works"
+    "defaultImageDescription": "Encaustic paintings of Marcia Jo Streithorst, MJS Works",
+    "awsSellerId": "A3IO5ZO9PFIM3P",
+    "awsPublicAccessKey": "AKIAIM3SZ2U2PKXWGYYA",
+    "awsLwaClientId": "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184"
   },
   "plugins": [
     "wintersmith-nunjucks",
+    "./plugins/yaml-pages.js",
     "./plugins/gallery.js",
     "./plugins/redirect-gone-pages.js"
   ],

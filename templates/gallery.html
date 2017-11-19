@@ -11,8 +11,8 @@
 {% block metadata%}
 <meta property="og:title" content="{{galleryImage.title }}"></meta>
 <meta property="og:description" content="{{galleryImage.description}}">
-<meta property="og:image" content="{{env.locals.url}}photos/images/{{galleryImage.file}}">
-<meta property="og:image:secure_url" content="{{env.locals.secureUrl}}photos/images/{{galleryImage.file}}">
+<meta property="og:image" content="{{env.helpers.getEnvironmentVariable('MJS_WORKS_SITE_HOST')}}photos/images/{{galleryImage.file}}">
+<meta property="og:image:secure_url" content="{{env.helpers.getEnvironmentVariable('MJS_WORKS_SITE_HOST_SECURE')}}photos/images/{{galleryImage.file}}">
 <meta property="og:image:type" content="{{galleryImage.mimeType}}">
 <meta property="og:image:alt" content="{{galleryImage.title}}">
 <meta property="og:image:width" content="{{imageDimensions.width}}">
@@ -21,7 +21,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="content gallerycontent">
+<div class="content gallerycontent {{galleryImage.sellUiCssClass}}">
   <div class="gallerynav">
       <a style="float:left" href="{{previousImage}}.html"><i class="icon-left-circled"></i></a>
       <a style="float:right" href="{{nextImage}}.html"><i class="icon-right-circled"></i></a>
@@ -30,15 +30,54 @@
       <a href="{{galleryLink}}"><i class="icon-th-large"></i></a>
   </div>
   <div class="galleryimagetitle">{{galleryImage.title }}</div>
-  <div class="galleryimage">
-    <img src="../../photos/images/{{galleryImage.file}}" alt="{{galleryImage.title}}" height="{{imageDimensions.height}}" width="{{imageDimensions.width}}" />
-  </div>
-  <div class="galleryimagedescription">
+  <div class="columnContainer">
+    <div class="details">
+      <div class="galleryimage">
+        <img src="../../photos/images/{{galleryImage.file}}" alt="{{galleryImage.title}}" />
+      </div>
+    </div>
+    {% if galleryImage.showSellUi %}
+    <div class="sellPanel">
+      <div>
+        <div>Price: ${{galleryImage.price}}</div>
+        <div>Panel Size: {{galleryImage.size}}</div>
+        <div>Shipping: <a href="shipping.html">Free</a></div>
+        <div>Quantity: 1</div>
+      </div>
+      <div style="padding-top: 1em; padding-bottom: 1em">
+        <div>{{galleryImage.description}}</div>
+      </div>
+      <div style="padding-bottom: 1em">Purchase using your existing Amazon account</div>
+      <div id="AmazonPayButton"></div>  
+      <div class="sellFooter">
+          <div>Details about <a href="encaustic.html">encaustic paintings</a>, <a href="howtocare.html">how to care</a>, and <a href="return.html">return policy</a></div>
+          <div>SKU #{{galleryImage.sku}}</div>    
+      </div>
+    </div>
+    {% else %}
+    <div class="galleryimagedescription">
       {% if galleryImage.sold %}
       <div class="photoblocktext sold">Sold</div>
       {% else %}
       <div class="photoblocktext">{{ galleryImage.size}}</div>
       {% endif %}    
+    </div>
+    {% endif %} 
   </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% if galleryImage.showSellUi %}
+  <script src="{{awsWidgetsUrl}}"></script>
+  <script type="text/javascript">
+    var mjsworks = mjsworks || {};
+    mjsworks.purchaseConfig = {{ awsButtonJson | safe }};
+  </script>
+  {%if env.helpers.getEnvironmentVariable('MJS_WORKS_SITE_MODE') === 'local' %}
+    <script src="/js/awsPurchase.js"></script>
+  {%else %}
+    <script src="/js/awsPurchase.min.js"></script>
+  {% endif %}
+{%endif %}
 {% endblock %}

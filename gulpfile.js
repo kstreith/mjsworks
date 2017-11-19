@@ -11,4 +11,10 @@ gulp.task('default', function () {
     gulp.src(['contents/js/jquery-2.1.0.min.js', 'contents/js/responsive-nav.min.js'])
         .pipe(uglify('all.min.js', {outSourceMap: true}))
         .pipe(gulp.dest('contents/js/'));
+    gulp.src(['contents/js/finalizeAwsSale.js'])
+        .pipe(uglify('finalizeAwsSale.min.js', {outSourceMap: true}))
+        .pipe(gulp.dest('contents/js/'));
+    gulp.src(['contents/js/awsPurchase.js'])
+        .pipe(uglify('awsPurchase.min.js', {outSourceMap: true}))
+        .pipe(gulp.dest('contents/js/'));
 });

@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "./painting-gallery-schema.json": "/*index.yaml"
+    }
+}
