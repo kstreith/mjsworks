@@ -27,11 +27,7 @@ A portion of the proceeds of the sales from the paintings made with feathers wil
 <div class="photoblock">
   <a href="gallery/feathers/{{ env.helpers.slug(photo.title)}}.html" title="{{ photo.title }}">
       <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
-  </a>
-      
-  <a href="/photos/images/{{ photo.file }}" rel="{{ series.id }}" class="swipebox" title="{{ photo.title }}">
-    <img class="photo" src="/photos/thumbnails/{{ photo.file }}" alt="{{ photo.title }}" />
-  </a>
+  </a>      
   <div class="photoblocktext">{{ photo.title }}</div>
   {% if photo.sold %}
   <div class="photoblocktext sold">Sold</div>
