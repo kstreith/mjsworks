@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+Completed Purchase - MJS Works
+</title>
+  <style>
+    body {
+      background-color: #035B74;
+      background-image: radial-gradient(circle at top right, #FFC668, #035B74);
+      background-attachment: fixed;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<meta property="og:title" content="Completed Purchase - MJS Works"></meta>
+<meta property="og:description" content="Completed Purchase">
+<meta name="description" content="Completed Purchase">
+
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+<div class="header">MJS Works</div>
+
+
+
+<nav class="nav-collapse">
+  <ul>
+     <li class="larger"><a href="/" class="active">Artist Bio</a></li>
+     <li class="larger"><a href="/painting.html" >Paintings</a></li>
+     <li class="larger"><a href="/feathers.html" >Feathers</a></li>
+     <li><a href="/shows.html" >Shows</a></li>
+     <li><a href="/forpurchase.html" >Buy</a></li>
+  </ul>
+</nav>
+
+
+<div style="clear: both"></div>
+
+<div class="content">
+    <div id="successfulPurchase" style="display:none">
+        <p>Thank you for purchase, your order number is <span id="orderNumber"></span></p>
+        <p>It make take up to 7 days to be shipped.</p>
+        <p>Once it is shipped, your card will be charged and you will receive an e-mail with a tracking number.</p>
+    </div>
+    <div id="abandonedPurchase" style="display:none">
+        We noticed you cancelled your order, if you have any questions, please e-mail info@mjsworks.com.
+    </div>
+    <div id="rejectedPurchase" style="display:none">
+        It appears Amazon rejected your order, please e-mail info@mjsworks.com.
+    </div>
+    <div id="technicalIssuesPurchase" style="display:none">
+        There was a problem processing your order, it will NOT be processed, please e-mail info@mjsworks.com.
+    </div>
+</div>
+
+<footer class="footer">
+ <a href="mailto:info@mjsworks.com"><img alt="E-mail" src="/img/email.png" /></a>
+ <a href="https://www.facebook.com/mjsworks"><img alt="Facebook" src="/img/facebook_1.png" /></a>
+ <a href="https://twitter.com/mjsworks"><img alt="Twitter" src="/img/twitter_2.png" /></a>
+</footer>
+<script src="/js/all.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48125849-1', 'localhost');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function () {
+    var nav = responsiveNav(".nav-collapse", {insert: "before"});
+  }());
+</script>
+
+<script>
+    function parseQuery() {
+        var queryString = window.location.search;
+        var query = {};
+        var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i].split('=');
+            query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+        }
+        return query;
+    }
+    function displayMessage(data, validMessage) {
+        if (!validMessage) {
+            $("#technicalIssuesPurchase").show();
+            return;            
+        }
+        if (data.resultCode === "Failure" && data.failureCode === "BuyerAbandoned") {
+            $("#abandonedPurchase").show();
+            return;
+        }
+        if (data.resultCode === "Failure" && data.failureCode === "AmazonRejected") {
+            $("#rejectedPurchase").show();
+            return;
+        }
+        if (data.resultCode === "Success" && data.orderReferenceId) {
+            $("#orderNumber").text(data.orderReferenceId);
+            $("#successfulPurchase").show();
+            return;
+        }
+        $("#technicalIssuesPurchase").show();        
+    }
+    function validateResult(data) {
+        data.mode = 'local';
+        fetch('https://mjsworksfuncs.azurewebsites.net/api/ValidateReceiptSignature?code=Aj52Rvg73Hj0J5equro2cUg9fINaDW7QybjoQdDMpO/dhQbQl416Ng==&clientId=default', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            if (response.status === 200) {
+                return response.json();
+            }
+            return "failed";          
+        }).then(function (responseObj) {
+            if (responseObj === "failed") {
+                alert('There was a problem processing your request');
+            } else {
+                var originalSignature = window.decodeURIComponent(data.signature);
+                var validated = !!(originalSignature === responseObj.signature);
+                displayMessage(data, validated);
+            }
+        });
+    }
+    var data = parseQuery();
+    validateResult(data);
+</script>
+        
+
+</body>
+</html>
