@@ -9,7 +9,7 @@
           {"file":"IMG_6181.jpg","title":"Three Amigos","size":"5x7","price":-1},
           {"file":"IMG_6183.jpg","title":"Right","size":"5x7","price":-1},
           {"file":"IMG_6186.jpg","title":"Beach Bound","size":"11x14","price":-1},
-          {"file":"IMG_6196.jpg","title":"Just Hanging","size":"6x6","price":-1},
+          {"file":"IMG_6196.jpg","title":"Just Hanging","size":"6x6","price":-1,"sold":true},
           {"file":"IMG_6327.jpg","title":"Find Your Balance","size":"9x12","price":-1,"sold":true},
           {"file":"IMG_6182.jpg","title":"Blue","size":"6x6","price":-1,"sold":true}          
        ]

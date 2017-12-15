@@ -5,6 +5,7 @@
    "series": [
       {"title": "Flora & Fauna", "id": "gal1",
        "photos": [
+          {"file":"IMG_6346.jpg","title":"The Pond","size":"11x14","price":-1},
           {"file":"IMG_6204.jpg","title":"Room To Move","size":"16x20","price":-1},
           {"file":"IMG_6041.jpg","title":"Mom's Favorite Flowers","size":"12x12","price":150},
           {"file":"IMG_6050.jpg","title":"My Two Friends","size":"12x12","price":150},

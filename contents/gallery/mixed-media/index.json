@@ -5,13 +5,15 @@
    "series": [
       {"title": "Mixed Media", "id": "gal1",
        "photos": [
-          {"file":"IMG_6061.jpg","title":"Golden Leaf","size":"6x6","price":50},
-          {"file":"IMG_6071.jpg","title":"Lights On","size":"6x6","price":50},
+          {"file":"IMG_6383.jpg","title":"Letter To Mom","size":"4x8","price":-1},
+          {"file":"IMG_6381.jpg","title":"Keep Me Safe","size":"5x7","price":-1},
           {"file":"IMG_6072.jpg","title":"Dancing Pen","size":"6x6","price":50},
           {"file":"IMG_6081.jpg","title":"Hidden Beauty","size":"12x12","price":150},
           {"file":"IMG_6104.jpg","title":"Mighty Pen","size":"6x6","price":50},
-          {"file":"IMG_4825.jpg","title":"Fading Beauty","size":"6x12","price":70},
           {"file":"2015-03-05 10.48.23.jpg","title":"Sailing Away","size":"16x20","price":320},		  
+          {"file":"IMG_4825.jpg","title":"Fading Beauty","size":"6x12","price":70,"sold":true},
+          {"file":"IMG_6061.jpg","title":"Golden Leaf","size":"6x6","price":50,"sold":true},
+          {"file":"IMG_6071.jpg","title":"Lights On","size":"6x6","price":50,"sold":true},
           {"file":"IMG_2991.jpg","title":"Birds in Flight","size":"6x6","price":50,"sold":true},
           {"file":"IMG_3663.jpg","title":"Ava's Pond","size":"11x14","price":125,"sold":true},
           {"file":"IMG_2999.jpg","title":"Rose","size":"6x6","price":60,"sold":true}

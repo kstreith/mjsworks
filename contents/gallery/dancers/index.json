@@ -1,0 +1,16 @@
+{
+   "template": "paintinggallery.html",
+   "title": "Paintings - MJS Works",
+   "description": "Encausting paintings of Marcia Jo Streithorst, MJS Works",      
+   "series": [
+      {"title": "Dancers", "id": "gal1",
+       "photos": [
+          {"file":"IMG_6387.jpg","title":"Reaching For The Stars","size":"18x24","price":-1},
+          {"file":"IMG_6357.jpg","title":"Friends","size":"6x6","price":-1},
+          {"file":"IMG_6377.jpg","title":"Pure Joy","size":"5x7","price":-1},
+          {"file":"IMG_6352.jpg","title":"Dancing with your dreams","size":"14x18","price":-1},
+          {"file":"IMG_6359.jpg","title":"Faith","size":"5x7","price":-1}          
+        ]
+      }
+   ]
+ }
