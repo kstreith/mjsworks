@@ -16,7 +16,7 @@ series:
     price: 50
     sku: p17001e
     description: Encaustic painting with a real feather embedded into the wax
-    forSale: false
+    forSale: true
   - file: K9279707.jpg
     title: Dragonfly
     size: 6x6
