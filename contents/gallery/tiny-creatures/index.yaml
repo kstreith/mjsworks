@@ -16,7 +16,7 @@ series:
     price: 50
     sku: p17001e
     description: Feathers are AWESOME
-    forSale: true
+    forSale: false
   - file: K9279707.jpg
     title: Dragonfly
     size: 6x6
