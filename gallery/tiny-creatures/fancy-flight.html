@@ -46,7 +46,7 @@ Fancy Flight - Painting - MJS Works
 
 <div style="clear: both"></div>
 
-<div class="content gallerycontent ">
+<div class="content gallerycontent sellUi">
   <div class="gallerynav">
       <a style="float:left" href="seahorse.html"><i class="icon-left-circled"></i></a>
       <a style="float:right" href="dragonfly.html"><i class="icon-right-circled"></i></a>
@@ -62,10 +62,22 @@ Fancy Flight - Painting - MJS Works
       </div>
     </div>
     
-    <div class="galleryimagedescription">
-      
-      <div class="photoblocktext">6x6</div>
-          
+    <div class="sellPanel">
+      <div>
+        <div>Price: $50.00</div>
+        <div>Panel Size: 6x6</div>
+        <div>Shipping: <a href="shipping.html">Free</a></div>
+        <div>Quantity: 1</div>
+      </div>
+      <div style="padding-top: 1em; padding-bottom: 1em">
+        <div>Encaustic painting with a real feather embedded into the wax Original One of a kind encaustic painting on wood birch panel with wire hanger</div>
+      </div>
+      <div style="padding-bottom: 1em">Purchase using your existing Amazon account</div>
+      <div id="AmazonPayButton"></div>  
+      <div class="sellFooter">
+          <div>Details about <a href="encaustic.html">encaustic paintings</a>, <a href="howtocare.html">how to care</a>, and <a href="return.html">return policy</a></div>
+          <div>SKU #p17001e</div>    
+      </div>
     </div>
      
   </div>
@@ -93,6 +105,15 @@ Fancy Flight - Painting - MJS Works
   }());
 </script>
 
+
+  <script src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
+  <script type="text/javascript">
+    var mjsworks = mjsworks || {};
+    mjsworks.purchaseConfig = {"shippingAddressRequired":"true","currencyCode":"USD","paymentAction":"Authorize","accessKey":"AKIAIM3SZ2U2PKXWGYYA","amount":"50.00","lwaClientId":"amzn1.application-oa2-client.094733663c3d46519ad829672b45a184","returnURL":"https://mjsworks.com/finalizedSale.html","sellerId":"A3IO5ZO9PFIM3P","sellerNote":"Original encaustic painting","sellerOrderId":"p17001e","static_generation_signature":"eMJaCgJ1ZXEq6/lsxyvTyWhUhcsULJA9Jej/mXDjiNM="};
+  </script>
+  
+    <script src="/js/awsPurchase.min.js"></script>
+  
 
 
 </body>
