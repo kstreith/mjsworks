@@ -46,7 +46,7 @@ Farmhouse - Painting - MJS Works
 
 <div style="clear: both"></div>
 
-<div class="content gallerycontent">
+<div class="content gallerycontent ">
   <div class="gallerynav">
       <a style="float:left" href="lighthouse.html"><i class="icon-left-circled"></i></a>
       <a style="float:right" href="bamboo-forest.html"><i class="icon-right-circled"></i></a>
@@ -55,13 +55,19 @@ Farmhouse - Painting - MJS Works
       <a href="/gallery/dreamscapes/"><i class="icon-th-large"></i></a>
   </div>
   <div class="galleryimagetitle">Farmhouse</div>
-  <div class="galleryimage">
-    <img src="../../photos/images/IMG_3696.jpg" alt="Farmhouse" height="1000" width="787" />
-  </div>
-  <div class="galleryimagedescription">
+  <div class="columnContainer">
+    <div class="details">
+      <div class="galleryimage">
+        <img src="../../photos/images/IMG_3696.jpg" alt="Farmhouse" />
+      </div>
+    </div>
+    
+    <div class="galleryimagedescription">
       
       <div class="photoblocktext sold">Sold</div>
           
+    </div>
+     
   </div>
 </div>
 
@@ -86,6 +92,8 @@ Farmhouse - Painting - MJS Works
     var nav = responsiveNav(".nav-collapse", {insert: "before"});
   }());
 </script>
+
+
 
 </body>
 </html>
