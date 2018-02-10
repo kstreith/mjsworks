@@ -126,7 +126,8 @@ module.exports = function(env, callback) {
       var sellerNote = "";
       var type = "";
       //encaustic specific section
-      description = customDescription + " Original One of a kind encaustic painting on wood birch panel with wire hanger"
+      description = customDescription;
+      saleDescription = customDescription + " Original One of a kind encaustic painting on wood birch panel with wire hanger";
       sellerNote = "Original encaustic painting";
       type = "encaustic-painting"
       //end encaustic specific section
@@ -149,6 +150,7 @@ module.exports = function(env, callback) {
         price:formatPrice(seriesPhoto.price),
         mimeType: mimeType,
         description: description,
+        saleDescription: saleDescription,
         sellerNote: sellerNote
       });
     });  
