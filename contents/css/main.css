@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'caviar_dreamsregular';
-    src: url('/font/CaviarDreams-webfont.eot');
-    src: url('/font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/font/CaviarDreams-webfont.woff') format('woff'),
-         url('/font/CaviarDreams-webfont.ttf') format('truetype'),
-         url('/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    src: url('https://mjsworks.com/font/CaviarDreams-webfont.eot');
+    src: url('https://mjsworks.com/font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://mjsworks.com/font/CaviarDreams-webfont.woff') format('woff'),
+         url('https://mjsworks.com/font/CaviarDreams-webfont.ttf') format('truetype'),
+         url('https://mjsworks.com/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,8 +15,14 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: 'caviar_dreamsregular';
-            src: url('/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+            src: url('https://mjsworks.com/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
     }
+}
+
+body {
+  background-color: #035B74;
+  background-image: radial-gradient(circle at top right, #FFC668, #035B74);
+  background-attachment: fixed;
 }
 
 .photo {
@@ -47,7 +53,6 @@
 
 
 body {
-  /*background-color: #e8e7e5;*/
   font-family: 'caviar_dreamsregular';
   font-size: 24px;
 }
@@ -90,15 +95,9 @@ body {
 }
 
 .photocontent .photoseriestitle {
-  /*padding-top: 50px;*/
   margin-bottom: 10px;
   border-bottom: 1px solid black;
 } 
-
-/*
-.photocontent .photoseriestitle:first-child {
-  padding-top: 0px;
-}*/
 
 .gallerylink {
   font-size: 0.6em;
