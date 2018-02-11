@@ -9,25 +9,53 @@
         }
         return query;
     }
-    function displayMessage(data, validMessage) {
+    function show(selector) {
+        var domNode = document.querySelector(selector);
+        if (!domNode) {
+            return;
+        }
+        domNode.style.display = "block";
+    }
+    function hide(selector) {
+        var domNode = document.querySelector(selector);
+        if (!domNode) {
+            return;
+        }
+        domNode.style.display = "none";
+    }
+    function setText(selector, text) {
+        var domNode = document.querySelector(selector);
+        if (!domNode) {
+            return;
+        }
+        domNode.innerText = text;        
+    }
+    function displayMessage(data, validMessage, technicalCode) {
+        hide("#loading");
         if (!validMessage) {
-            $("#technicalIssuesPurchase").show();
-            return;            
+            show("#technicalIssuesPurchase");
+            if (technicalCode) {
+                setText("#technicalCode", technicalCode);
+            }
+            return;
         }
         if (data.resultCode === "Failure" && data.failureCode === "BuyerAbandoned") {
-            $("#abandonedPurchase").show();
+            show("#abandonedPurchase");
             return;
         }
         if (data.resultCode === "Failure" && data.failureCode === "AmazonRejected") {
-            $("#rejectedPurchase").show();
+            show("#rejectedPurchase");
             return;
         }
         if (data.resultCode === "Success" && data.orderReferenceId) {
-            $("#orderNumber").text(data.orderReferenceId);
-            $("#successfulPurchase").show();
+            setText("#orderNumber", data.orderReferenceId);
+            show("#successfulPurchase");
             return;
         }
-        $("#technicalIssuesPurchase").show();        
+        show("#technicalIssuesPurchase");
+        if (technicalCode) {
+            setText("#technicalCode", technicalCode);
+        }
     }
     function validateResult(data) {
         data.mode = mjsworks.mode;
@@ -42,14 +70,19 @@
             return "failed";          
         }).then(function (responseObj) {
             if (responseObj === "failed") {
-                alert('There was a problem processing your request');
+                displayMessage(null, null, "E200");
             } else {
                 var originalSignature = window.decodeURIComponent(data.signature);
                 var validated = !!(originalSignature === responseObj.signature);
-                displayMessage(data, validated);
+                displayMessage(data, validated, validated ? null : "E400");
             }
         });
     }
-    var data = parseQuery();
-    validateResult(data);      
+    if (!window.fetch) {
+        displayMessage(null, null, "E300");
+    }
+    else {
+        var data = parseQuery();
+        validateResult(data);      
+    }
 })();
