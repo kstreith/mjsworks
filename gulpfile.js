@@ -8,7 +8,7 @@ gulp.task('default', function () {
 	.pipe(concat('all.min.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('contents/css/'));
-    gulp.src(['contents/js/jquery-2.1.0.min.js', 'contents/js/responsive-nav.min.js'])
+    gulp.src(['contents/js/responsive-nav.min.js'])
         .pipe(uglify('all.min.js', {outSourceMap: true}))
         .pipe(gulp.dest('contents/js/'));
     gulp.src(['contents/js/finalizeAwsSale.js'])
