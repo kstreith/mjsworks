@@ -84,7 +84,7 @@ body {
 
 .footer {
   font-size: 14px;
-  width: 240px;
+  width: 241px;
   margin: auto;
   padding-top: 10px;
   text-align: center;
@@ -97,6 +97,7 @@ body {
 .footerPolicy {
   font-size: 1.5em;
 }
+
 .footerPolicy > a {
   color: white;
 }
