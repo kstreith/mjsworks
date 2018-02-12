@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Privacy Policy - MJS Works
+{% endblock %}
+
+{% block metadata%}
+<meta property="og:title" content="Privacy Policy - MJS Works"></meta>
+<meta property="og:description" content="Privacy Policy">
+<meta name="description" content="Privacy Policy">
+{% endblock %}
+
+{% block nav %}
+{{ nav('home') }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+{{ page.html | safe }}
+</div>
+{% endblock %}

@@ -84,7 +84,7 @@ body {
 
 .footer {
   font-size: 14px;
-  width: 155px;
+  width: 240px;
   margin: auto;
   padding-top: 10px;
   text-align: center;
@@ -92,6 +92,13 @@ body {
 
 .footer a {
   text-decoration: none;
+}
+
+.footerPolicy {
+  font-size: 1.5em;
+}
+.footerPolicy > a {
+  color: white;
 }
 
 .photocontent .photoseriestitle {
