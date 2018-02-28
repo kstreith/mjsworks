@@ -9,7 +9,10 @@ series:
   - file: IMG_6383.jpg
     title: Letter To Mom
     size: 4x8
-    price: -1
+    price: 55.0
+    sku: p17006e
+    description: Written words, marks and flowers bring together this captivating gem of a painting.
+    forSale: true        
   - file: IMG_6381.jpg
     title: Keep Me Safe
     size: 5x7

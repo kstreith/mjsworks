@@ -13,7 +13,10 @@ series:
   - file: IMG_6204.jpg
     title: Room To Move
     size: 16x20
-    price: -1
+    price: 350.0
+    sku: p17004e
+    description: Unique color study exploring texture, line and movement.
+    forSale: true    
   - file: IMG_6041.jpg
     title: Mom's Favorite Flowers
     size: 12x12
@@ -25,7 +28,10 @@ series:
   - file: IMG_6080.jpg
     title: Red Poppy
     size: 8x8
-    price: 70
+    price: 85.0
+    sku: p17005e
+    description: Glorious red pobby getting ready to open and enjoy spring.
+    forSale: true    
   - file: IMG_6132.jpg
     title: Standing Tall
     size: 6x12
@@ -38,6 +44,7 @@ series:
     title: Daises
     size: 6x6
     price: 50
+    sold: true
   - file: IMG_6193.jpg
     title: Three Daises
     size: 8x10

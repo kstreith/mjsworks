@@ -9,8 +9,9 @@ series:
   - file: IMG_6354.jpg
     title: Ready To Swim
     size: 5x7
-    price: -1
+    price: -1    
   - file: IMG_6363.jpg
     title: Dreamer
     size: 5x7
     price: -1
+    sold: true

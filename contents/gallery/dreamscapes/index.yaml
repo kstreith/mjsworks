@@ -13,7 +13,10 @@ series:
   - file: IMG_5400.jpg
     title: Water Dancing
     size: 8x10
-    price: 80
+    price: 90.0
+    sku: p17007e
+    description: Fall days at the park at the water fountain as the kids dance and play.
+    forSale: true    
   - file: IMG_3675.jpg
     title: Boat
     size: 8x10
@@ -26,6 +29,7 @@ series:
     title: Nightime Forest
     size: 8x10
     price: 80
+    sold: true
   - file: IMG_2996.jpg
     title: Frog
     size: 6x6

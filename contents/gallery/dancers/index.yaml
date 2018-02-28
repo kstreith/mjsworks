@@ -17,11 +17,15 @@ series:
   - file: IMG_6377.jpg
     title: Pure Joy
     size: 5x7
-    price: -1
+    price: 55.0
+    sku: p17003e
+    description: This delightful mixed media piece incorporates music sheets.
+    forSale: true
   - file: IMG_6352.jpg
     title: Dancing with your dreams
     size: 14x18
     price: -1
+    sold: true
   - file: IMG_6359.jpg
     title: Faith
     size: 5x7
