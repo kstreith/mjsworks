@@ -24,7 +24,10 @@
                                 "title": { "type": "string"},
                                 "size": { "type": "string"},
                                 "price": { "type": "number"},
-                                "sold": { "type": "boolean"}
+                                "sold": { "type": "boolean"},
+                                "sku": { "type": "string"},
+                                "description": { "type": "string"},
+                                "forSale": { "type": "boolean" }
                             }
                         }
                     }
