@@ -10,6 +10,7 @@ series:
     title: Morning swim
     size: 5x7
     price: 55
+    sold: true
     forSale: true
     sku: p17008e
     description: The smell of the salty air as the sea rushes around you to say good morning.
