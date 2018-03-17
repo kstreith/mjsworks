@@ -9,11 +9,17 @@ series:
   - file: IMG_6387.jpg
     title: Reaching For The Stars
     size: 18x24
-    price: -1
+    price: 460.0
+    sku: p17011e    
+    description: As the wind whips around her she reaches out to touch the stars ready to be lifted up and let her dreams take flight.
+    forSale: true        
   - file: IMG_6357.jpg
     title: Friends
     size: 6x6
-    price: -1
+    price: 55.0
+    sku: p17012e    
+    description: Celebrating your tribe, your voice and your friends.
+    forSale: true        
   - file: IMG_6377.jpg
     title: Pure Joy
     size: 5x7
@@ -29,4 +35,7 @@ series:
   - file: IMG_6359.jpg
     title: Faith
     size: 5x7
-    price: -1
+    price: 55.0
+    sku: p17013e    
+    description: Listen to your inner music, follow your truth, and have faith to carry on.
+    forSale: true        
