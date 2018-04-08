@@ -7,21 +7,33 @@ series:
   id: gal1
   photos:
   - file: IMG_5586.jpg
-    title: Windy Way
+    title: Windy Day
     size: 16x20
-    price: 350
+    price: 350.0
+    sku: p17018e
+    description: Atmospheric mixed media painting capturing the feeling of a windy fall day.
+    forSale: true    
   - file: 2016-04-19 09.36.01.jpg
     title: Looking for home
     size: 16x20
     price: 350
+    sku: p17019e
+    description: The smell of breakfast in the morning, the feel of your favorite chair. That is the heart of this mixed media landscape painting.
+    forSale: true    
   - file: IMG_6023.jpg
     title: Mom's Garden
     size: 16x20
     price: 350
+    sku: p17020e
+    description: This expansive landscape painting focuses on the vast endless skies around us.
+    forSale: true    
   - file: IMG_6029.jpg
     title: Just Us
     size: 16x20
     price: 350
+    sku: p17021e
+    description: Wide open skies and the quiet that lives in the space between each of us.
+    forSale: true        
   - file: IMG_5592.jpg
     title: Walk on the beach
     size: 16x20

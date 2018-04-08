@@ -9,14 +9,17 @@ series:
   - file: K9279716.jpg
     title: Seahorse
     size: 6x6
-    price: 50
+    price: 55.0
+    sku: p17024e
+    description: Enchanting small painting of a seahorse.
+    forSale: true                
   - file: K9279713.jpg
     title: Fancy Flight
     size: 6x6
-    price: 50
-    sku: p17001e
-    description: Encaustic painting with a real feather embedded into the wax
-    forSale: false
+    price: 55.0
+    sku: p17025e
+    description: Small abstract mixed media painting with golden birds taking flight.
+    forSale: true
   - file: K9279707.jpg
     title: Dragonfly
     size: 6x6

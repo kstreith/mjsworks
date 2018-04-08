@@ -45,6 +45,10 @@ module.exports = function(env, callback) {
         rv.gonepages["gallery-plants"] = new RedirectPage("gallery/plants/index.html");
         rv.gonepages["gallery-sights"] = new RedirectPage("gallery/sights/index.html");
         rv.gonepages["gallery-trapped"] = new RedirectPage("gallery/trapped/index.html");
+        rv.gonepages["painting-in-the-woods"] = new RedirectPage("gallery/dreamscapes/in-the-woods.html");
+        rv.gonepages["painting-mighty-pen"] = new RedirectPage("gallery/mixed-media/mighty-pen.html");
+        rv.gonepages["gallery-linear-study"] = new RedirectPage("gallery/linear-study/index.html");
+        rv.gonepages["gallery-textures"] = new RedirectPage("gallery/textures/index.html");
         rv.gonepages["photos"] = new RedirectPage("photos.html");
         return callback(null, rv);
     });

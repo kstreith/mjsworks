@@ -235,12 +235,21 @@ module.exports = function(env, callback) {
     rv = {
       gallery: {},
     }
+    var skuDict = {};
+    var duplicatedSkus = [];
     galleries.forEach(function (gallery) {
       var curGallery = {};
       rv.gallery[gallery.title] = curGallery;
       gallery.photos.forEach(function (photo, index, photoList) {
         var previous = photoList[photoList.length - 1].slug;
         var next = photoList[0].slug;
+        var sku = photo.sku;
+        if (sku) {
+          if (skuDict.hasOwnProperty(sku)) {
+            duplicatedSkus.push(sku);
+          }
+          skuDict[sku] = true;
+        }
         if (index > 0) {
           previous = photoList[index - 1].slug;
         }
@@ -250,6 +259,14 @@ module.exports = function(env, callback) {
         curGallery[photo.slug] = new GalleryPage(gallery.title, photo, previous, next, gallery.navSection); 
       });
     });
+    if (duplicatedSkus.length) {
+      console.log("Duplicated skus: " + duplicatedSkus.join());
+    }
+    var skus = Object.keys(skuDict);
+    if (skus.length) {
+      skus.sort();
+      console.log('Most recent sku is ' + skus[skus.length - 1]);
+    }
     return callback(null, rv);
   });
   env.helpers.formatPrice = formatPrice;

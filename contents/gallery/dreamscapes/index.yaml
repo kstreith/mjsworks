@@ -9,7 +9,10 @@ series:
   - file: IMG_4926.jpg
     title: Bamboo Forest
     size: 8x10
-    price: 80
+    price: 90.0
+    sku: p17022e
+    description: This dream like landscape is full of summer magic.
+    forSale: true            
   - file: IMG_5400.jpg
     title: Water Dancing
     size: 8x10
@@ -20,11 +23,10 @@ series:
   - file: IMG_3675.jpg
     title: Boat
     size: 8x10
-    price: 80
-  - file: IMG_3004.jpg
-    title: In the Woods
-    size: 8x10
-    price: 80
+    price: 90
+    sku: p17023e
+    description: A moonlite voyage awaits you, with this wonderful boat painting.
+    forSale: true            
   - file: IMG_3739.jpg
     title: Nightime Forest
     size: 8x10

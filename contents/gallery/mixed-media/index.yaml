@@ -23,19 +23,24 @@ series:
   - file: IMG_6072.jpg
     title: Dancing Pen
     size: 6x6
-    price: 50
+    price: 55.0
+    sku: p17026e
+    description: Whimsical feather dancing and writing to the tune of its' own song.
+    forSale: true    
   - file: IMG_6081.jpg
     title: Hidden Beauty
     size: 12x12
-    price: 150
-  - file: IMG_6104.jpg
-    title: Mighty Pen
-    size: 6x6
-    price: 50
+    price: 160.0
+    sku: p17027e
+    description: Hidden behind the screen of daily life is a butterfly waiting to fly free.
+    forSale: true    
   - file: 2015-03-05 10.48.23.jpg
     title: Sailing Away
     size: 16x20
-    price: 320
+    price: 350.0
+    sku: p17028e
+    description: Setting off on a great voyage is one of life's greatest thrills.
+    forSale: true    
   - file: IMG_4825.jpg
     title: Fading Beauty
     size: 6x12

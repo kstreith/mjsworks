@@ -11,10 +11,6 @@
        "file": "IMG_6029.jpg",
        "link": "landscapes"
       },
-      {"title": "Linear Study", 
-       "file": "IMG_5351.jpg",
-       "link": "linear-study"
-      },
       {"title": "Tiny Creatures", 
        "file": "K9279707.jpg",
        "link": "tiny-creatures"
@@ -34,10 +30,6 @@
       {"title": "Mermaids", 
         "file": "IMG_6363.jpg",
         "link": "mermaids"
-       },       
-      {"title": "Textures", 
-       "file": "IMG_5436.jpg",
-       "link": "textures"
-      }	  
+       }
    ]
  }
