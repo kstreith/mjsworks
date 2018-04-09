@@ -49,6 +49,7 @@ module.exports = function(env, callback) {
         rv.gonepages["painting-mighty-pen"] = new RedirectPage("gallery/mixed-media/mighty-pen.html");
         rv.gonepages["gallery-linear-study"] = new RedirectPage("gallery/linear-study/index.html");
         rv.gonepages["gallery-textures"] = new RedirectPage("gallery/textures/index.html");
+        rv.gonepages["gallery-textures"] = new RedirectPage("gallery/flora/room-to-move.html");
         rv.gonepages["photos"] = new RedirectPage("photos.html");
         return callback(null, rv);
     });

@@ -12,14 +12,7 @@ series:
     price: 170.0
     sku: p17010e    
     description: Water lilies dreamily floating atop a pond.
-    forSale: true    
-  - file: IMG_6204.jpg
-    title: Room To Move
-    size: 16x20
-    price: 350.0
-    sku: p17004e
-    description: Unique color study exploring texture, line and movement.
-    forSale: true    
+    forSale: true               
   - file: IMG_6041.jpg
     title: Mom's Favorite Flowers
     size: 12x12

@@ -4,6 +4,33 @@ title: Upcoming Shows - MJS Works
 description: The artistic works of Marcia Jo Streithorst
 ---
 
+November 2017  
+Show and Encaustic Workshop
+Turtle Nest Gallery
+Emerald Isle, NC
+
+A show of my encaustic paintings along with a paid workshop on beginning encaustic painting.
+
+----------
+
+September 2017
+Art Flair
+Clayton Visual Art Center
+Clayton, NC
+
+This was a juried show where my piece, Room To Move, was accepted.
+
+----------
+
+August 2017 
+311 Gallery
+Flower And Garden Show
+Raleigh, NC
+
+This was a nationally juried show where my pieice, My Two Friends, was accepted.
+
+----------
+
 June to July, 2016  
 Solo Show  
 Hager Smith Building  

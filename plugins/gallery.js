@@ -127,7 +127,7 @@ module.exports = function(env, callback) {
       var type = "";
       //encaustic specific section
       description = customDescription;
-      saleDescription = customDescription + " Original One of a kind encaustic painting on wood birch panel with wire hanger";
+      saleDescription = customDescription + " Original encaustic painting on wood birch panel with wire hanger";
       sellerNote = "Original encaustic painting";
       type = "encaustic-painting"
       //end encaustic specific section
