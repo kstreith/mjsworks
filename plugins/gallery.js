@@ -115,7 +115,7 @@ module.exports = function(env, callback) {
         else {
           throw new Error(seriesPhoto.file + " sku is wrong length");          
         }
-        if (!description) {
+        if (!customDescription) {
           throw new Error(seriesPhoto.file + " missing description which is required");
         }
         if (seriesPhoto.price <= 0) {
