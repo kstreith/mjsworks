@@ -33,7 +33,7 @@
   {% else %}
     <div class="photoblocktext">{{ photo.size}}</div>
     {%if env.helpers.shouldShowSellUi(photo) %}
-      <div class="photoblocktext">Price: ${{ env.helpers.formatPrice(photo.price) }}</div>
+      <div class="photoblocktext">Price: ${{ env.helpers.formatPrice(photo.price) }} {%if env.helpers.formatOriginalPrice(photo.price) %}<span class="originalPrice">${{env.helpers.formatOriginalPrice(photo.price)}}</span>{% endif %}</div>
       <div class="photoblocktext">Click on image to buy</div>
     {%endif %}
   {% endif %}

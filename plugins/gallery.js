@@ -28,15 +28,29 @@ function getEnvironmentVariable(name) {
   }
   return value;
 }
-function formatPrice(priceNumber) {
-  if (priceNumber > 0) {
-    var priceString = priceNumber.toFixed(2);
-    return priceString;
-  }
-  return "";
-}
 
 module.exports = function(env, callback) {  
+  function formatPrice(priceNumber) {
+    if (priceNumber > 0) {
+      var discount = env.locals.salePercentDiscount;
+      var discountMultiplier = 1;
+      if (discount) {
+        discountMultiplier = 1 - (discount / 100);
+      }  
+      var priceString = (priceNumber * discountMultiplier).toFixed(2);
+      return priceString;
+    }
+    return "";
+  }
+  
+  function formatOriginalPrice(priceNumber) {
+    var discount = env.locals.salePercentDiscount;
+    if (priceNumber > 0 && discount) {
+      var priceString = priceNumber.toFixed(2);
+      return priceString;
+    }
+    return null;
+  }  
   var GalleryPage, getGalleries;
   function encode(str) {
     return querystring.escape(str);
@@ -136,6 +150,11 @@ module.exports = function(env, callback) {
         var overText = description.slice(description.length - amountOver);
         throw new Error(seriesPhoto.file + " description is too long, following text goes over limit " + overText);
       }
+      var discount = env.locals.salePercentDiscount;
+      var discountMultiplier = 1;
+      if (discount) {
+        discountMultiplier = 1 - (discount / 100);
+      }
       gallery.photos.push({
         title:seriesPhoto.title,
         slug:slugify(seriesPhoto.title),
@@ -148,6 +167,7 @@ module.exports = function(env, callback) {
         size:seriesPhoto.size,
         type:type,
         price:formatPrice(seriesPhoto.price),
+        originalPrice:formatOriginalPrice(seriesPhoto.price),
         mimeType: mimeType,
         description: description,
         saleDescription: saleDescription,
@@ -270,6 +290,7 @@ module.exports = function(env, callback) {
     return callback(null, rv);
   });
   env.helpers.formatPrice = formatPrice;
+  env.helpers.formatOriginalPrice = formatOriginalPrice;
   env.helpers.shouldShowSellUi = shouldShowSellUi;
   env.helpers.slug = function (title) {
     return slugify(title);

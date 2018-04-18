@@ -39,7 +39,7 @@
     {% if galleryImage.showSellUi %}
     <div class="sellPanel">
       <div>
-        <div>Price: ${{galleryImage.price}}</div>
+        <div>Price: ${{galleryImage.price}} {%if galleryImage.originalPrice %}<span class="originalPrice">${{galleryImage.originalPrice}}</span>{% endif %}</div>
         <div>Panel Size: {{galleryImage.size}}</div>
         <div>Shipping: <a href="/faq.html#shipping_policy">Free</a></div>
         <div>Quantity: 1</div>
