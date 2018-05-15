@@ -20,13 +20,6 @@ series:
     sku: p17012e    
     description: Celebrating your tribe, your voice and your friends.
     forSale: true        
-  - file: IMG_6377.jpg
-    title: Pure Joy
-    size: 5x7
-    price: 55.0
-    sku: p17003e
-    description: This delightful mixed media piece incorporates music sheets.
-    forSale: true
   - file: IMG_6352.jpg
     title: Dancing with your dreams
     size: 14x18

@@ -4,8 +4,8 @@
     "awsSellerId": "A3IO5ZO9PFIM3P",
     "awsPublicAccessKey": "AKIAIM3SZ2U2PKXWGYYA",
     "awsLwaClientId": "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184",
-    "saleBanner": "15% off paintings until May, 13th",
-    "salePercentDiscount": 15
+    "saleBanner": null,
+    "salePercentDiscount": null
   },
   "plugins": [
     "wintersmith-nunjucks",
