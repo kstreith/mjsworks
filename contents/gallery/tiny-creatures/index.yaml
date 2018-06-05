@@ -20,6 +20,13 @@ series:
     sku: p17025e
     description: Small abstract mixed media painting with golden birds taking flight.
     forSale: true
+  - file: IMG_6456.JPG
+    title: Seahorse and Turtle Friends
+    size: 5x7
+    price: 110.0
+    sku: p17033e
+    description: Sold as a pair of 5x7 paintings.
+    forSale: true
   - file: K9279707.jpg
     title: Dragonfly
     size: 6x6
