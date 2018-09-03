@@ -6,6 +6,27 @@ series:
 - title: Landscapes
   id: gal1
   photos:
+  - file: IMG_6469.JPG
+    title: Early Morning
+    size: 5x7
+    price: 55.0
+    sku: p17036e
+    description: Waves crashing in on the rocky beach, cool winds of the early morning all await to greet you.
+    forSale: true    
+  - file: IMG_6462.JPG
+    title: Letter Home
+    size: 16x20
+    price: 350.0
+    sku: p17035e
+    description: Watching the waves roll in and thinking about the loves ones back home was the inspiration for this painting.
+    forSale: true    
+  - file: IMG_6464.JPG
+    title: High Tide
+    size: 16x20
+    price: 350.0
+    sku: p17034e
+    description: High waves sweep in taking sand, rocks and fish with them.
+    forSale: true    
   - file: IMG_5586.jpg
     title: Windy Day
     size: 16x20
@@ -39,3 +60,8 @@ series:
     size: 16x20
     price: 350
     sold: true
+  - file: IMG_6457.JPG
+    title: Just Beneath the Surface
+    size: 16x20
+    price: 350.0
+    sold: true    

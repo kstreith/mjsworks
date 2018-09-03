@@ -4,27 +4,71 @@ title: Upcoming Shows - MJS Works
 description: The artistic works of Marcia Jo Streithorst
 ---
 
-November 2017  
-Show and Encaustic Workshop
-Turtle Nest Gallery
+January 2019  
+Group Show  
+Contemporary Art Exchange  
+Washington, NC
+
+My work is featured as part of the Mixed Media Artist Guild show.
+
+https://www.thecontemporaryartexchange.com/  
+
+----------
+
+November 2018  
+Guest Artist  
+Soulful Heart Studios  
+Rolesville, NC
+
+Teaching "Natures calling" an encaustic mixed media experience.
+
+http://deborahsoulfulheart.com/1767-2/
+
+----------
+
+August 2018  
+Featured Arists  
+Bull City Framing  
+Durham, NC
+
+Featured guest artist for Durham Third Friday art event.
+
+You can find my work at https://www.bullcityartandframecompany.com/
+
+----------
+
+May 2018  
+Featured Artist  
+Going Local NC  
+Wilmington, NC
+
+Taught a weekend long encaustic workshop at Going Local gallery.
+
+You can find my work at http://goinglocalnc.com/
+
+----------
+
+November 2017   
+Show and Encaustic Workshop  
+Turtle Nest Gallery  
 Emerald Isle, NC
 
 A show of my encaustic paintings along with a paid workshop on beginning encaustic painting.
 
 ----------
 
-September 2017
-Art Flair
-Clayton Visual Art Center
+September 2017  
+Art Flair  
+Clayton Visual Art Center  
 Clayton, NC
 
 This was a juried show where my piece, Room To Move, was accepted.
 
 ----------
 
-August 2017 
-311 Gallery
-Flower And Garden Show
+August 2017   
+311 Gallery  
+Flower And Garden Show  
 Raleigh, NC
 
 This was a nationally juried show where my pieice, My Two Friends, was accepted.
