@@ -1,0 +1,15 @@
+@{
+    Layout = @"/_Layout.cshtml";
+    string title = Model.String("Title");
+    string description = Model.String("Description");
+}
+
+@section Metadata {
+<meta property="og:title" content="@title"></meta>
+<meta property="og:description" content="@description">
+<meta name="description" content="@description">
+}
+
+<div class="content">
+@RenderBody()
+</div>

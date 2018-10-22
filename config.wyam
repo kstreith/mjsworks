@@ -1,0 +1,42 @@
+#n Wyam.Yaml
+#n Wyam.Razor
+#n Wyam.Markdown
+#n Wyam.Minification
+
+Settings["Host"] = "mjsworks.com";
+Settings["LinksUseHttps"] = true;
+Settings["GoogleAnalyticsId"] = "fakeOne";
+Settings["SaleBanner"] = null;
+Settings["SalePercentDiscount"] = null;
+Settings["LinkHideExtensions"] = false;
+
+Pipelines.Add("ContentPages",
+    ReadFiles("**/*.md"),
+    FrontMatter(Yaml()),
+    Markdown()
+        .UseExtensions(),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_ContentPageLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("Paintings",
+    ReadFiles("paintings/*.yml"),
+    Yaml(),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingPageLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("AllCss",
+    ReadFiles("assets/css/*.css"),
+    Join(),
+    WriteFiles((doc, ctx) => "assets/css/all.min.css")
+);
+
+Pipelines.Add("Site Resources",
+    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,!.js,}"),
+    WriteFiles()
+);
