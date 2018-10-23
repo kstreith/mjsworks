@@ -3,12 +3,19 @@
 #n Wyam.Markdown
 #n Wyam.Minification
 
-Settings["Host"] = "mjsworks.com";
-Settings["LinksUseHttps"] = true;
-Settings["GoogleAnalyticsId"] = "fakeOne";
-Settings["SaleBanner"] = null;
-Settings["SalePercentDiscount"] = null;
+#a MjsWorks.Image.Wyam\bin\Release\netstandard2.0\MjsWorks.Image.Wyam.dll
+#a MjsWorks.SalesDiscount.Wyam\bin\Release\netstandard2.0\MjsWorks.SalesDiscount.Wyam.dll
+#a MjsWorks.AmazonPay.Wyam\bin\Release\netstandard2.0\MjsWorks.AmazonPay.Wyam.dll
+
+Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
+Settings["LinksUseHttps"] = false;
+Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
+Settings["MjsWorks-SaleBanner"] = null;
+Settings["MjsWorks-SalePercentDiscount"] = null;
 Settings["LinkHideExtensions"] = false;
+Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
+Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
+string signingKey = Environment.GetEnvironmentVariable("MJS_STATIC_GENERATION_SIGNING_KEY");
 
 Pipelines.Add("ContentPages",
     ReadFiles("**/*.md"),
@@ -21,9 +28,25 @@ Pipelines.Add("ContentPages",
     WriteFiles()
 );
 
+Pipelines.Add("FinalizedSale",
+    ReadFiles("finalizedSale.cshtml"),
+    FrontMatter(Yaml()),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor(),
+    WriteFiles()
+);
+
 Pipelines.Add("Paintings",
     ReadFiles("paintings/*.yml"),
     Yaml(),
+    ImageInfo()
+        .OutputMetadataWithPrefix("PaintingImage"),
+    SalesDiscount(),
+    AmazonPay()
+        .SignWithKey(signingKey)
+        .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")
+        .WithStaticSellerNote("Original encaustic painting")
+        .WithPurchaseCompletionPage("finalizedSale.html", "8080"),
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingPageLayout.cshtml"),
@@ -37,6 +60,6 @@ Pipelines.Add("AllCss",
 );
 
 Pipelines.Add("Site Resources",
-    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,!.js,}"),
+    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,}"),
     WriteFiles()
 );

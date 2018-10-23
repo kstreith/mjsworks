@@ -6,6 +6,20 @@
     string size = Model.String("Size");
     string sku = Model.String("Sku");
     bool sold = Model.Bool("Sold");
+    bool forSale = Model.Bool("ForSale");
+    bool showSellUi = forSale && !sold;
+    string showSellUiCss = showSellUi ? "sellUi" : null;
+    string imageWidth = Model.String("PaintingImageWidth");
+    string imageHeight = Model.String("PaintingImageHeight");
+    string imageMimeType = Model.String("PaintingImageMimeType");
+    string price = $"{Model.Get<double>("Price"):C}";
+    double? originalPrice = Model.Get<double?>("OriginalPrice");
+    string originalPriceFormatted = null;
+    if (originalPrice != null) 
+    {
+      originalPriceFormatted = $"{originalPrice:C}";
+    }
+    string saleDescription = $"{description} Original encaustic painting on wood birch panel with wire hanger";
 }
 
 @section Metadata {
@@ -13,14 +27,14 @@
 <meta property="og:description" content="@description">
 <meta property="og:image" content='@Context.GetLink(file, true)'>
 <meta property="og:image:secure_url" content='@Context.GetLink(file, true)'>
-<meta property="og:image:type" content="{{galleryImage.mimeType}}">
+<meta property="og:image:type" content="@imageMimeType">
 <meta property="og:image:alt" content="@title">
-<meta property="og:image:width" content="{{imageDimensions.width}}">
-<meta property="og:image:height" content="{{imageDimensions.height}}">
+<meta property="og:image:width" content="@imageWidth">
+<meta property="og:image:height" content="@imageHeight">
 <meta name="description" content="@description">
 }
 
-<div class="content gallerycontent {{galleryImage.sellUiCssClass}}">
+<div class="content gallerycontent @showSellUiCss">
   <!--
   <div class="gallerynav">
       <a style="float:left" href="{{previousImage}}.html"><i class="icon-left-circled"></i></a>
@@ -37,16 +51,17 @@
         <img src="@file" alt="@title" />
       </div>
     </div>
-    {% if galleryImage.showSellUi %}
+    @if (showSellUi)
+    {
     <div class="sellPanel">
       <div>
-        <div>Price: ${{galleryImage.price}} {%if galleryImage.originalPrice %}<span class="originalPrice">${{galleryImage.originalPrice}}</span>{% endif %}</div>
+        <div>Price: @price @if (originalPriceFormatted != null) {<span class="originalPrice">@originalPriceFormatted</span>}</div>
         <div>Panel Size: @size</div>
         <div>Shipping: <a href="/faq.html#shipping_policy">Free</a></div>
         <div>Quantity: 1</div>
       </div>
       <div style="padding-top: 1em; padding-bottom: 1em">
-        <div>{{galleryImage.saleDescription}}</div>
+        <div>@saleDescription</div>
       </div>
       <div style="padding-bottom: 1em">Purchase using your existing Amazon account</div>
       <div id="AmazonPayButton"></div>  
@@ -55,7 +70,7 @@
           <div>SKU #@sku</div>    
       </div>
     </div>
-    {% else %}
+    } else {
     <div class="galleryimagedescription">
       @if (sold == true) {
       <div class="photoblocktext sold">Sold</div>
@@ -63,19 +78,22 @@
       <div class="photoblocktext">@size</div>
       }
     </div>
-    {% endif %} 
+    } 
   </div>
 </div>
 
 @{ IgnoreBody(); }
 
 @section Scripts {
-{% if galleryImage.showSellUi %}
-  <script src="{{awsWidgetsUrl}}"></script>
+@if (showSellUi)
+{
+  var awsWidgetsUrl = Model.String("MjsWorks-AwsWidgetsUrl");
+  var awsButtonJson = Model.String("AmazonPayJson");
+  <script src="@Html.Raw(awsWidgetsUrl)"></script>
   <script type="text/javascript">
     var mjsworks = mjsworks || {};
-    mjsworks.purchaseConfig = {{ awsButtonJson | safe }};
+    mjsworks.purchaseConfig = @Html.Raw(awsButtonJson);
   </script>
-  <script src="/js/awsPurchase.min.js"></script>
-{%endif %}
+  <script src="/assets/js/awsPurchase.min.js"></script>
+}
 }
