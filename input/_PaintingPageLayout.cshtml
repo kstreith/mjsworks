@@ -20,6 +20,7 @@
       originalPriceFormatted = $"{originalPrice:C}";
     }
     string saleDescription = $"{description} Original encaustic painting on wood birch panel with wire hanger";
+    var parentGalleriesJson = Model.Get<string>("ParentGalleriesJson");
 }
 
 @section Metadata {
@@ -35,15 +36,13 @@
 }
 
 <div class="content gallerycontent @showSellUiCss">
-  <!--
-  <div class="gallerynav">
-      <a style="float:left" href="{{previousImage}}.html"><i class="icon-left-circled"></i></a>
-      <a style="float:right" href="{{nextImage}}.html"><i class="icon-right-circled"></i></a>
+  <div class="gallerynav" style="display: none">
+      <a id="prevGalleryImageLink" style="float:left" href=""><i class="icon-left-circled"></i></a>
+      <a id="nextGalleryImageLink" style="float:right" href=""><i class="icon-right-circled"></i></a>
   </div>
-  <div class="gallerynav">
-      <a href="{{galleryLink}}"><i class="icon-th-large"></i></a>
+  <div class="gallerynav" style="display: none">
+      <a id="galleryHomeLink" href=""><i class="icon-th-large"></i></a>
   </div>
-  -->
   <div class="galleryimagetitle">@title</div>
   <div class="columnContainer">
     <div class="details">
@@ -85,6 +84,36 @@
 @{ IgnoreBody(); }
 
 @section Scripts {
+  <script type="text/javascript">
+    var mjsworks = mjsworks || {};
+    mjsworks.parentGalleries = @Html.Raw(parentGalleriesJson);
+    var data = mjsworks.parseQuery();
+    showGalleryNav(data["gallery"]);
+    
+    function setLink(selector, link) {
+        var domNode = document.querySelector(selector);
+        if (!domNode) {
+            return;
+        }
+        domNode.href = link;        
+    }
+
+    function showGalleryNav(currentGallery) {
+      if (!currentGallery) {
+        return;
+      }
+      var matchedGallery = mjsworks.parentGalleries[currentGallery];
+      if (!matchedGallery) {
+        return;
+      }
+      var prevImage = matchedGallery.PreviousImage;
+      var nextImage = matchedGallery.NextImage;
+      setLink("#prevGalleryImageLink", "/paintings/" + prevImage + ".html");
+      setLink("#nextGalleryImageLink", "/paintings/" + nextImage + ".html");
+      setLink("#galleryHomeLink", "/gallery/" + currentGallery + ".html");
+      mjsworks.show(".gallerynav");
+    }
+  </script>  
 @if (showSellUi)
 {
   var awsWidgetsUrl = Model.String("MjsWorks-AwsWidgetsUrl");

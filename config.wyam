@@ -6,6 +6,7 @@
 #a MjsWorks.Image.Wyam\bin\Release\netstandard2.0\MjsWorks.Image.Wyam.dll
 #a MjsWorks.SalesDiscount.Wyam\bin\Release\netstandard2.0\MjsWorks.SalesDiscount.Wyam.dll
 #a MjsWorks.AmazonPay.Wyam\bin\Release\netstandard2.0\MjsWorks.AmazonPay.Wyam.dll
+#a MjsWorks.Gallery.Wyam\bin\Release\netstandard2.0\MjsWorks.Gallery.Wyam.dll
 
 Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
 Settings["LinksUseHttps"] = false;
@@ -42,6 +43,7 @@ Pipelines.Add("Paintings",
     ImageInfo()
         .OutputMetadataWithPrefix("PaintingImage"),
     SalesDiscount(),
+    PaintingRelationshipToGalleries().WithGalleryDocuments(ReadFiles("galleries/*.yml"), Yaml()),
     AmazonPay()
         .SignWithKey(signingKey)
         .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")

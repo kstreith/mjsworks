@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MjsWorks.Image.Wyam", "MjsWorks.Image.Wyam\MjsWorks.Image.Wyam.csproj", "{1FD315DF-01AD-468D-ACA7-863A9E0FD56D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.Image.Wyam", "MjsWorks.Image.Wyam\MjsWorks.Image.Wyam.csproj", "{1FD315DF-01AD-468D-ACA7-863A9E0FD56D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.AmazonPay.Wyam", "MjsWorks.AmazonPay.Wyam\MjsWorks.AmazonPay.Wyam.csproj", "{8EF14A79-B9D6-4F60-834C-28BCC6A4272B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.SalesDiscount.Wyam", "MjsWorks.SalesDiscount.Wyam\MjsWorks.SalesDiscount.Wyam.csproj", "{A0453AF0-41C1-4D41-A544-FBB4352684DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MjsWorks.AmazonPay.Wyam.Test", "MjsWorks.AmazonPay.Wyam.Test\MjsWorks.AmazonPay.Wyam.Test.csproj", "{7A27423A-D9B1-4683-AF4C-7B0A9D601FE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.AmazonPay.Wyam.Test", "MjsWorks.AmazonPay.Wyam.Test\MjsWorks.AmazonPay.Wyam.Test.csproj", "{7A27423A-D9B1-4683-AF4C-7B0A9D601FE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.Gallery.Wyam", "MjsWorks.Gallery.Wyam\MjsWorks.Gallery.Wyam.csproj", "{13E71118-5C15-4843-9F49-987A3C5F2119}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MjsWorks.Gallery.Wyam.Test", "MjsWorks.Gallery.Wyam.Test\MjsWorks.Gallery.Wyam.Test.csproj", "{78D43DD5-D5E8-4C8E-943D-2DD48742FD49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{7A27423A-D9B1-4683-AF4C-7B0A9D601FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A27423A-D9B1-4683-AF4C-7B0A9D601FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A27423A-D9B1-4683-AF4C-7B0A9D601FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E71118-5C15-4843-9F49-987A3C5F2119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E71118-5C15-4843-9F49-987A3C5F2119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E71118-5C15-4843-9F49-987A3C5F2119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E71118-5C15-4843-9F49-987A3C5F2119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D43DD5-D5E8-4C8E-943D-2DD48742FD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D43DD5-D5E8-4C8E-943D-2DD48742FD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D43DD5-D5E8-4C8E-943D-2DD48742FD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D43DD5-D5E8-4C8E-943D-2DD48742FD49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

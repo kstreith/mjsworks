@@ -26,7 +26,8 @@ namespace MjsWorks.AmazonPay.Wyam.Test
             var testDocument = new TestDocument(new Dictionary<string, object>
             {
                 ["Price"] = (double)5,
-                ["Sku"] = "fake-sku"
+                ["Sku"] = "fake-sku",
+                ["Host"] = testContext.Settings["Host"]
             });
 
             //Act
