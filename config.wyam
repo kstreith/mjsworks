@@ -43,7 +43,8 @@ Pipelines.Add("Paintings",
     ImageInfo()
         .OutputMetadataWithPrefix("PaintingImage"),
     SalesDiscount(),
-    PaintingRelationshipToGalleries().WithGalleryDocuments(ReadFiles("galleries/*.yml"), Yaml()),
+    AddParentGalleryMetadataToPainting()
+        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml()),
     AmazonPay()
         .SignWithKey(signingKey)
         .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")
@@ -52,6 +53,23 @@ Pipelines.Add("Paintings",
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingPageLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("PaintingGalleries",
+    ReadFiles("gallery/*.yml"),
+    Yaml(),
+    AddIndividualPaintingMetadataToGallery()
+        .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount()),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingGalleryLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("PaintingThumbnails",
+    ReadFiles("assets/paintings/*"),
+    ThumbnailImage(),
     WriteFiles()
 );
 

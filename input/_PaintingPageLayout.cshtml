@@ -108,8 +108,8 @@
       }
       var prevImage = matchedGallery.PreviousImage;
       var nextImage = matchedGallery.NextImage;
-      setLink("#prevGalleryImageLink", "/paintings/" + prevImage + ".html");
-      setLink("#nextGalleryImageLink", "/paintings/" + nextImage + ".html");
+      setLink("#prevGalleryImageLink", "/paintings/" + prevImage + ".html?gallery=" + currentGallery);
+      setLink("#nextGalleryImageLink", "/paintings/" + nextImage + ".html?gallery=" + currentGallery);
       setLink("#galleryHomeLink", "/gallery/" + currentGallery + ".html");
       mjsworks.show(".gallerynav");
     }

@@ -21,13 +21,13 @@ namespace MjsWorks.Gallery.Wyam.Test
             return Documents;
         }
     }
-    public class PaintingRelationshipToGalleriesTest
+    public class AddParentGalleryMetadataToPaintingTest
     {
         [Fact]
         public void Execute_Paintings_NoneInGallery_ParentGalleryJsonIsEmpty()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
@@ -68,7 +68,7 @@ namespace MjsWorks.Gallery.Wyam.Test
         public void Execute_Paintings_OnlyOneImageInOneGallery_ParentGalleryJsonIsCorrect()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
@@ -94,7 +94,7 @@ namespace MjsWorks.Gallery.Wyam.Test
         public void Execute_Paintings_MultipleImagesInOneGallery_ParentGalleryJsonIsCorrect()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
@@ -132,7 +132,7 @@ namespace MjsWorks.Gallery.Wyam.Test
         public void Execute_Paintings_OnlyOneImageInMultipleGalleries_ParentGalleryJsonIsCorrect()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
@@ -169,7 +169,7 @@ namespace MjsWorks.Gallery.Wyam.Test
         public void Execute_Paintings_MultipleImagesWithOneNotFoundImageInGallery_ThrowsException()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
@@ -188,7 +188,7 @@ namespace MjsWorks.Gallery.Wyam.Test
         public void Execute_Paintings_OnlyOneNotFoundImageInOneGallery_ParentGalleryJsonIsCorrect()
         {
             //Arrange
-            var painting = new PaintingRelationshipToGalleries();
+            var painting = new AddParentGalleryMetadataToPainting();
             var testContext = new TestExecutionContext();
             testContext.Settings["Host"] = "localhost";
             List<IDocument> testPaintings = GetTestPaintings();
