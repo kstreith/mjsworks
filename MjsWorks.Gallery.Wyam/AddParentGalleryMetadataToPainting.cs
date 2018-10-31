@@ -36,7 +36,7 @@ namespace MjsWorks.Gallery.Wyam
         {
             var galleryDocs = context.Execute(_galleryDocModules, new List<IDocument>());
             var galleryIndex = galleryDocs.ToDictionary(x => x.String("SourceFileBase"));
-            var imageWithinGalleries = galleryDocs.SelectMany(x => x.Get<IDocument[]>("images").Select(y => new { gallery = x.String("SourceFileBase"), image = y.String("image") })).ToLookup(z => z.image, z => z.gallery);
+            var imageWithinGalleries = galleryDocs.SelectMany(x => x.Get<IDocument[]>("Images").Select(y => new { gallery = x.String("SourceFileBase"), image = y.String("Image") })).ToLookup(z => z.image, z => z.gallery);
             //System.Console.WriteLine($"imageWithGalleries: {JsonConvert.SerializeObject(imageWithinGalleries, Formatting.Indented)}");
             //System.Console.WriteLine($"galleryDocs: {JsonConvert.SerializeObject(galleryDocs.Select(x => x.Get("images").GetType().Name))}");
             var paintingByImageFile = inputs.ToDictionary(x => x.String("File"), x => x.String("SourceFileBase"));
@@ -48,11 +48,11 @@ namespace MjsWorks.Gallery.Wyam
                 var parentGalleryNavigations = new Dictionary<string, GalleryPosition>();
                 foreach (var parentGalleryName in parentGalleryNames)
                 {
-                    var galleryImages = galleryIndex[parentGalleryName].Get<IDocument[]>("images");
+                    var galleryImages = galleryIndex[parentGalleryName].Get<IDocument[]>("Images");
                     var foundIndex = -1;
                     for (var i = 0; i < galleryImages.Length; ++i)
                     {
-                        if (galleryImages[i].String("image") == file)
+                        if (galleryImages[i].String("Image") == file)
                         {
                             foundIndex = i;
                         }
@@ -63,19 +63,19 @@ namespace MjsWorks.Gallery.Wyam
                         string nextImageFile = null;
                         if (foundIndex == 0)
                         {
-                            prevImageFile = galleryImages[galleryImages.Length - 1].String("image");
+                            prevImageFile = galleryImages[galleryImages.Length - 1].String("Image");
                         }
                         else
                         {
-                            prevImageFile = galleryImages[foundIndex - 1].String("image");
+                            prevImageFile = galleryImages[foundIndex - 1].String("Image");
                         }
                         if (foundIndex == galleryImages.Length - 1)
                         {
-                            nextImageFile = galleryImages[0].String("image");
+                            nextImageFile = galleryImages[0].String("Image");
                         }
                         else
                         {
-                            nextImageFile = galleryImages[foundIndex + 1].String("image");
+                            nextImageFile = galleryImages[foundIndex + 1].String("Image");
                         }
                         var prevImagePage = paintingByImageFile[prevImageFile];
                         var nextImagePage = paintingByImageFile[nextImageFile];

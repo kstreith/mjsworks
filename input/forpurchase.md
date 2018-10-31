@@ -1,6 +1,7 @@
 ---
 Title: Works For Sale - MJS Works
 Description: The artistic works of Marcia Jo Streithorst
+NavigationTab: buy
 ---
 
 ### Online

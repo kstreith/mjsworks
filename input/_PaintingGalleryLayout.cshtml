@@ -3,7 +3,8 @@
     string galleryPage = Model.String("SourceFileBase");
     string title = Model.String("Title");
     string description = Model.String("Description");
-    IDocument[] images = Model.Get<IDocument[]>("images");
+    IDocument[] images = Model.Get<IDocument[]>("Images");
+    var textContent = Model.String("FileContent");
 }
 
 @section Metadata {
@@ -15,12 +16,17 @@
 @{ IgnoreBody(); }
 
 <div class="content photocontent">
+    @if (textContent != null) {
+        @Html.Raw(textContent)
+        <br/>
+    } else {
     <a class="gallerylink" href="/painting.html">Back to Gallery Listing</a>
     <div class="photoseriestitle">@title</div>
+    }
     <div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
     <div>
         @foreach (var image in images) {
-            string imageFile = image.String("image");
+            string imageFile = image.String("Image");
             var thumbnailImageFile = imageFile.Substring(0, imageFile.Length - 4);
             thumbnailImageFile = $"{thumbnailImageFile}-thumbnail.jpg";
             string imageTitle = image.String("Title");

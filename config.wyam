@@ -37,28 +37,42 @@ Pipelines.Add("FinalizedSale",
     WriteFiles()
 );
 
-Pipelines.Add("Paintings",
+Pipelines.Add("PaintingPages",
     ReadFiles("paintings/*.yml"),
     Yaml(),
     ImageInfo()
         .OutputMetadataWithPrefix("PaintingImage"),
     SalesDiscount(),
     AddParentGalleryMetadataToPainting()
-        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml()),
+        .WithGalleryDocuments(
+            ReadFiles("gallery/*.yml"), Yaml(),
+            Concat(
+                ReadFiles("gallery/*.md"),
+                FrontMatter(Yaml())
+            )),
     AmazonPay()
         .SignWithKey(signingKey)
         .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")
         .WithStaticSellerNote("Original encaustic painting")
         .WithPurchaseCompletionPage("finalizedSale.html", "8080"),
+    SetNavigation().ToTab("paintings"),        
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingPageLayout.cshtml"),
     WriteFiles()
 );
 
-Pipelines.Add("PaintingGalleries",
+Pipelines.Add("PaintingGalleryPages",
     ReadFiles("gallery/*.yml"),
     Yaml(),
+    Concat(
+        ReadFiles("gallery/*.md"),
+        FrontMatter(Yaml()),
+        Markdown()
+            .UseExtensions(),
+        GalleryMarkdownContentToMetadata()           
+    ),
+    SetNavigation().ToTab("paintings"),
     AddIndividualPaintingMetadataToGallery()
         .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount()),
     WriteFiles(".html").OnlyMetadata(),
@@ -67,6 +81,17 @@ Pipelines.Add("PaintingGalleries",
     WriteFiles()
 );
 
+Pipelines.Add("PaintingGalleryList",
+    ReadFiles("painting.yml"),
+    Yaml(),
+    SetNavigation().ToTab("paintings"),
+    AddIndividualGalleryMetadata()
+        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml()),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingGalleryListLayout.cshtml"),
+    WriteFiles()
+);
 Pipelines.Add("PaintingThumbnails",
     ReadFiles("assets/paintings/*"),
     ThumbnailImage(),

@@ -33,15 +33,15 @@ namespace MjsWorks.Gallery.Wyam
             var paintingDocIndexByImage = paintingDocs.ToDictionary(x => x.String("File"));
             return inputs.Select(context, doc =>
             {
-                var galleryImages = doc.Get<IDocument[]>("images");
+                var galleryImages = doc.Get<IDocument[]>("Images");
                 List<IDocument> outputGalleryImageDocs = new List<IDocument>();
                 foreach (var galleryImage in galleryImages)
                 {
-                    var galleryImageFile = galleryImage.String("image");
+                    var galleryImageFile = galleryImage.String("Image");
                     var paintingDocDetails = paintingDocIndexByImage[galleryImageFile];
-                    System.Console.WriteLine($"paintingDocDetails {galleryImageFile}"); // - {JsonConvert.SerializeObject(paintingDocDetails.Keys.ToList())}");
+                    //System.Console.WriteLine($"paintingDocDetails {galleryImageFile}"); // - {JsonConvert.SerializeObject(paintingDocDetails.Keys.ToList())}");
                     var price = paintingDocDetails.Get<double>("Price");
-                    System.Console.WriteLine($"price {price}");
+                    //System.Console.WriteLine($"price {price}");
                     //System.Console.WriteLine($"originalPrice {paintingDocDetails.Get<double?>("OriginalPrice")}");
                     var newGalleryImageDoc = context.GetDocument(galleryImage, new Dictionary<string, object>
                     {
@@ -57,7 +57,7 @@ namespace MjsWorks.Gallery.Wyam
                 }
                 return context.GetDocument(doc, new Dictionary<string, object>
                 {
-                    ["images"] = outputGalleryImageDocs.ToArray()
+                    ["Images"] = outputGalleryImageDocs.ToArray()
                 });
             });
         }

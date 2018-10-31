@@ -1,6 +1,7 @@
 ---
 Title: Upcoming Shows - MJS Works
 Description: The artistic works of Marcia Jo Streithorst
+NavigationTab: shows
 ---
 
 January 2019  

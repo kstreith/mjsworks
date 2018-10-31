@@ -6,6 +6,7 @@
       string host = Model.String("Host");
       string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
       string saleBanner = Model.String("MjsWorks-SaleBanner");
+      string navigationTab = Model.String("NavigationTab") ?? "home";
   }
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,16 +23,15 @@
 @{
     var pages = new []
     {
-        new { Title = "Artist Bio", Link = Context.GetLink("/index.html"), LargerBanner = true},
-        new { Title = "Paintings", Link = Context.GetLink("paintings.html"), LargerBanner = true},
-        new { Title = "Feathers", Link = Context.GetLink("feathers.html"), LargerBanner = true},
-        new { Title = "Shows", Link = Context.GetLink("shows.html"), LargerBanner = false},
-        new { Title = "Buy", Link = Context.GetLink("forpurchase.html"), LargerBanner = false},
+        new { Title = "Artist Bio", Key = "home", Link = Context.GetLink("/index.html"), LargerBanner = true},
+        new { Title = "Paintings", Key = "paintings", Link = Context.GetLink("painting.html"), LargerBanner = true},
+        new { Title = "Feathers", Key = "feathers", Link = Context.GetLink("/gallery/feathers.html"), LargerBanner = true},
+        new { Title = "Shows", Key = "shows", Link = Context.GetLink("shows.html"), LargerBanner = false},
+        new { Title = "Buy", Key = "buy", Link = Context.GetLink("forpurchase.html"), LargerBanner = false},
     };
-    var docLink = Context.GetLink(Document);
     var pagesWithIndex = pages.Select((page, index) => new { Page = page, Index = index }).ToList();
     var matchedIndex = pagesWithIndex.
-        Where(item => item.Page.Link != "/index.html" && docLink.StartsWith(item.Page.Link)).Select(item => item.Index).FirstOrDefault();
+        Where(item => item.Page.Key == navigationTab).Select(item => item.Index).FirstOrDefault();
     for(var i = 0; i < pagesWithIndex.Count; i++)
     {
         var item = pagesWithIndex[i];
@@ -56,7 +56,6 @@
   </div>
 </footer>
 <script src="/assets/js/all.min.js"></script>
-<script src="/assets/js/shared.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
