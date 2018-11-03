@@ -13,24 +13,22 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     extension: "yml"
     slug: "{{slug}}"
-    identifier_field: Title
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "Title", widget: "string"}
-      - {label: "File", name: "File", widget: "image"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Size", name: "Size", widget: "string"}
       - {label: "Price", name: "Price", widget: "number", valueType: "float"}
       - {label: "Sku", name: "Sku", widget: "string"}
       - {label: "Description", name: "Description", widget: "string"}
       - {label: "For Sale", name: "ForSale", widget: "boolean", default: true}
       - {label: "Sold", name: "Sold", widget: "boolean", required: false}
+      - {label: "Image", name: "File", widget: "image"}
   - name: "galleries"
     label: "Galleries"
     folder: "input/gallery"
-    identifier_field: Title    
     create: true
     extension: "yml"
     fields:
-      - {label: "Title", name: "Title", widget: "string" }
+      - {label: "Title", name: "title", widget: "string" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "pages"
     label: "Pages"
@@ -43,4 +41,4 @@ collections: # A list of collections the CMS should be able to edit
             name: "Galleries"
             widget: "list"
             fields: 
-              - { label: "Gallery", name: "Gallery", widget: "relation", collection: "galleries", searchFields: ["Title"], valueField: "Title" }
+              - { label: "Gallery", name: "Gallery", widget: "relation", collection: "galleries", searchFields: ["title"], valueField: "title" }

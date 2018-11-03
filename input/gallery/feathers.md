@@ -1,5 +1,5 @@
 ---
-Title: Feathers
+title: Feathers
 NavigationTab: feathers
 Images:
   - Image: /assets/paintings/IMG_6311.JPG
