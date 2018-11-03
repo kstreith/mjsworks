@@ -13,6 +13,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     extension: "yml"
     slug: "{{slug}}"
+    identifier_field: Title
     fields: # The fields each document in this collection have
       - {label: "Title", name: "Title", widget: "string"}
       - {label: "File", name: "File", widget: "image"}
@@ -25,6 +26,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "galleries"
     label: "Galleries"
     folder: "input/gallery"
+    identifier_field: Title    
     create: true
     extension: "yml"
     fields:
