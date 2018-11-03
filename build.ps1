@@ -6,5 +6,4 @@
 )
 
 &.\configure-env.ps1 $envName -overrides $overrides -skipLocalFile $skipLocalFile
-gulp
 .\packages\wyam\1.6.0\tools\net462\wyam.exe build -o $outputPath
