@@ -98,13 +98,17 @@ Pipelines.Add("PaintingThumbnails",
     WriteFiles()
 );
 
-Pipelines.Add("AllCss",
-    ReadFiles("assets/css/*.css"),
-    Join(),
-    WriteFiles((doc, ctx) => "assets/css/all.min.css")
+Pipelines.Add("Admin",
+  CopyFiles("admin/*"),
+  WriteFiles()
+);
+
+Pipelines.Add("CopyMinified",
+  CopyFiles("assets/css/all.min.css", "assets/js/*.min.js"),
+  WriteFiles()
 );
 
 Pipelines.Add("Site Resources",
-    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,}"),
+    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,!.js,}"),
     WriteFiles()
 );
