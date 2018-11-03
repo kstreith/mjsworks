@@ -42,4 +42,4 @@ collections: # A list of collections the CMS should be able to edit
             name: "Galleries"
             widget: "list"
             fields: 
-              - { label: "Gallery", name: "Gallery", widget: "relation", collection: "galleries", searchFields: ["title"], valueField: "title" }
+              - { label: "Gallery", name: "Gallery", widget: "string" }
