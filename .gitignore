@@ -31,3 +31,8 @@ bld/
 .vs/
 .vscode/
 packages/
+input/assets/css/all.min.css
+input/assets/js/all.min.js
+input/assets/js/awsPurchase.min.js
+input/assets/js/finalizeAwsSale.min.js
+input/assets/js/paintingPage.min.js
