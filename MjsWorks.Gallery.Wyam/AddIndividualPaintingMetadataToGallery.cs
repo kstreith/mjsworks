@@ -38,6 +38,7 @@ namespace MjsWorks.Gallery.Wyam
                 foreach (var galleryImage in galleryImages)
                 {
                     var galleryImageFile = galleryImage.String("Image");
+                    System.Console.WriteLine($"Looking up {galleryImageFile}");
                     var paintingDocDetails = paintingDocIndexByImage[galleryImageFile];
                     //System.Console.WriteLine($"paintingDocDetails {galleryImageFile}"); // - {JsonConvert.SerializeObject(paintingDocDetails.Keys.ToList())}");
                     var price = paintingDocDetails.Get<double>("Price");
