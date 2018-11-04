@@ -17,7 +17,7 @@ Settings["LinkHideExtensions"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
 Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
 string signingKey = Environment.GetEnvironmentVariable("MJS_STATIC_GENERATION_SIGNING_KEY");
-
+string port = Environment.GetEnvironmentVariable("MJS_WORKS_PORT");
 Pipelines.Add("ContentPages",
     ReadFiles("**/*.md"),
     FrontMatter(Yaml()),
@@ -54,7 +54,7 @@ Pipelines.Add("PaintingPages",
         .SignWithKey(signingKey)
         .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")
         .WithStaticSellerNote("Original encaustic painting")
-        .WithPurchaseCompletionPage("finalizedSale.html", "8080"),
+        .WithPurchaseCompletionPage("finalizedSale.html", port),
     SetNavigation().ToTab("paintings"),        
     WriteFiles(".html").OnlyMetadata(),
     Razor()
