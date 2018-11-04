@@ -75,6 +75,7 @@ Pipelines.Add("PaintingGalleryPages",
     SetNavigation().ToTab("paintings"),
     AddIndividualPaintingMetadataToGallery()
         .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount()),
+    RenderGalleryAsIndexFileWithinFolder(),
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingGalleryLayout.cshtml"),

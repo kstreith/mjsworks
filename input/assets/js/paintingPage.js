@@ -22,7 +22,7 @@
       var nextImage = matchedGallery.NextImage;
       setLink("#prevGalleryImageLink", "/paintings/" + prevImage + ".html?gallery=" + currentGallery);
       setLink("#nextGalleryImageLink", "/paintings/" + nextImage + ".html?gallery=" + currentGallery);
-      setLink("#galleryHomeLink", "/gallery/" + currentGallery + ".html");
+      setLink("#galleryHomeLink", "/gallery/" + currentGallery + "/index.html");
       mjsworks.show(".gallerynav");
     }
 }());
