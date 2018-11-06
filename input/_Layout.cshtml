@@ -3,10 +3,6 @@
 <head>
   @{
       string title = Model.String("Title");
-      string host = Model.String("Host");
-      string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
-      string saleBanner = Model.String("MjsWorks-SaleBanner");
-      string navigationTab = Model.String("NavigationTab") ?? "home";
   }
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +17,7 @@
 <nav class="nav-collapse">
   <ul>
 @{
+    string navigationTab = Model.String("NavigationTab") ?? "home";
     var pages = new []
     {
         new { Title = "Artist Bio", Key = "home", Link = Context.GetLink("/index.html"), LargerBanner = true},
@@ -39,6 +36,9 @@
         string larger = item.Page.LargerBanner ? "larger" : null;
         <li class="@larger"><a href="@(item.Page.Link)" class="@active">@item.Page.Title</a></li>
     }
+    string saleBanner = Model.String("MjsWorks-SaleBanner");
+    string host = Model.String("Host");
+    string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
 }      
   </ul>
 </nav>

@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0004" />
-    <PackageReference Include="Wyam.Common" Version="1.6.0" />
+    <PackageReference Include="Wyam.Common" Version="1.7.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
