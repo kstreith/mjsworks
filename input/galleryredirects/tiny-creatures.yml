@@ -1,0 +1,11 @@
+RedirectFrom:
+  - FromPath: gallery/tiny-creatures/seahorse.html
+    ToPath: /paintings/seahorse.html?gallery=tiny-creatures
+  - FromPath: gallery/tiny-creatures/fancy-flight.html
+    ToPath: /paintings/fancy-flight.html?gallery=tiny-creatures
+  - FromPath: gallery/tiny-creatures/seahorse-and-turtle-friends.html
+    ToPath: /paintings/seahorse-and-turtle-friends.html?gallery=tiny-creatures
+  - FromPath: gallery/tiny-creatures/dragonfly.html
+    ToPath: /paintings/dragonfly.html?gallery=tiny-creatures
+  - FromPath: gallery/tiny-creatures/golden-cage.html
+    ToPath: /paintings/golden-cage.html?gallery=tiny-creatures

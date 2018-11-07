@@ -1,0 +1,19 @@
+RedirectFrom:
+  - FromPath: gallery/landscapes/early-morning.html
+    ToPath: /paintings/early-morning.html?gallery=landscapes
+  - FromPath: gallery/landscapes/letter-home.html
+    ToPath: /paintings/letter-home.html?gallery=landscapes
+  - FromPath: gallery/landscapes/high-tide.html
+    ToPath: /paintings/high-tide.html?gallery=landscapes
+  - FromPath: gallery/landscapes/windy-day.html
+    ToPath: /paintings/windy-day.html?gallery=landscapes
+  - FromPath: gallery/landscapes/looking-for-home.html
+    ToPath: /paintings/looking-for-home.html?gallery=landscapes
+  - FromPath: gallery/landscapes/moms-garden.html
+    ToPath: /paintings/moms-garden.html?gallery=landscapes
+  - FromPath: gallery/landscapes/just-us.html
+    ToPath: /paintings/just-us.html?gallery=landscapes
+  - FromPath: gallery/landscapes/walk-on-the-beach.html
+    ToPath: /paintings/walk-on-the-beach.html?gallery=landscapes
+  - FromPath: gallery/landscapes/just-beneath-the-surface.html
+    ToPath: /paintings/just-beneath-the-surface.html?gallery=landscapes

@@ -1,0 +1,19 @@
+RedirectFrom:
+  - FromPath: gallery/flora/the-pond.html
+    ToPath: /paintings/the-pond.html?gallery=flora
+  - FromPath: gallery/flora/moms-favorite-flowers.html
+    ToPath: /paintings/moms-favorite-flowers.html?gallery=flora
+  - FromPath: gallery/flora/my-two-friends.html
+    ToPath: /paintings/my-two-friends.html?gallery=flora
+  - FromPath: gallery/flora/red-poppy.html
+    ToPath: /paintings/red-poppy.html?gallery=flora
+  - FromPath: gallery/flora/standing-tall.html
+    ToPath: /paintings/standing-tall.html?gallery=flora
+  - FromPath: gallery/flora/red-family.html
+    ToPath: /paintings/red-family.html?gallery=flora
+  - FromPath: gallery/flora/daises.html
+    ToPath: /paintings/daises.html?gallery=flora
+  - FromPath: gallery/flora/three-daises.html
+    ToPath: /paintings/three-daises.html?gallery=flora
+  - FromPath: gallery/flora/hanging-basket.html
+    ToPath: /paintings/hanging-basket.html?gallery=flora

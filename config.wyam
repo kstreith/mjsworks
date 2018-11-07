@@ -14,12 +14,13 @@ Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS
 Settings["MjsWorks-SaleBanner"] = null;
 Settings["MjsWorks-SalePercentDiscount"] = null;
 Settings["LinkHideExtensions"] = false;
+Settings["LinkHideIndexPages"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
 Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
 string signingKey = Environment.GetEnvironmentVariable("MJS_STATIC_GENERATION_SIGNING_KEY");
 string port = Environment.GetEnvironmentVariable("MJS_WORKS_PORT");
 Pipelines.Add("ContentPages",
-    ReadFiles("**/*.md"),
+    ReadFiles("*.md"),
     FrontMatter(Yaml()),
     Markdown()
         .UseExtensions(),
@@ -79,8 +80,31 @@ Pipelines.Add("PaintingGalleryPages",
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingGalleryLayout.cshtml"),
+    ConcatBranch(Redirect()),
     WriteFiles()
 );
+
+Pipelines.Add("Redirects",
+  ReadFiles("galleryredirects/*.yml"),
+  Yaml(),
+  MjsRedirect(),
+  WriteFiles()
+);
+
+/*Pipelines.Add("PaintingGalleryRedirect",
+    ReadFiles("gallery/*.yml"),
+    Yaml(),
+    Concat(
+        ReadFiles("gallery/*.md"),
+        FrontMatter(Yaml()),
+        Markdown()
+            .UseExtensions(),
+        GalleryMarkdownContentToMetadata()           
+    ),
+    RenderGalleryAsIndexFileWithinFolder(),    
+    MjsRedirect(),
+    WriteFiles()
+);*/
 
 Pipelines.Add("PaintingGalleryList",
     ReadFiles("painting.yml"),
