@@ -1,0 +1,9 @@
+RedirectFrom:
+  - FromPath: gallery/mermaids/morning-swim.html
+    ToPath: /paintings/morning-swim.html?gallery=mermaids
+  - FromPath: gallery/mermaids/day-dreamer.html
+    ToPath: /paintings/day-dreamer.html?gallery=mermaids
+  - FromPath: gallery/mermaids/ready-to-swim.html
+    ToPath: /paintings/ready-to-swim.html?gallery=mermaids
+  - FromPath: gallery/mermaids/dreamer.html
+    ToPath: /paintings/dreamer.html?gallery=mermaids
