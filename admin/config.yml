@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: kstreith/mjsworks
+  branch: mjsworks-wyam
+
+media_folder: "input/assets/paintings" # Folder where user uploaded files should go
+public_folder: "assets/paintings"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "painting" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Painting" # Used in the UI, ie.: "New Post"
+    folder: "input/paintings" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    extension: "yml"
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Size", name: "Size", widget: "string"}
+      - {label: "Price", name: "Price", widget: "number", valueType: "float"}
+      - {label: "Sku", name: "Sku", widget: "string"}
+      - {label: "Description", name: "Description", widget: "string"}
+      - {label: "For Sale", name: "ForSale", widget: "boolean", default: true}
+      - {label: "Sold", name: "Sold", widget: "boolean", required: false}
+      - {label: "Image", name: "File", widget: "image"}
+  - name: "galleries"
+    label: "Galleries"
+    folder: "input/gallery"
+    create: true
+    extension: "yml"
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "Cover Image", name: "CoverImage", widget: "image" }
+      - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Painting Gallery"
+        name: "painting"
+        file: "input/painting.yml"
+        fields:
+          - label: "Galleries"
+            name: "Galleries"
+            widget: "list"
+            fields: 
+              - { label: "Gallery", name: "Gallery", widget: "string" }

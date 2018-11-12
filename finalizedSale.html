@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Completed Purchase - MJS Works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<meta property="og:title" content="Completed Purchase - MJS Works"></meta>
+<meta property="og:description" content="Completed Purchase"></meta>
+<meta name="description" content="Completed Purchase"></meta>
+
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/all.min.css?2018041701">
+</head>
+<body>
+<div class="header">MJS Works</div>
+<nav class="nav-collapse">
+  <ul>
+        <li class="larger"><a href="/index.html" class="active">Artist Bio</a></li>
+        <li class="larger"><a href="/painting.html">Paintings</a></li>
+        <li class="larger"><a href="/gallery/feathers/index.html">Feathers</a></li>
+        <li><a href="/shows.html">Shows</a></li>
+        <li><a href="/forpurchase.html">Buy</a></li>
+  </ul>
+</nav>
+<div style="clear: both"></div>
+<div class="banner"><div class="bannertext"></div></div>
+
+
+
+
+<div class="content">
+    <div id="loading">
+        Loading receipt details, please be patient...
+        If you have any questions, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="successfulPurchase" style="display:none">
+        <p>Thank you for purchase, your order number is <span id="orderNumber"></span></p>
+        <p>You should receive an e-mail from Amazon shortly confirming your order.</p>
+        <p>Your encaustic painting must be manually packed and shipped, that may take up to 7 days.</p>
+        <p>Once it is shipped, your card will be charged and you will receive another e-mail with a tracking number.</p>
+        <p>If you have any questions about your order, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a></p>
+    </div>
+    <div id="abandonedPurchase" style="display:none">
+        We noticed you cancelled your order, if you have any questions, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="rejectedPurchase" style="display:none">
+        It appears Amazon rejected your order, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="technicalIssuesPurchase" style="display:none">
+        There was a problem processing your order, the error is <span id="technicalCode">E100</span>. Your order will NOT be processed, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+</div>
+
+<footer class="footer">
+  <div>
+    <a href="mailto:info@mjsworks.com"><img alt="E-mail" src="/assets/images/email.png" /></a>
+    <a href="https://www.facebook.com/mjsworks"><img alt="Facebook" src="/assets/images/facebook_1.png" /></a>
+    <a href="https://twitter.com/mjsworks"><img alt="Twitter" src="/assets/images/twitter_2.png" /></a>
+  </div>
+  <div class="footerPolicy">
+    <a href="/privacyPolicy.html">Privacy</a> | <a href="/faq.html">FAQ</a>
+  </div>
+</footer>
+<script src="/assets/js/all.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48125849-1', 'mjsworks.com');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function () {
+    var nav = responsiveNav(".nav-collapse", {insert: "before"});
+  }());
+</script>
+
+    <script>
+        var mjsworks = mjsworks || {};
+        mjsworks.mode = "prod";
+    </script>
+    <script src="/js/finalizeAwsSale.min.js"></script>
+
+</body>
+</html>
