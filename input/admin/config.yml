@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: kstreith/mjsworks
-  branch: mjsworks-wyam
+  branch: master
 
 media_folder: "input/assets/paintings" # Folder where user uploaded files should go
 public_folder: "assets/paintings"
