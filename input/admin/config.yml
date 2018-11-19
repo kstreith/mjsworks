@@ -31,9 +31,26 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
+  - name: "galleriesWithDescription"
+    label: "Galleries With Description"
+    folder: "input/gallery"
+    create: true
+    extension: "md"
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "Description", name: "body", widget: "markdown" }
+      - {label: "Cover Image", name: "CoverImage", widget: "image" }
+      - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "pages"
     label: "Pages"
     files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "input/index.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }                              
       - label: "Painting Gallery"
         name: "painting"
         file: "input/painting.yml"
@@ -43,3 +60,33 @@ collections: # A list of collections the CMS should be able to edit
             widget: "list"
             fields: 
               - { label: "Gallery", name: "Gallery", widget: "string" }
+      - label: "Buy"
+        name: "buy"
+        file: "input/forpurchase.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Navigation Tab", name: "NavigationTab", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }          
+      - label: "Shows"
+        name: "shows"
+        file: "input/shows.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Navigation Tab", name: "NavigationTab", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Faq"
+        name: "faq"
+        file: "input/faq.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Privacy Policy"
+        name: "privacypolicy"
+        file: "input/privacyPolicy.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }          
