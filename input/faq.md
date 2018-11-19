@@ -2,6 +2,7 @@
 Title: FAQ - MJS Works
 Description: Frequently asked questions
 ---
+
 # Frequently Asked Questions
 
 * [About Encaustic Paintings](#about_paintings)
@@ -26,45 +27,39 @@ To return the painting to its original luster, simply buff the surface with a so
 ## <a id="shipping_policy"></a> Shipping Policy
 
 ### Cost
-
 Shipping is **free** to an address within the continental United States.
 
-If you want to ship outside the continental United States, we will attempt to accomodate that, but shipping will be charged separately and you need to contact us at <mailto:info@mjsworks.com> before you complete the purchase.
+If you want to ship outside the continental United States, we will attempt to accomodate that, but shipping will be charged separately and you need to contact us at [info@mjsworks.com](mailto:info@mjsworks.com) before you complete the purchase.
 
 ### Delivery Details
-
-We will package and ship your item as quickly as we can, but life happens and it may take up to 7 business days after purchase before it is shipped. If you want an update on your order, please contact us at <mailto:info@mjsworks.com>.
+We will package and ship your item as quickly as we can, but life happens and it may take up to 7 business days after purchase before it is shipped. If you want an update on your order, please contact us at [info@mjsworks.com](mailto:info@mjsworks.com).
 
 Once shipped you will receive an e-mail notification with a tracking number.
 
 Your item will typically be shipped via US Postal Service Priority Mail from Raleigh, North Carolina. You can consult the [USPS Priority Mail Map](https://www.usps.com/priority-mail/map/) with a zip code of 27571 for an expected delivery time to your location, typically 3 business days or less.
 
-If your item is damaged, please contact us at <mailto:info@mjsworks.com> and consult the return policy below.
+If your item is damaged, please contact us at [info@mjsworks.com](mailto:info@mjsworks.com) and consult the return policy below.
 
 ## <a id="return_policy"></a> Return Policy
 
-Thanks for shopping at MJS Works, LLC. If you are not entirely satisfied with your purchase, we're here to help. Please reach out to us at <mailto:info@mjsworks.com> and we'll happily assist you.
+Thanks for shopping at MJS Works, LLC. If you are not entirely satisfied with your purchase, we're here to help. Please reach out to us at [info@mjsworks.com](mailto:info@mjsworks.com) and we'll happily assist you.
 
 ### Amazon Payments A-Z Guarantee
-
 Your purchase is covered by the [Amazon Payments A-Z Guarantee](https://pay.amazon.com/us/help/201212420). You must first initiate a return under the below policy for MJS Works. But in the case of disputes, those can be escalated directly to [Amazon Payments](https://pay.amazon.com/us/help/201212420).
 
 ### Returns
-
 You have 14 calendar days to return an item from the date you received it. To be eligible for a return, your item must be in the original packaging.
 
 ### Refunds
-
 Once we receive your item, we will inspect it and notify you that we have received your returned item and the status of your return. If your return is approved, we will refund the purchase amount to your credit card via Amazon Payments, subject to your card issuer's policies.
 
 ### Shipping
-
-Shipping charges for all returns must be prepaid by you. Please contact us at <mailto:info@mjsworks.com> for the return address in North Carolina, US. The return will only be processed when the item is received by us. You are responsible for any loss or damage to the item during shipment.
+Shipping charges for all returns must be prepaid by you. Please contact us at [info@mjsworks.com](mailto:info@mjsworks.com) for the return address in North Carolina, US. The return will only be processed when the item is received by us. You are responsible for any loss or damage to the item during shipment.
 
 ### Contact Us
-
-If you have any questions on how to return your item to us, contact us at <mailto:info@mjsworks.com>.
+If you have any questions on how to return your item to us, contact us at [info@mjsworks.com](mailto:info@mjsworks.com).
 
 ## <a id="privacy_policy"></a> Privacy Policy
 
 Read the [site's privacy policy](/privacyPolicy.html)
+
