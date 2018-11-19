@@ -1,7 +1,0 @@
-Run .\configure-env1.ps1 to set environment variables, default is local
-wintersmith preview to preview
-wintersmith build -o ..\mjsworksdeploy to build locally
-
-
-Need to create .json file in $env:APPDATA\mjsworks\ folder
-Valid values are: local.json, stage.json, prod.json
