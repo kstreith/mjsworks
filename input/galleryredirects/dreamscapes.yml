@@ -1,0 +1,21 @@
+RedirectFrom:
+  - FromPath: gallery/dreamscapes/bamboo-forest.html
+    ToPath: /paintings/bamboo-forest.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/water-dancing.html
+    ToPath: /paintings/water-dancing.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/boat.html
+    ToPath: /paintings/boat.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/nightime-forest.html
+    ToPath: /paintings/nightime-forest.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/frog.html
+    ToPath: /paintings/frog.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/dreaming-of-spring.html
+    ToPath: /paintings/dreaming-of-spring.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/fireflies.html
+    ToPath: /paintings/fireflies.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/sleeping-garden.html
+    ToPath: /paintings/sleeping-garden.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/lighthouse.html
+    ToPath: /paintings/lighthouse.html?gallery=dreamscapes
+  - FromPath: gallery/dreamscapes/farmhouse.html
+    ToPath: /paintings/farmhouse.html?gallery=dreamscapes

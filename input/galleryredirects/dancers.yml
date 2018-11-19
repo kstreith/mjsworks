@@ -1,0 +1,9 @@
+RedirectFrom:
+  - FromPath: gallery/dancers/reaching-for-the-stars.html
+    ToPath: /paintings/reaching-for-the-stars.html?gallery=dancers
+  - FromPath: gallery/dancers/friends.html
+    ToPath: /paintings/friends.html?gallery=dancers
+  - FromPath: gallery/dancers/dancing-with-your-dreams.html
+    ToPath: /paintings/dancing-with-your-dreams.html?gallery=dancers
+  - FromPath: gallery/dancers/faith.html
+    ToPath: /paintings/faith.html?gallery=dancers

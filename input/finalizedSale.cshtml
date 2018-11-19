@@ -1,0 +1,50 @@
+---
+Title: Completed Purchase - MJS Works
+Description: Completed Purchase
+---
+
+@{
+    Layout = @"/_Layout.cshtml";
+    string title = Model.String("Title");
+    string description = Model.String("Description");
+}
+
+@section Metadata {
+<meta property="og:title" content="@title"></meta>
+<meta property="og:description" content="@description"></meta>
+<meta name="description" content="@description"></meta>
+}
+
+@{ 
+    var siteMode = Model.String("MjsWorks-SiteMode");
+}
+@section Scripts {
+    <script>
+        var mjsworks = mjsworks || {};
+        mjsworks.mode = "@siteMode";
+    </script>
+    <script src="/js/finalizeAwsSale.min.js"></script>
+}
+
+<div class="content">
+    <div id="loading">
+        Loading receipt details, please be patient...
+        If you have any questions, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="successfulPurchase" style="display:none">
+        <p>Thank you for purchase, your order number is <span id="orderNumber"></span></p>
+        <p>You should receive an e-mail from Amazon shortly confirming your order.</p>
+        <p>Your encaustic painting must be manually packed and shipped, that may take up to 7 days.</p>
+        <p>Once it is shipped, your card will be charged and you will receive another e-mail with a tracking number.</p>
+        <p>If you have any questions about your order, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a></p>
+    </div>
+    <div id="abandonedPurchase" style="display:none">
+        We noticed you cancelled your order, if you have any questions, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="rejectedPurchase" style="display:none">
+        It appears Amazon rejected your order, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+    <div id="technicalIssuesPurchase" style="display:none">
+        There was a problem processing your order, the error is <span id="technicalCode">E100</span>. Your order will NOT be processed, please e-mail <a href="mailto:info@mjsworks.com">info@mjsworks.com</a>.
+    </div>
+</div>

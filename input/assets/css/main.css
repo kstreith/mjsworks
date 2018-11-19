@@ -1,0 +1,271 @@
+/* Custom Styles */
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.eot');
+    src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.woff') format('woff'),
+         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.ttf') format('truetype'),
+         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'caviar_dreamsregular';
+            src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    }
+}
+
+body {
+  background-color: #035B74;
+  background-image: radial-gradient(circle at top right, #FFC668, #035B74);
+  background-attachment: fixed;
+}
+
+.photo {
+  padding: 10px;
+}
+
+.photoinstruction {
+  font-size: 50%;
+}
+
+.photocontent {
+  padding-top: 30px;
+}
+
+.header {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 35px;
+  float: left;
+  background-color: #fff;
+  text-align: center;
+  opacity: 0.7;
+  color: black;
+  border-radius: 6px;
+  margin-bottom: 10px;    
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+body {
+  font-family: 'caviar_dreamsregular';
+  font-size: 24px;
+}
+
+.leftsidebar {
+  width: 30%;
+}
+
+.sideimg {
+  float: left;
+  max-width: 100%;
+  height: auto;  
+  padding-right: 10px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  background-color: white;  
+  min-height: 520px;
+  padding: 15px;
+}
+
+.content, .banner {
+  min-width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.banner {
+  background-color: #cce5ff;
+}
+
+.bannertext {
+  max-width: 450px;
+  margin: auto;
+  color: #004085;
+  font-weight: bold;
+}
+
+.footer {
+  font-size: 14px;
+  width: 241px;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footerPolicy {
+  font-size: 1.5em;
+}
+
+.footerPolicy > a {
+  color: white;
+}
+
+.photocontent .photoseriestitle {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+} 
+
+.gallerylink {
+  font-size: 0.6em;
+  float: right;
+}
+
+.photoblock {
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+}
+
+.photoblock img {
+  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.photoblocktext {
+  text-align: center;
+  color: black;
+  font-size: 0.75em;
+}
+
+.photoblocktext.sold {
+  color: red;
+}
+
+.content p:nth-of-type(1) {
+  margin: 0px;
+}
+
+.logocontainer {
+  clear: both;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+#slidy-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gallerycontent {
+  text-align: center;
+}
+
+.galleryimage {
+  display: block;
+}
+
+.galleryimage > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallerynav a {
+  color: black;
+}
+.galleryimagetitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallerycontent {
+  background-color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sellPanel {
+  margin-top: 1em;
+  border: 5px ridge black;
+  padding: 5px;
+  border-radius: 20px;
+}
+.sellFooter {
+  font-size: .7em;
+  margin-top: 1em;
+}
+
+.disabledPurchase {
+  color: #721c24;
+  font-weight: bold;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+@media screen and (min-width: 75em) {
+  .columnContainer {
+    display: table;
+    table-layout: fixed;    
+    width: 100%;
+  }
+  .sellUi .details {
+    display: table-cell;
+    padding-right: 1em;
+    width: 75%;
+  }
+  .sellPanel {
+    display: none;
+  }
+  .sellUi .sellPanel {
+    display: table-cell;
+    width: 25%;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    width: 300px;
+    margin: auto;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .nav-collapse a {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .content {
+    padding: 30px;    
+  }
+
+  .content, .banner {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+
+  .logoContainer {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+}
+

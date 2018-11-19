@@ -1,0 +1,15 @@
+RedirectFrom:
+  - FromPath: gallery/feathers/the-world-is-her-stage.html
+    ToPath: /paintings/the-world-is-her-stage.html?gallery=feathers
+  - FromPath: gallery/feathers/three-amigos.html
+    ToPath: /paintings/three-amigos.html?gallery=feathers
+  - FromPath: gallery/feathers/right.html
+    ToPath: /paintings/right.html?gallery=feathers
+  - FromPath: gallery/feathers/beach-bound.html
+    ToPath: /paintings/beach-bound.html?gallery=feathers
+  - FromPath: gallery/feathers/just-hanging.html
+    ToPath: /paintings/just-hanging.html?gallery=feathers
+  - FromPath: gallery/feathers/find-your-balance.html
+    ToPath: /paintings/find-your-balance.html?gallery=feathers
+  - FromPath: gallery/feathers/blue.html
+    ToPath: /paintings/blue.html?gallery=feathers

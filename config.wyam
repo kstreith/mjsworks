@@ -1,0 +1,139 @@
+#n Wyam.Yaml
+#n Wyam.Razor
+#n Wyam.Markdown
+#n Wyam.Minification
+
+#a MjsWorks.Image.Wyam\bin\Release\netstandard2.0\MjsWorks.Image.Wyam.dll
+#a MjsWorks.SalesDiscount.Wyam\bin\Release\netstandard2.0\MjsWorks.SalesDiscount.Wyam.dll
+#a MjsWorks.AmazonPay.Wyam\bin\Release\netstandard2.0\MjsWorks.AmazonPay.Wyam.dll
+#a MjsWorks.Gallery.Wyam\bin\Release\netstandard2.0\MjsWorks.Gallery.Wyam.dll
+
+Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
+Settings["LinksUseHttps"] = Environment.GetEnvironmentVariable("MJS_WORKS_USE_HTTPS") == "false" ? false : true;
+Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
+Settings["MjsWorks-SaleBanner"] = null;
+Settings["MjsWorks-SalePercentDiscount"] = null;
+Settings["LinkHideExtensions"] = false;
+Settings["LinkHideIndexPages"] = false;
+Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
+Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
+string signingKey = Environment.GetEnvironmentVariable("MJS_STATIC_GENERATION_SIGNING_KEY");
+string port = Environment.GetEnvironmentVariable("MJS_WORKS_PORT");
+Pipelines.Add("ContentPages",
+    ReadFiles("*.md"),
+    FrontMatter(Yaml()),
+    Markdown()
+        .UseExtensions(),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_ContentPageLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("FinalizedSale",
+    ReadFiles("finalizedSale.cshtml"),
+    FrontMatter(Yaml()),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor(),
+    WriteFiles()
+);
+
+Pipelines.Add("PaintingPages",
+    ReadFiles("paintings/*.yml"),
+    Yaml(),
+    ImageInfo()
+        .OutputMetadataWithPrefix("PaintingImage"),
+    SalesDiscount(),
+    AddParentGalleryMetadataToPainting()
+        .WithGalleryDocuments(
+            ReadFiles("gallery/*.yml"), Yaml(),
+            Concat(
+                ReadFiles("gallery/*.md"),
+                FrontMatter(Yaml())
+            )),
+    AmazonPay()
+        .SignWithKey(signingKey)
+        .WithAmazonPayConfig("AKIAIM3SZ2U2PKXWGYYA", "A3IO5ZO9PFIM3P", "amzn1.application-oa2-client.094733663c3d46519ad829672b45a184")
+        .WithStaticSellerNote("Original encaustic painting")
+        .WithPurchaseCompletionPage("finalizedSale.html", port),
+    SetNavigation().ToTab("paintings"),        
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingPageLayout.cshtml"),
+    WriteFiles()
+);
+
+Pipelines.Add("PaintingGalleryPages",
+    ReadFiles("gallery/*.yml"),
+    Yaml(),
+    Concat(
+        ReadFiles("gallery/*.md"),
+        FrontMatter(Yaml()),
+        Markdown()
+            .UseExtensions(),
+        GalleryMarkdownContentToMetadata()           
+    ),
+    SetNavigation().ToTab("paintings"),
+    AddIndividualPaintingMetadataToGallery()
+        .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount()),
+    RenderGalleryAsIndexFileWithinFolder(),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingGalleryLayout.cshtml"),
+    ConcatBranch(Redirect()),
+    WriteFiles()
+);
+
+Pipelines.Add("Redirects",
+  ReadFiles("galleryredirects/*.yml"),
+  Yaml(),
+  MjsRedirect(),
+  WriteFiles()
+);
+
+/*Pipelines.Add("PaintingGalleryRedirect",
+    ReadFiles("gallery/*.yml"),
+    Yaml(),
+    Concat(
+        ReadFiles("gallery/*.md"),
+        FrontMatter(Yaml()),
+        Markdown()
+            .UseExtensions(),
+        GalleryMarkdownContentToMetadata()           
+    ),
+    RenderGalleryAsIndexFileWithinFolder(),    
+    MjsRedirect(),
+    WriteFiles()
+);*/
+
+Pipelines.Add("PaintingGalleryList",
+    ReadFiles("painting.yml"),
+    Yaml(),
+    SetNavigation().ToTab("paintings"),
+    AddIndividualGalleryMetadata()
+        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml()),
+    WriteFiles(".html").OnlyMetadata(),
+    Razor()
+        .WithLayout("/_PaintingGalleryListLayout.cshtml"),
+    WriteFiles()
+);
+Pipelines.Add("PaintingThumbnails",
+    ReadFiles("assets/paintings/*"),
+    ThumbnailImage(),
+    WriteFiles()
+);
+
+Pipelines.Add("Admin",
+  CopyFiles("admin/*"),
+  WriteFiles()
+);
+
+Pipelines.Add("CopyMinified",
+  CopyFiles("assets/css/all.min.css", "assets/js/*.min.js"),
+  WriteFiles()
+);
+
+Pipelines.Add("Site Resources",
+    CopyFiles("**/*{!.cshtml,!.md,!.less,!.yml,!.scss,!.css,!.js,}"),
+    WriteFiles()
+);

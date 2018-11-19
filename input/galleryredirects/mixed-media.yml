@@ -1,0 +1,23 @@
+RedirectFrom:
+  - FromPath: gallery/mixed-media/letter-to-mom.html
+    ToPath: /paintings/letter-to-mom.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/keep-me-safe.html
+    ToPath: /paintings/keep-me-safe.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/dancing-pen.html
+    ToPath: /paintings/dancing-pen.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/hidden-beauty.html
+    ToPath: /paintings/hidden-beauty.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/sailing-away.html
+    ToPath: /paintings/sailing-away.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/fading-beauty.html
+    ToPath: /paintings/fading-beauty.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/golden-leaf.html
+    ToPath: /paintings/golden-leaf.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/lights-on.html
+    ToPath: /paintings/lights-on.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/birds-in-flight.html
+    ToPath: /paintings/birds-in-flight.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/avas-pond.html
+    ToPath: /paintings/avas-pond.html?gallery=mixed-media
+  - FromPath: gallery/mixed-media/rose.html
+    ToPath: /paintings/rose.html?gallery=mixed-media

@@ -1,0 +1,11 @@
+RedirectFrom:
+  - FromPath: gallery/butterfly/close-your-eyes-and-fly.html
+    ToPath: /paintings/close-your-eyes-and-fly.html?gallery=butterfly
+  - FromPath: gallery/butterfly/fly-away-home-no-1.html
+    ToPath: /paintings/fly-away-home-no-1.html?gallery=butterfly
+  - FromPath: gallery/butterfly/fly-away-home-no-2.html
+    ToPath: /paintings/fly-away-home-no-2.html?gallery=butterfly
+  - FromPath: gallery/butterfly/fly-away-home-no-3.html
+    ToPath: /paintings/fly-away-home-no-3.html?gallery=butterfly
+  - FromPath: gallery/butterfly/room-to-move.html
+    ToPath: /paintings/room-to-move.html?gallery=butterfly

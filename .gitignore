@@ -1,0 +1,38 @@
+*node_modules/*
+*node_modules2/*
+*~
+*.swp
+Thumbs.db
+output/*
+config.wyam.*
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studo 2015 cache/options directory
+.vs/
+.vscode/
+packages/
+input/assets/css/all.min.css
+input/assets/js/all.min.js
+input/assets/js/awsPurchase.min.js
+input/assets/js/finalizeAwsSale.min.js
+input/assets/js/paintingPage.min.js

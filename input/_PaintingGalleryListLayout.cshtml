@@ -1,0 +1,34 @@
+@{
+    Layout = @"/_Layout.cshtml";
+    string galleryPage = Model.String("SourceFileBase");
+    string title = Model.String("Title");
+    string description = Model.String("Description");
+    IDocument[] galleries = Model.Get<IDocument[]>("Galleries");
+}
+
+@section Metadata {
+<meta property="og:title" content="@title"></meta>
+<meta property="og:description" content="@description">
+<meta name="description" content="@description">
+}
+
+@{ IgnoreBody(); }
+
+<div class="content photocontent">
+    <div class="photoseriestitle">Galleries</div>
+    <div class="photoinstruction">Click to view images for gallery</div>
+    @foreach (var gallery in galleries) {
+        string galleryName = gallery.String("Gallery");
+        string galleryTitle = gallery.String("Title");
+        string galleryCoverImage = gallery.String("CoverImage");
+        var galleryThumbnailCoverImage = galleryCoverImage.Substring(0, galleryCoverImage.Length - 4);
+        galleryThumbnailCoverImage = $"{galleryThumbnailCoverImage}-thumbnail.jpg";
+
+        <div class="photoblock">
+            <a href="/gallery/@(galleryName)/index.html" title="@galleryTitle">
+                <img class="photo" src="@galleryThumbnailCoverImage" alt="@galleryTitle" />
+            </a>
+            <div class="photoblocktext">@galleryTitle</div>
+        </div>
+    }
+</div>

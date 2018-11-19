@@ -1,0 +1,62 @@
+@{
+    Layout = @"/_Layout.cshtml";
+    string galleryPage = Model.String("SourceFileBase");
+    string title = Model.String("Title");
+    string description = Model.String("Description");
+    IDocument[] images = Model.Get<IDocument[]>("Images");
+    var textContent = Model.String("FileContent");
+}
+
+@section Metadata {
+<meta property="og:title" content="@title"></meta>
+<meta property="og:description" content="@description">
+<meta name="description" content="@description">
+}
+
+@{ IgnoreBody(); }
+
+<div class="content photocontent">
+    @if (textContent != null) {
+        @Html.Raw(textContent)
+        <br/>
+    } else {
+    <a class="gallerylink" href="/painting.html">Back to Gallery Listing</a>
+    <div class="photoseriestitle">@title</div>
+    }
+    <div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
+    <div>
+        @foreach (var image in images) {
+            string imageFile = image.String("Image");
+            var thumbnailImageFile = imageFile.Substring(0, imageFile.Length - 4);
+            thumbnailImageFile = $"{thumbnailImageFile}-thumbnail.jpg";
+            string imageTitle = image.String("Title");
+            string imagePage = image.String("SourceFileBase");
+            bool imageSold = image.Bool("Sold");
+            bool imageForSale = image.Bool("ForSale");
+            string imageSize = image.String("Size");
+            string imagePrice = $"{image.Get<double>("Price"):C}";
+            double? imageOriginalPrice = image.Get<double?>("OriginalPrice");
+            string imageOriginalPriceFormatted = null;
+            if (imageOriginalPrice != null)
+            {
+                imageOriginalPriceFormatted = $"{imageOriginalPrice:C}";
+            }
+            <div class="photoblock">
+                <a href="/paintings/@(imagePage).html?gallery=@galleryPage" title="@imageTitle">
+                    <img class="photo" src="@thumbnailImageFile" alt="@imageTitle" />
+                </a>
+                <div class="photoblocktext">@imageTitle</div>
+                @if (imageSold) {
+                    <div class="photoblocktext sold">Sold</div>
+                }
+                else {
+                    <div class="photoblocktext">@imageSize</div>
+                }
+                @if (imageForSale && !imageSold) {
+                    <div class="photoblocktext">Price: @imagePrice @if (imageOriginalPriceFormatted != null) {<span class="originalPrice">@imageOriginalPriceFormatted</span>}</div>
+                    <div class="photoblocktext">Click on image to buy</div>
+                }
+            </div>
+        }
+    </div>
+</div>
