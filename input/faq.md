@@ -12,7 +12,7 @@ Description: Frequently asked questions
 
 ## <a id="about_paintings"></a> About Encaustic Paintings
 
-Test. All my encaustic paintings are original works and hand-painted. They are painted on wood birch panels with 7/8 inch thickness on the side unless otherwise noted in the image description. The paintings are ready to hang with gallery gauge wire on back and should hang flush on the wall.
+All my encaustic paintings are original works and hand-painted. They are painted on wood birch panels with 7/8 inch thickness on the side unless otherwise noted in the image description. The paintings are ready to hang with gallery gauge wire on back and should hang flush on the wall.
 
 My encaustic paintings are typically made from cosmetic grade bees wax with [damar resin](http://www.encausticpaints.com/OurProducts/Sundries/DamarResin/tabid/387/Default.aspx) added and pigments for color, but may include other mixed media elements depending on the painting.
 Encaustic is a beeswax-based paint that is kept molten on a heated palette. It is applied to a surface and reheated to fuse the paint into a uniform enamel-like finish. The term “Encaustic” is derived from the Greek word “enkaien” and means “to burn into”.  
