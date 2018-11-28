@@ -4,17 +4,6 @@ Description: The artistic works of Marcia Jo Streithorst
 NavigationTab: shows
 ---
 
-January 2019  
-Group Show  
-Contemporary Art Exchange  
-Washington, NC
-
-My work is featured as part of the Mixed Media Artist Guild show.
-
-https://www.thecontemporaryartexchange.com/  
-
-----------
-
 November 2018  
 Guest Artist  
 Soulful Heart Studios  
