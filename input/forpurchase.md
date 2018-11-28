@@ -10,11 +10,11 @@ Buy my encaustic paintings direct from my site, browse the Paintings section and
 
 ### In Person - Artists Loft at Wake Forest Coffee Shop    
 
-My encaustic paintings are available for purchase at [Wake Forest Artists Loft](http://wfartistsloft.com/), this is on the second floor of the Wake Forest Coffee Shop. Wake Forest Coffee Shop is located at 156 S. White Street Wake Forest, North Carolina 
+My encaustic paintings are available for purchase at [Bull city framing](https://www.bullcityartandframecompany.com/) in Durham NC, and [Going Local NC](https://goinglocalnc.com/) in Wilmington NC.
 
 ### Encaustic Workshops
 
-I occassionally teach encaustic workshops at the [Artists Loft](http://wfartistsloft.com/) at the Wake Forest Coffee Shop. You can find the current class schedule at the [Wake Forest Artists Loft website](http://wfartistsloft.com/booking/eventList.php). I teach both an beginners class and an intermediate class.
+I occassionally teach encaustic workshops at the [SoulfulHeart](http://deborahsoulfulheart.com/1767-2/) in Rolesville NC, and [Going Local NC](https://goinglocalnc.com/) in Wilmington NC. I teach both a beginners class and a intermediate class and would love to come teach for you so if you are interested in having me as a guest teaching artist please let me know.
   
 ### Commissioned Work
 
