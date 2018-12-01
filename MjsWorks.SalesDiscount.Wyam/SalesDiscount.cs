@@ -15,7 +15,7 @@ namespace MjsWorks.SalesDiscount.Wyam
         {
         }
 
-        public SalesDiscount WithDiscount(double discount)
+        public SalesDiscount WithDiscount(double? discount)
         {
             _discount = discount;
             return this;
@@ -42,7 +42,7 @@ namespace MjsWorks.SalesDiscount.Wyam
                     return context.GetDocument(doc, null);
                 }
                 var originalPrice = doc.Get<double>(_priceKey);
-                var price = originalPrice * 0.3;
+                var price = originalPrice * (1 - _discount);
                 return context.GetDocument(doc, new Dictionary<string, object>
                 {
                     [_priceKey] = price,

@@ -12,7 +12,7 @@ Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
 Settings["LinksUseHttps"] = Environment.GetEnvironmentVariable("MJS_WORKS_USE_HTTPS") == "false" ? false : true;
 Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
 Settings["MjsWorks-SaleBanner"] = null;
-Settings["MjsWorks-SalePercentDiscount"] = null;
+double? discount = null;
 Settings["LinkHideExtensions"] = false;
 Settings["LinkHideIndexPages"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
@@ -43,7 +43,7 @@ Pipelines.Add("PaintingPages",
     Yaml(),
     ImageInfo()
         .OutputMetadataWithPrefix("PaintingImage"),
-    SalesDiscount(),
+    SalesDiscount().WithDiscount(discount),
     AddParentGalleryMetadataToPainting()
         .WithGalleryDocuments(
             ReadFiles("gallery/*.yml"), Yaml(),
@@ -75,7 +75,7 @@ Pipelines.Add("PaintingGalleryPages",
     ),
     SetNavigation().ToTab("paintings"),
     AddIndividualPaintingMetadataToGallery()
-        .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount()),
+        .WithPaintingDocuments(ReadFiles("paintings/*.yml"), Yaml(), SalesDiscount().WithDiscount(discount)),
     RenderGalleryAsIndexFileWithinFolder(),
     WriteFiles(".html").OnlyMetadata(),
     Razor()
@@ -90,21 +90,6 @@ Pipelines.Add("Redirects",
   MjsRedirect(),
   WriteFiles()
 );
-
-/*Pipelines.Add("PaintingGalleryRedirect",
-    ReadFiles("gallery/*.yml"),
-    Yaml(),
-    Concat(
-        ReadFiles("gallery/*.md"),
-        FrontMatter(Yaml()),
-        Markdown()
-            .UseExtensions(),
-        GalleryMarkdownContentToMetadata()           
-    ),
-    RenderGalleryAsIndexFileWithinFolder(),    
-    MjsRedirect(),
-    WriteFiles()
-);*/
 
 Pipelines.Add("PaintingGalleryList",
     ReadFiles("painting.yml"),

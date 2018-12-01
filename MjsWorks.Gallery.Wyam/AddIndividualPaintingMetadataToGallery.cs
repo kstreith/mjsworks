@@ -51,8 +51,8 @@ namespace MjsWorks.Gallery.Wyam
                         ["Sold"] = paintingDocDetails.Bool("Sold"),
                         ["ForSale"] = paintingDocDetails.Bool("ForSale"),
                         ["SourceFileBase"] = paintingDocDetails.String("SourceFileBase"),
-                        ["Price"] = price
-                        //["OriginalPrice"] = paintingDocDetails.Get<double?>("OriginalPrice")
+                        ["Price"] = price,
+                        ["OriginalPrice"] = paintingDocDetails.Get<double?>("OriginalPrice")
                     });
                     outputGalleryImageDocs.Add(newGalleryImageDoc);
                 }
