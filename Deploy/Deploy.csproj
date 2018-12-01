@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wyam" Version="1.7.1" />
+    <PackageReference Include="Wyam" Version="2.0.0" />
   </ItemGroup>
 
 </Project>

@@ -9,4 +9,4 @@
 npm install
 dotnet restore --packages packages Deploy\Deploy.csproj
 dotnet build -c "Release"
-.\packages\wyam\1.7.1\tools\net462\wyam.exe -p 8080 -w
+dotnet .\packages\wyam\2.0.0\tools\netcoreapp2.1\wyam.dll preview -p 8080 -w
