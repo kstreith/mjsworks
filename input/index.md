@@ -9,7 +9,7 @@ Encaustic paintings and workshops by Marcia Jo Streithorst. View my work either 
 
 You can purchase directly from my site using your existing Amazon account and I will ship to you. Browse my [Paintings](/painting.html) from the menu.
 
-Want to learn how to get started painting encaustics yourself? Want to make a encaustic painting with your own hands for your home or as a personalized gift? Book an encaustic workshop with me at the [Wake Forest Artists Loft](http://wfartistsloft.com/booking/eventList.php)!
+
 
 ### About Me
 
