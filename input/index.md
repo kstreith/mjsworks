@@ -9,7 +9,17 @@ Encaustic paintings and workshops by Marcia Jo Streithorst. View my work either 
 
 You can purchase directly from my site using your existing Amazon account and I will ship to you. Browse my [Paintings](/painting.html) from the menu.
 
+### Upcoming Workshops
 
+-  Natures calling an encaustic mixed media experience  
+   When: Saturday Feb 23rd 2019 11am-2pm 
+   Where: Going Local NC 208 N Front St, Wilmington, North Carolina 28401  
+   To register call Going Local NC at (910)769-4833
+       
+- Seascapes and mermaids  
+  When: Saturday April 20th 2019 10am-12:30pm  
+  Where: Soulful heART Studio at The Young Farm, 507 East Young Street, Rolesville, NC  27571  
+  To register click the [link](http://deborahsoulfulheart.com/product/encaustic-painting-using-nature-with-marcia-streithorst/)
 
 ### About Me
 
