@@ -4,19 +4,19 @@ Description: The artistic works of Marcia Jo Streithorst
 NavigationTab: shows
 ---
 
-November 2018  
-Guest Artist  
-Soulful Heart Studios  
-Rolesville, NC
+Dec 2018  
+Solo show  
+Wake Med North  
+Wakefield, NC
 
-Teaching "Natures calling" an encaustic mixed media experience.
+My solo show will be up till mid Jan.
 
-http://deborahsoulfulheart.com/1767-2/
+
 
 ----------
 
 August 2018  
-Featured Arists  
+Featured Artists  
 Bull City Framing  
 Durham, NC
 
