@@ -11,8 +11,8 @@
 Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
 Settings["LinksUseHttps"] = Environment.GetEnvironmentVariable("MJS_WORKS_USE_HTTPS") == "false" ? false : true;
 Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
-Settings["MjsWorks-SaleBanner"] = "Treat Yourself - 20% Off Through End of December";
-double? discount = 0.2;
+Settings["MjsWorks-SaleBanner"] = null;
+double? discount = null;
 Settings["LinkHideExtensions"] = false;
 Settings["LinkHideIndexPages"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
