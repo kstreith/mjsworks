@@ -11,56 +11,84 @@
   @RenderSection("Metadata", false)
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/css/all.min.css?2018120401">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
-<div class="header">MJS Works</div>
 @{
     var siteMode = Model.String("MjsWorks-SiteMode");
-}
-@if (siteMode != "prod") {
-<h1 style="color: red">NOT PRODUCTION SITE</h1>
-}
-<nav class="nav-collapse">
-  <ul>
-@{
     string navigationTab = Model.String("NavigationTab") ?? "home";
     var pages = new []
     {
-        new { Title = "Artist Bio", Key = "home", Link = Context.GetLink("/index.html"), LargerBanner = true},
-        new { Title = "Paintings", Key = "paintings", Link = Context.GetLink("painting.html"), LargerBanner = true},
-        new { Title = "Feathers", Key = "feathers", Link = Context.GetLink("/gallery/feathers/index.html"), LargerBanner = true},
-        new { Title = "Shows", Key = "shows", Link = Context.GetLink("shows.html"), LargerBanner = false},
-        new { Title = "Buy", Key = "buy", Link = Context.GetLink("forpurchase.html"), LargerBanner = false},
+        new { Title = "About", Key = "aboutme", Link = Context.GetLink("/aboutme.html")},
+        new { Title = "Shop", Key = "paintings", Link = Context.GetLink("painting.html")},
+        new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")}
     };
     var pagesWithIndex = pages.Select((page, index) => new { Page = page, Index = index }).ToList();
     var matchedIndex = pagesWithIndex.
         Where(item => item.Page.Key == navigationTab).Select(item => item.Index).FirstOrDefault();
+    string saleBanner = Model.String("MjsWorks-SaleBanner");
+    string host = Model.String("Host");
+    string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
+}
+<body class="">
+<div class="header">
+  <div class="socialIcons">
+    <!-- <a href="mailto:info@mjsworks.com"><i class="fab fa-youtube"></i></a> -->
+    <a href="https://www.facebook.com/mjsworks"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/mjsworks/"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:info@mjsworks.com"><i class="far fa-envelope"></i></a>
+  </div>
+  <div class="navigation large">
+    <ul>
+@{
     for(var i = 0; i < pagesWithIndex.Count; i++)
     {
         var item = pagesWithIndex[i];
         string active = i == matchedIndex ? "active" : null;
-        string larger = item.Page.LargerBanner ? "larger" : null;
-        <li class="@larger"><a href="@(item.Page.Link)" class="@active">@item.Page.Title</a></li>
+        <li><a href="@(item.Page.Link)" class="@active">@item.Page.Title</a></li>
     }
-    string saleBanner = Model.String("MjsWorks-SaleBanner");
-    string host = Model.String("Host");
-    string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
-}      
+}
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+  <div class="siteTitle"><a href="/">
+  <span class="highlight">M</span>arcia <span class="highlight">J</span>o <span class="highlight">S</span>treithorst Encaustic <span class="highlight">Works</span>
+  </a></div>  
+</div>
+<div class="navigation-show-controls">
+  <label class="nav-hamburger"><i class="fas fa-bars"></i></label>
+</div>
+<!--
+@if (siteMode != "prod") {
+<h1 style="color: red">NOT PRODUCTION SITE</h1>
+}
+-->
+<!--
+<nav class="nav-collapse">
+  <ul>
   </ul>
 </nav>
+-->
 <div style="clear: both"></div>
 <div class="banner"><div class="bannertext">@saleBanner</div></div>
 @RenderBody()
 <footer class="footer">
-  <div>
-    <a href="mailto:info@mjsworks.com"><img alt="E-mail" src="/assets/images/email.png" /></a>
-    <a href="https://www.facebook.com/mjsworks"><img alt="Facebook" src="/assets/images/facebook_1.png" /></a>
-    <a href="https://twitter.com/mjsworks"><img alt="Twitter" src="/assets/images/twitter_2.png" /></a>
-  </div>
   <div class="footerPolicy">
     <a href="/privacyPolicy.html">Privacy</a> | <a href="/faq.html">FAQ</a>
   </div>
 </footer>
+  <div class="navigation small">
+    <ul>
+@{
+    for(var i = 0; i < pagesWithIndex.Count; i++)
+    {
+        var item = pagesWithIndex[i];
+        string active = i == matchedIndex ? "active" : null;
+        <li><a href="@(item.Page.Link)" class="@active">@item.Page.Title</a></li>
+    }
+}
+    </ul>
+  </div>
+
 <script src="/assets/js/all.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,7 +102,21 @@
 </script>
 <script>
   (function () {
-    var nav = responsiveNav(".nav-collapse", {insert: "before"});
+    document.querySelector('.navigation-show-controls').addEventListener('click', function () {
+      var bodyClassList = document.querySelector('body').classList;
+      var isOpen = bodyClassList.contains('navigation-slide-open');
+      if (isOpen) {
+        bodyClassList.remove('navigation-slide-open');
+      } else {
+        bodyClassList.add('navigation-slide-open');
+      }
+    });
+    window.addEventListener('resize', function (e) {
+      var width = e.target.innerWidth;
+      if (width > 992) {
+        document.querySelector('body').classList.remove('navigation-slide-open');
+      }
+    });
   }());
 </script>
 @RenderSection("Scripts", false)

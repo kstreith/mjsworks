@@ -5,11 +5,11 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default', function (done) {
-    gulp.src(['input/assets/css/main.css', 'input/assets/css/responsive-nav.css', 'input/assets/css/custom-icons.css'])
+    gulp.src(['input/assets/css/main.css', 'input/assets/css/custom-icons.css'])
 	    .pipe(concat('all.min.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('input/assets/css/'));
-    gulp.src(['input/assets/js/responsive-nav.min.js', 'input/assets/js/shared.js'], { sourcemaps: true })
+    gulp.src(['input/assets/js/shared.js'], { sourcemaps: true })
         .pipe(concat('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('input/assets/js/', { sourcemaps: true }));
