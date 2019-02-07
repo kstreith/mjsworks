@@ -1,24 +1,5 @@
 /* Custom Styles */
 
-@font-face {
-    font-family: 'caviar_dreamsregular';
-    src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.eot');
-    src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.woff') format('woff'),
-         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.ttf') format('truetype'),
-         url('https://mjsworks.com/assets/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'caviar_dreamsregular';
-            src: url('https://mjsworks.com/assets/font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
-    }
-}
-
 body {
   background-color: #fff;  
   margin: 0px;
@@ -46,11 +27,12 @@ body {
 }
 
 .header  > .siteTitle {
-  font-family: 'Kaushan Script', cursive;
+  font-family: ' Merienda', cursive;
   font-size: 35px;
   text-align: center;
   text-shadow: 2px 2px black;
   padding: 0px 15px;
+  font-weight: bold;
 }
 
 .header > .siteTitle .highlight {
@@ -186,7 +168,6 @@ body {
 }
 
 body {
-  font-family: 'caviar_dreamsregular';
   font-size: 24px;
 }
 
@@ -232,23 +213,29 @@ body {
 
 
 .inline-pic.small img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0 20px;
 }
 
-.inline-pic.right img {
-  float: right;
-  margin-left: 20px;
+.test-container {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.inline-pic.left img {
-  float: left;
-  margin-right: 20px;
+.text h3 {
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
-.sectionEnd {
-  clear: both;
-  margin-bottom: 25px;
+@media (max-width: 525px) {
+  .test-container {
+    flex-wrap: wrap;
+  }
+  .test-container .inline-pic {
+    order: -1;
+  }
 }
 
 .footer {
@@ -404,6 +391,13 @@ body {
   .content, .banner {
     margin: auto;
     width: 80%;
+    max-width: 1400px;
+    min-width: 740px;
+  }
+
+  .small-content {
+    margin: auto;
+    width: 50%;
     max-width: 1400px;
     min-width: 740px;
   }
