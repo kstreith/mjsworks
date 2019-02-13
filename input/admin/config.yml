@@ -60,6 +60,20 @@ collections: # A list of collections the CMS should be able to edit
             widget: "list"
             fields: 
               - { label: "Gallery", name: "Gallery", widget: "string" }
+      - label: "About"
+        name: "about"
+        file: "input/about.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }                              
+      - label: "Classes"
+        name: "classes"
+        file: "input/classes.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }                            
+          - { label: "Body", name: "body", widget: "markdown" }                              
       - label: "Buy"
         name: "buy"
         file: "input/forpurchase.md"
