@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'custom-icons';
-  src: url('https://mjsworks.com/assets/font/custom-icons.eot?36764000');
-  src: url('https://mjsworks.com/assets/font/custom-icons.eot?36764000#iefix') format('embedded-opentype'),
-       url('https://mjsworks.com/assets/font/custom-icons.woff2?36764000') format('woff2'),
-       url('https://mjsworks.com/assets/font/custom-icons.woff?36764000') format('woff'),
-       url('https://mjsworks.com/assets/font/custom-icons.ttf?36764000') format('truetype'),
-       url('https://mjsworks.com/assets/font/custom-icons.svg?36764000#custom-icons') format('svg');
+  src: url('../font/custom-icons.eot?82702650');
+  src: url('../font/custom-icons.eot?82702650#iefix') format('embedded-opentype'),
+       url('../font/custom-icons.woff2?82702650') format('woff2'),
+       url('../font/custom-icons.woff?82702650') format('woff'),
+       url('../font/custom-icons.ttf?82702650') format('truetype'),
+       url('../font/custom-icons.svg?82702650#custom-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'custom-icons';
-    src: url('../font/custom-icons.svg?36764000#custom-icons') format('svg');
+    src: url('../font/custom-icons.svg?82702650#custom-icons') format('svg');
   }
 }
 */
@@ -55,6 +55,12 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-mail:before { content: '\e800'; } /* '' */
 .icon-th-large:before { content: '\e803'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
 .icon-left-circled:before { content: '\f0a8'; } /* '' */
 .icon-right-circled:before { content: '\f0a9'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-youtube:before { content: '\f167'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */

@@ -213,12 +213,12 @@ body {
 
 
 .inline-pic.small img {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 240px;
+  max-height: 240px;
   margin: 0 20px;
 }
 
-.test-container {
+.text-with-image {
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
@@ -229,11 +229,11 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 525px) {
-  .test-container {
+@media (max-width: 580px) {
+  .text-with-image {
     flex-wrap: wrap;
   }
-  .test-container .inline-pic {
+  .text-with-image .inline-pic {
     order: -1;
   }
 }
@@ -397,7 +397,7 @@ body {
 
   .small-content {
     margin: auto;
-    width: 50%;
+    width: 60%;
     max-width: 1400px;
     min-width: 740px;
   }

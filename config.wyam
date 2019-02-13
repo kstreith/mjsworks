@@ -96,7 +96,9 @@ Pipelines.Add("PaintingGalleryList",
     Yaml(),
     SetNavigation().ToTab("paintings"),
     AddIndividualGalleryMetadata()
-        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml()),
+        .WithGalleryDocuments(ReadFiles("gallery/*.yml"), Yaml(), Concat(
+        ReadFiles("gallery/*.md"),
+        FrontMatter(Yaml()))),
     WriteFiles(".html").OnlyMetadata(),
     Razor()
         .WithLayout("/_PaintingGalleryListLayout.cshtml"),

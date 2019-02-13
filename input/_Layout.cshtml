@@ -10,15 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   @RenderSection("Metadata", false)
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/assets/css/all.min.css?2018020602">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/all.min.css?2018021201">
 </head>
 @{
     var siteMode = Model.String("MjsWorks-SiteMode");
     string navigationTab = Model.String("NavigationTab") ?? "home";
     var pages = new []
     {
-        new { Title = "About", Key = "aboutme", Link = Context.GetLink("/aboutme.html")},
+        new { Title = "About", Key = "aboutme", Link = Context.GetLink("/about.html")},
         new { Title = "Shop", Key = "paintings", Link = Context.GetLink("painting.html")},
         new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")}
     };
@@ -32,10 +31,10 @@
 <body class="">
 <div class="header">
   <div class="socialIcons">
-    <!-- <a href="mailto:info@mjsworks.com"><i class="fab fa-youtube"></i></a> -->
-    <a href="https://www.facebook.com/mjsworks"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/mjsworks/"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:info@mjsworks.com"><i class="far fa-envelope"></i></a>
+    <a href="https://www.youtube.com/channel/UCaI98jFBed3dYzfLbfUJCmg"><i class="icon-youtube"></i></a>
+    <a href="https://www.facebook.com/mjsworks"><i class="icon-facebook-official"></i></a>
+    <a href="https://www.instagram.com/mjsworks/"><i class="icon-instagram"></i></a>
+    <a href="mailto:info@mjsworks.com"><i class="icon-mail"></i></a>
   </div>
   <div class="navigation large">
     <ul>
@@ -55,7 +54,7 @@
   </a></div>  
 </div>
 <div class="navigation-show-controls">
-  <label class="nav-hamburger"><i class="fas fa-bars"></i></label>
+  <label class="nav-hamburger"><i class="icon-menu"></i></label>
 </div>
 <!--
 @if (siteMode != "prod") {
