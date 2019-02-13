@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   @RenderSection("Metadata", false)
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/assets/css/all.min.css?2018021201">
+  <link rel="stylesheet" href="/assets/css/all.min.css?2018021202">
 </head>
 @{
     var siteMode = Model.String("MjsWorks-SiteMode");
@@ -31,10 +31,10 @@
 <body class="">
 <div class="header">
   <div class="socialIcons">
-    <a href="https://www.youtube.com/channel/UCaI98jFBed3dYzfLbfUJCmg"><i class="icon-youtube"></i></a>
-    <a href="https://www.facebook.com/mjsworks"><i class="icon-facebook-official"></i></a>
-    <a href="https://www.instagram.com/mjsworks/"><i class="icon-instagram"></i></a>
     <a href="mailto:info@mjsworks.com"><i class="icon-mail"></i></a>
+    <a href="https://www.instagram.com/mjsworks/"><i class="icon-instagram"></i></a>
+    <a href="https://www.facebook.com/mjsworks"><i class="icon-facebook-official"></i></a>
+    <a href="https://www.youtube.com/channel/UCaI98jFBed3dYzfLbfUJCmg"><i class="icon-youtube"></i></a>
   </div>
   <div class="navigation large">
     <ul>
@@ -56,17 +56,9 @@
 <div class="navigation-show-controls">
   <label class="nav-hamburger"><i class="icon-menu"></i></label>
 </div>
-<!--
 @if (siteMode != "prod") {
 <h1 style="color: red">NOT PRODUCTION SITE</h1>
 }
--->
-<!--
-<nav class="nav-collapse">
-  <ul>
-  </ul>
-</nav>
--->
 <div style="clear: both"></div>
 <div class="banner"><div class="bannertext">@saleBanner</div></div>
 @RenderBody()
