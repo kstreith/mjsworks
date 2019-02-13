@@ -16,20 +16,40 @@
 <meta property="og:image:height" content="1000">
 <meta name="description" content="Magical mixed media painting that captures the surreal feelings of dreams.">
 
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/assets/css/all.min.css?2018120401">
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/all.min.css?2018021201">
 </head>
-<body>
-<div class="header">MJS Works</div>
+<body class="">
+<div class="header">
+  <div class="socialIcons">
+    <a href="https://www.youtube.com/channel/UCaI98jFBed3dYzfLbfUJCmg"><i class="icon-youtube"></i></a>
+    <a href="https://www.facebook.com/mjsworks"><i class="icon-facebook-official"></i></a>
+    <a href="https://www.instagram.com/mjsworks/"><i class="icon-instagram"></i></a>
+    <a href="mailto:info@mjsworks.com"><i class="icon-mail"></i></a>
+  </div>
+  <div class="navigation large">
+    <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/painting.html" class="active">Shop</a></li>
+        <li><a href="/classes.html">Classes</a></li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+  <div class="siteTitle"><a href="/">
+  <span class="highlight">M</span>arcia <span class="highlight">J</span>o <span class="highlight">S</span>treithorst Encaustic <span class="highlight">Works</span>
+  </a></div>  
+</div>
+<div class="navigation-show-controls">
+  <label class="nav-hamburger"><i class="icon-menu"></i></label>
+</div>
+<!--
+-->
+<!--
 <nav class="nav-collapse">
   <ul>
-        <li class="larger"><a href="/index.html">Artist Bio</a></li>
-        <li class="larger"><a href="/painting.html" class="active">Paintings</a></li>
-        <li class="larger"><a href="/gallery/feathers/index.html">Feathers</a></li>
-        <li><a href="/shows.html">Shows</a></li>
-        <li><a href="/forpurchase.html">Buy</a></li>
   </ul>
 </nav>
+-->
 <div style="clear: both"></div>
 <div class="banner"><div class="bannertext"></div></div>
 
@@ -72,15 +92,18 @@
 
 
 <footer class="footer">
-  <div>
-    <a href="mailto:info@mjsworks.com"><img alt="E-mail" src="/assets/images/email.png" /></a>
-    <a href="https://www.facebook.com/mjsworks"><img alt="Facebook" src="/assets/images/facebook_1.png" /></a>
-    <a href="https://twitter.com/mjsworks"><img alt="Twitter" src="/assets/images/twitter_2.png" /></a>
-  </div>
   <div class="footerPolicy">
     <a href="/privacyPolicy.html">Privacy</a> | <a href="/faq.html">FAQ</a>
   </div>
 </footer>
+  <div class="navigation small">
+    <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/painting.html" class="active">Shop</a></li>
+        <li><a href="/classes.html">Classes</a></li>
+    </ul>
+  </div>
+
 <script src="/assets/js/all.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -94,7 +117,21 @@
 </script>
 <script>
   (function () {
-    var nav = responsiveNav(".nav-collapse", {insert: "before"});
+    document.querySelector('.navigation-show-controls').addEventListener('click', function () {
+      var bodyClassList = document.querySelector('body').classList;
+      var isOpen = bodyClassList.contains('navigation-slide-open');
+      if (isOpen) {
+        bodyClassList.remove('navigation-slide-open');
+      } else {
+        bodyClassList.add('navigation-slide-open');
+      }
+    });
+    window.addEventListener('resize', function (e) {
+      var width = e.target.innerWidth;
+      if (width > 992) {
+        document.querySelector('body').classList.remove('navigation-slide-open');
+      }
+    });
   }());
 </script>
 
