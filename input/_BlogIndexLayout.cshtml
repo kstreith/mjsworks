@@ -1,0 +1,51 @@
+@{
+    Layout = @"/_Layout.cshtml";
+    string title = "Fix";
+    string description = "Fix";
+}
+
+@section Metadata {
+<meta property="og:title" content="@title"></meta>
+<meta property="og:description" content="@description">
+<meta name="description" content="@description">
+}
+
+<div class="content">
+@{
+    foreach (IDocument post in Model.DocumentList("PageDocuments"))
+    {
+        string lead = post.String("Lead");
+        string postTitle = post.String("Title");
+        DateTime published = post.Get<DateTime>("Published");
+        <div>
+            <a href="@Context.GetLink(post)"><h2>@postTitle</h2></a>
+            <h4>@lead</h4>
+            <p>Posted on @published.ToLongDateString(Context)</p>
+        </div>
+    }
+
+    var currentPage = Model.Get<int>("CurrentPage");
+    <ul class="actions">
+        @if(Model.Bool("HasPreviousPage"))
+        {
+            var prevPage = currentPage - 1;
+            var prevPageLink = prevPage <= 1 ? "/blog/index.html" : $"/blog/index-{prevPage}.html";
+            <li>
+                <a href="@prevPageLink" class="button"><span aria-hidden="true">&larr;</span> Newer</a>
+            </li>
+        }                
+        @if(Model.Bool("HasNextPage"))
+        {
+            var nextPage = currentPage + 1;
+            var nextPageLink = $"/blog/index-{nextPage}.html";
+            <li>
+                <a href="@nextPageLink" class="button">Older <span aria-hidden="true">&rarr;</span></a>
+            </li>
+        }
+    </ul>    
+
+}
+
+</div>
+
+@{ IgnoreBody(); }

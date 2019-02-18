@@ -115,6 +115,28 @@ Pipelines.Add("Admin",
   WriteFiles()
 );
 
+Pipelines.Add("BlogPosts",
+  ReadFiles("blog/*.md"),
+  FrontMatter(Yaml()),
+  Markdown()
+    .UseExtensions(),
+  WriteFiles(".html").OnlyMetadata()
+);
+
+Pipelines.Add("BlogArchive",
+  Paginate(2, Documents("BlogPosts")),
+  Razor()
+    .WithLayout("/_BlogIndexLayout.cshtml"),
+  WriteFiles((doc, ctx) => doc.Get<int>("CurrentPage") <= 1 ? "blog/index.html" : $"blog/index-{doc["CurrentPage"]}.html")
+);
+
+Pipelines.Add("RenderBlogPosts",
+  Documents("BlogPosts"),
+    Razor()
+        .WithLayout("/_BlogPostLayout.cshtml"),
+    WriteFiles()
+);
+
 Pipelines.Add("CopyMinified",
   CopyFiles("assets/css/all.min.css", "assets/js/*.min.js"),
   WriteFiles()
