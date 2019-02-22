@@ -6,6 +6,7 @@
 #a MjsWorks.Image.Wyam\bin\Release\netstandard2.0\MjsWorks.Image.Wyam.dll
 #a MjsWorks.SalesDiscount.Wyam\bin\Release\netstandard2.0\MjsWorks.SalesDiscount.Wyam.dll
 #a MjsWorks.AmazonPay.Wyam\bin\Release\netstandard2.0\MjsWorks.AmazonPay.Wyam.dll
+#a MjsWorks.Blog.Wyam\bin\Release\netstandard2.0\MjsWorks.Blog.Wyam.dll
 #a MjsWorks.Gallery.Wyam\bin\Release\netstandard2.0\MjsWorks.Gallery.Wyam.dll
 
 Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
@@ -115,12 +116,17 @@ Pipelines.Add("Admin",
   WriteFiles()
 );
 
+var currentDateTime = DateTime.Now;
+if (Settings["MjsWorks-SiteMode"] != "prod") {
+    currentDateTime = currentDateTime.AddYears(1);
+}
 Pipelines.Add("BlogPosts",
   ReadFiles("blog/*.md"),
   FrontMatter(Yaml()),
   Markdown()
     .UseExtensions(),
-  WriteFiles(".html").OnlyMetadata()
+  WriteFiles(".html").OnlyMetadata(),
+  FilterAndSortPosts().WithFilterDate(currentDateTime)
 );
 
 Pipelines.Add("BlogArchive",
