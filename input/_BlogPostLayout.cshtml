@@ -5,6 +5,7 @@
     string author = Model.String("Author");
     DateTime published = Model.Get<DateTime>("Published");
     string description = Model.String("Description");
+    string imagePath = Model.String("Image");
 }
 
 @section Metadata {
@@ -15,6 +16,9 @@
 
 <div class="content">
 <h1>@title</h1>
+<div class="inline-pic small">
+    <img src="@imagePath" alt="Pic for Blog Post" />
+</div>
 <h2>@lead</h2>
 <div>Published on @published.ToLongDateString(Context)</div>
 <div>By @author</div>

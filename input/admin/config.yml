@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "File", widget: "image"}
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog" # Used in the UI, ie.: "New Post"
-    folder: "input/blog" # The path to the folder where the documents are stored
+    folder: "input/blog/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     extension: "md"
     slug: "{{slug}}"
@@ -34,8 +34,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Lead", name: "Lead", widget: "string"}
       - {label: "Author", name: "Author", widget: "string"}
       - {label: "Published", name: "Published", widget: "datetime", "format": "YYYY-MM-DD" }
+      - {label: "Body", name: "body", widget: "markdown" }
       - {label: "Image", name: "Image", widget: "image"}
-      - { label: "Text", name: "text", widget: "markdown" }
   - name: "galleries"
     label: "Galleries"
     folder: "input/gallery"

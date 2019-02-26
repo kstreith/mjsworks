@@ -117,15 +117,14 @@ Pipelines.Add("Admin",
 );
 
 var currentDateTime = DateTime.Now;
-if (Settings["MjsWorks-SiteMode"] != "prod") {
+if ((string)Settings["MjsWorks-SiteMode"] != "prod") {
     currentDateTime = currentDateTime.AddYears(1);
 }
 Pipelines.Add("BlogPosts",
-  ReadFiles("blog/*.md"),
+  ReadFiles("blog/posts/*.md"),
   FrontMatter(Yaml()),
   Markdown()
     .UseExtensions(),
-  WriteFiles(".html").OnlyMetadata(),
   FilterAndSortPosts().WithFilterDate(currentDateTime)
 );
 
@@ -140,7 +139,7 @@ Pipelines.Add("RenderBlogPosts",
   Documents("BlogPosts"),
     Razor()
         .WithLayout("/_BlogPostLayout.cshtml"),
-    WriteFiles()
+    WriteFiles(".html").UseWriteMetadata()
 );
 
 Pipelines.Add("CopyMinified",
