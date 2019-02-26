@@ -19,16 +19,17 @@
         DateTime published = post.Get<DateTime>("Published");
         string imagePath = post.String("Image");
         var relativeFilePathBase = post.String("RelativeFilePathBase");
-        <div>
+        <div class="postSummary">
             <div class="inline-pic small">
                 <a href="/@(relativeFilePathBase).html">
                     <img src="@imagePath" alt="Pic for Blog Post" />
                 </a>
             </div>
-            <a href="/@(relativeFilePathBase).html"><h2>@postTitle</h2></a>
-            <h4>@lead</h4>
-            <p>Posted on @published.ToLongDateString(Context)</p>
+            <div class="postTitle"><a href="/@(relativeFilePathBase).html"><h3>@postTitle</h3></a></div>
+            <div class="postLead">@lead</div>
+            <div class="postPublication"><p>Posted on @published.ToLongDateString(Context)</p></div>
         </div>
+        <hr />
     }
 
     var currentPage = Model.Get<int>("CurrentPage");

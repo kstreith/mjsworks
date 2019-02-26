@@ -1,6 +1,5 @@
 ---
 title: Why do I like Encaustic?
-Description: Why I do what I do
 Lead: Why I do what I do
 Author: Marcia Streithorst
 Published: '2019-02-21'
