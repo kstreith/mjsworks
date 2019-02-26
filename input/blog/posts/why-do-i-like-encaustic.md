@@ -1,9 +1,9 @@
 ---
-title: Why do I like Encaustic?
+title: Why do I love Encaustic?
 Lead: Why I do what I do
 Author: Marcia Streithorst
 Published: '2019-02-21'
-Image: /assets/paintings/img_6352.jpg
+Image: /assets/paintings/img_6486.jpg
 ---
 Why do I like Encaustic?
 
