@@ -295,7 +295,7 @@ body {
 }
 
 .content p {
-  margin: 0px;
+  margin: 20px;
 }
 
 .logocontainer {
@@ -411,3 +411,67 @@ body {
   }
 }
 
+/* Blog Post */
+.postLead {
+  padding-bottom: 20px;
+}
+
+.postIndex hr {
+  margin-bottom: 20px;
+}
+
+.postIndex .postPic img {
+  max-width: 200px;
+}
+
+.postArticle .postPic img {
+  max-width: 200px;
+}
+
+.content.postArticle p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.postSummary {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.postSummary h3 {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.postIndex .postTitle {
+  font-family: Merienda,cursive;
+  font-size: 1em;  
+}
+
+.postTitle {
+  font-family: Merienda,cursive;
+  font-size: 1.5em;  
+}
+
+.postPublication, .postAuthorBy {
+  font-size: 0.8em;
+}
+
+.postSynopsis {
+  margin-left: 20px;
+}
+
+.postText {
+  margin-bottom: 20px;
+}
+
+.postIndex .actions {
+  list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  .postSummary {
+    flex-wrap: nowrap;
+  }
+}

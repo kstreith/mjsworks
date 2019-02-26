@@ -8,16 +8,16 @@
 }
 
 @section Metadata {
-<meta property="og:title" content="@title - MJS Works"></meta>
+<meta property="og:title" content="@title"></meta>
 <meta property="og:description" content="@lead">
 <meta name="description" content="@lead">
 }
 
 <div class="content postArticle">
-    <h2>@title</h2>
-    <div class="inline-pic small">
+    <div class="postPic">
         <img src="@imagePath" alt="Pic for Blog Post" />
     </div>
+    <div class="postTitle">@title</div>
     <div class="postText">
         @RenderBody()
     </div>

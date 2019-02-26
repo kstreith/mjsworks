@@ -1,7 +1,7 @@
 @{
     Layout = @"/_Layout.cshtml";
-    string title = "Fix";
-    string description = "Fix";
+    string title = "Wax Works!";
+    string description = "An encaustic painter's blog by Marcia Streithorst";
 }
 
 @section Metadata {
@@ -10,7 +10,9 @@
 <meta name="description" content="@description">
 }
 
-<div class="content">
+<div class="content postIndex">
+    <h2 style="text-align: center; margin: 0px; font-family: Merienda,cursive; font-size: 32px; color: #87cefa">Wax Works!</h2>
+    <p style="text-align: center; padding-bottom: 20px;">An encaustic painter's blog by Marcia Streithorst</p>
 @{
     foreach (IDocument post in Model.DocumentList("PageDocuments"))
     {
@@ -20,14 +22,16 @@
         string imagePath = post.String("Image");
         var relativeFilePathBase = post.String("RelativeFilePathBase");
         <div class="postSummary">
-            <div class="inline-pic small">
+            <div class="postPic">
                 <a href="/@(relativeFilePathBase).html">
                     <img src="@imagePath" alt="Pic for Blog Post" />
                 </a>
             </div>
-            <div class="postTitle"><a href="/@(relativeFilePathBase).html"><h3>@postTitle</h3></a></div>
-            <div class="postLead">@lead</div>
-            <div class="postPublication"><p>Posted on @published.ToLongDateString(Context)</p></div>
+            <div class="postSynopsis">
+                <div class="postTitle"><a href="/@(relativeFilePathBase).html"><h3>@postTitle</h3></a></div>
+                <div class="postLead">@lead</div>
+                <div class="postPublication">Posted on @published.ToLongDateString(Context)</div>
+            </div>
         </div>
         <hr />
     }

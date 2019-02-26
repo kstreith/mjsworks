@@ -19,7 +19,8 @@
     {
         new { Title = "About", Key = "aboutme", Link = Context.GetLink("/about.html")},
         new { Title = "Shop", Key = "paintings", Link = Context.GetLink("painting.html")},
-        new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")}
+        new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")},
+        new { Title = "Blog", Key = "blog", Link = Context.GetLink("/blog/index.html")}
     };
     var pagesWithIndex = pages.Select((page, index) => new { Page = page, Index = index }).ToList();
     var matchedIndex = pagesWithIndex.
