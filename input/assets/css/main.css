@@ -459,7 +459,8 @@ body {
 }
 
 .postSynopsis {
-  margin-left: 20px;
+  margin-left: 0px;
+  width: 100%;
 }
 
 .postText {
@@ -474,4 +475,9 @@ body {
   .postSummary {
     flex-wrap: nowrap;
   }
+
+  .postSynopsis {
+    margin-left: 20px;
+    width: auto;
+  }  
 }

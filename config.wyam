@@ -123,6 +123,9 @@ if ((string)Settings["MjsWorks-SiteMode"] != "prod") {
 Pipelines.Add("BlogPosts",
   ReadFiles("blog/posts/*.md"),
   FrontMatter(Yaml()),
+  ImageInfo()
+    .FromMetadataKey("Image")
+    .OutputMetadataWithPrefix("BlogImage"),
   Markdown()
     .UseExtensions(),
   FilterAndSortPosts().WithFilterDate(currentDateTime)

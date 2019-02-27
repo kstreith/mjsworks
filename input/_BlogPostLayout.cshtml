@@ -5,11 +5,21 @@
     string author = Model.String("Author");
     DateTime published = Model.Get<DateTime>("Published");
     string imagePath = Model.String("Image");
+    string imageWidth = Model.String("BlogImageWidth");
+    string imageHeight = Model.String("BlogImageHeight");
+    string imageMimeType = Model.String("BlogImageMimeType");
+
 }
 
 @section Metadata {
 <meta property="og:title" content="@title"></meta>
 <meta property="og:description" content="@lead">
+<meta property="og:image" content='@Context.GetLink(imagePath, true)'>
+<meta property="og:image:secure_url" content='@Context.GetLink(imagePath, true)'>
+<meta property="og:image:type" content="@imageMimeType">
+<meta property="og:image:alt" content="@title">
+<meta property="og:image:width" content="@imageWidth">
+<meta property="og:image:height" content="@imageHeight">
 <meta name="description" content="@lead">
 }
 
