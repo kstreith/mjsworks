@@ -22,6 +22,19 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "For Sale", name: "ForSale", widget: "boolean", default: true}
       - {label: "Sold", name: "Sold", widget: "boolean", required: false}
       - {label: "Image", name: "File", widget: "image"}
+  - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "input/blog/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    extension: "md"
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Lead", name: "Lead", widget: "string"}
+      - {label: "Author", name: "Author", widget: "string"}
+      - {label: "Published", name: "Published", widget: "datetime", "format": "YYYY-MM-DD" }
+      - {label: "Body", name: "body", widget: "markdown" }
+      - {label: "Image", name: "Image", widget: "image"}
   - name: "galleries"
     label: "Galleries"
     folder: "input/gallery"
