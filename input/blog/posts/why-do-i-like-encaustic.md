@@ -3,8 +3,7 @@ title: Why do I love encaustic painting?
 Lead: Who wouldn't want to paint with a blow torch? Find out how I started.
 Author: Marcia Streithorst
 Published: '2019-02-26'
-Image: >-
-  https://raw.githubusercontent.com/kstreith/mjsworks/master/input/assets/paintings/img_5578.jpg
+Image: /assets/paintings/img_5578.jpg
 ---
 So, the question I get asked most is, *“Why are you an encaustic painter?”*
 
