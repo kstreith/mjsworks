@@ -14,6 +14,7 @@ Settings["LinksUseHttps"] = Environment.GetEnvironmentVariable("MJS_WORKS_USE_HT
 Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
 Settings["MjsWorks-SaleBanner"] = null;
 double? discount = null;
+int blogPostPageSize = 10;
 Settings["LinkHideExtensions"] = false;
 Settings["LinkHideIndexPages"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
@@ -132,7 +133,7 @@ Pipelines.Add("BlogPosts",
 );
 
 Pipelines.Add("BlogArchive",
-  Paginate(2, Documents("BlogPosts")),
+  Paginate(blogPostPageSize, Documents("BlogPosts")),
   Razor()
     .WithLayout("/_BlogIndexLayout.cshtml"),
   WriteFiles((doc, ctx) => doc.Get<int>("CurrentPage") <= 1 ? "blog/index.html" : $"blog/index-{doc["CurrentPage"]}.html")
