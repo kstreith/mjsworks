@@ -481,3 +481,13 @@ body {
     width: auto;
   }  
 }
+
+.marketing-section-across {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.marketing-section {
+  text-align: center;
+}
