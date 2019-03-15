@@ -46,7 +46,8 @@ namespace MjsWorks.Gallery.Wyam
                     var newGalleryDetailDoc = context.GetDocument(gallery, new Dictionary<string, object>
                     {
                         ["Title"] = galleryDocDetails.String("Title"),
-                        ["CoverImage"] = galleryDocDetails.String("CoverImage")
+                        ["CoverImage"] = galleryDocDetails.String("CoverImage"),
+                        ["Summary"] = galleryDocDetails.String("Summary")
                     });
                     outputGalleryDetailDocs.Add(newGalleryDetailDoc);
                 }

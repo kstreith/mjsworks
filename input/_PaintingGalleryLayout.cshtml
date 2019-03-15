@@ -20,10 +20,9 @@
         @Html.Raw(textContent)
         <br/>
     } else {
-    <a class="gallerylink" href="/painting.html">Back to Gallery Listing</a>
+    <a class="gallerylink" href="/painting.html">All Collections</a>
     <div class="photoseriestitle">@title</div>
     }
-    <div class="photoinstruction">Click or Tap on image to view a fullscreen gallery</div>
     <div>
         @foreach (var image in images) {
             string imageFile = image.String("Image");

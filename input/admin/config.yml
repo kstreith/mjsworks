@@ -42,6 +42,7 @@ collections: # A list of collections the CMS should be able to edit
     extension: "yml"
     fields:
       - {label: "Title", name: "title", widget: "string" }
+      - {label: "Summary", name: "summary", widget: "string" }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "galleriesWithDescription"
@@ -51,6 +52,7 @@ collections: # A list of collections the CMS should be able to edit
     extension: "md"
     fields:
       - {label: "Title", name: "title", widget: "string" }
+      - {label: "Summary", name: "summary", widget: "string" }
       - {label: "Description", name: "body", widget: "markdown" }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
