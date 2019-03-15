@@ -1,5 +1,6 @@
 ---
 title: Feathers
+summary: A feathers summary
 CoverImage: /assets/paintings/img_6478.jpg
 Images:
   - Image: /assets/paintings/IMG_6311.jpg
