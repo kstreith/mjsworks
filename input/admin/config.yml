@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Summary", name: "summary", widget: "string" }
-      - {label: "Description", name: "body", widget: "markdown" }
+      - {label: "Description", name: "body", widget: "markdown", required: false }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "pages"
@@ -118,4 +118,16 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Description", name: "Description", widget: "string" }                            
-          - { label: "Body", name: "body", widget: "markdown" }          
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Blog Landing Page"
+        name: "blog-landing-metadata"
+        file: "input/metadata/blog-landing.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }
+      - label: "Shop Landing Page"
+        name: "shop-landing-metadata"
+        file: "input/metadata/shop-landing.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }          

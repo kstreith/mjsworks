@@ -1,7 +1,7 @@
 @{
     Layout = @"/_Layout.cshtml";
-    string title = "Wax Works!";
-    string description = "An encaustic painter's blog by Marcia Streithorst";
+    string title = Model.String("Title");
+    string description = Model.String("Description");
 }
 
 @section Metadata {
@@ -11,8 +11,8 @@
 }
 
 <div class="content postIndex">
-    <h2 class="blogTitle">Wax Works!</h2>
-    <p class="blogSubTitle">An encaustic painter's blog by Marcia Streithorst</p>
+    <h2 class="blogTitle">@title</h2>
+    <p class="blogSubTitle">@description</p>
 @{
     foreach (IDocument post in Model.DocumentList("PageDocuments"))
     {

@@ -6,11 +6,11 @@ NavigationTab: shows
 
 <div class="event">
 
-  <div class="eventTitle">
+  <h3 class="eventTitle">
 
 [Art in the Heart of Hillsborough](https://www.hillsboroughartscouncil.org/arts-and-crafts-show)
 
-  </div>
+  </h3>
 
   <div class="eventInfo">
 
@@ -27,7 +27,7 @@ NavigationTab: shows
 
   I will be selling and showing at this show. This will be my first time at [Art in the Heart](https://www.hillsboroughartscouncil.org/arts-and-crafts-show).
 
-  <div class="inline-pic small">
+  <div class="eventPic">
 
   ![Early Morning](/assets/paintings/img_6550-thumbnail.jpg)
 
@@ -42,11 +42,11 @@ NavigationTab: shows
 
 <div class="event">
 
-  <div class="eventTitle">
+  <h3 class="eventTitle">
 
   [National Encaustic Exhibition](https://artgallery.stamford.uconn.edu/#)
 
-  </div>
+  </h3>
 
   <div class="eventInfo">
 
@@ -64,7 +64,7 @@ NavigationTab: shows
 
   My painting "Dream Hike" will be in this [juried show](https://artgallery.stamford.uconn.edu/#) that runs till the end of March.
 
-  <div class="inline-pic small">
+  <div class="eventPic">
 
    ![Early Morning](/assets/paintings/img_6513-thumbnail.jpg)
 

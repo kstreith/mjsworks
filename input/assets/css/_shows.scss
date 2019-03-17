@@ -1,22 +1,39 @@
 /*
 for the shows page only to style listed events
 */
+
+$event-respond-breakpoint: 800px;
+
 .eventTitle {
     font-weight: bold;
     font-size: 1.17em;
 }
 
+.eventPic {
+    max-width: 240px;
+    max-height: 240px;
+}
+
 .eventInfo {
     display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $event-respond-breakpoint) {
+        flex-wrap: nowrap;
+    }
 
     .eventSideBar {
-        width: 350px;
-        border-right-style: solid;
-        padding-right: 20px;
-        font-size: 0.8em;
+        @media (min-width: $event-respond-breakpoint) {
+            padding-right: 20px;
+            width: 350px;
+            border-right-style: solid;
+            font-size: 0.8em;
+        }
     }
     
     .eventDetails {
-        padding-left: 20px;
+        @media (min-width: $event-respond-breakpoint) {
+            padding-left: 20px;
+        }
     }
 }

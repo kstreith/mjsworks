@@ -11,7 +11,7 @@ Description: The artistic works of Marcia Jo Streithorst
 
   <div class="inline-pic small">
 
-  <a href="/painting.html"> ![Early Morning](/assets/paintings/img_5578-thumbnail.jpg) </a>
+  <a href="/painting.html"> ![Shop Recent Work](/assets/paintings/img_6550-thumbnail.jpg) </a>
   
   </div>
 
@@ -23,11 +23,11 @@ Description: The artistic works of Marcia Jo Streithorst
 
   <div class="inline-pic small">
 
-  <a href="/about.html"> ![Early Morning](/assets/paintings/img_20170512_192958-thumbnail.jpg) </a>
+  <a href="/classes.html"> ![Upcoming Classes](/assets/paintings/img_20170512_192958-thumbnail.jpg) </a>
 
   </div>
 
-  <a href="/about.html">Meet Marcia Streithorst</a>
+  <a href="/classes.html">Upcoming Classes</a>
 
   </div>
 
@@ -35,7 +35,7 @@ Description: The artistic works of Marcia Jo Streithorst
 
   <div class="inline-pic small">
 
-  <a href="/shows.html"> ![Early Morning](/assets/paintings/img_6513-thumbnail.jpg) </a>
+  <a href="/shows.html"> ![Upcoming Shows](/assets/paintings/img_6513-thumbnail.jpg) </a>
 
   </div>
 

@@ -53,7 +53,7 @@
                 }
                 @if (imageForSale && !imageSold) {
                     <div class="photoblocktext">Price: @imagePrice @if (imageOriginalPriceFormatted != null) {<span class="originalPrice">@imageOriginalPriceFormatted</span>}</div>
-                    <div class="photoblocktext">Click on image to buy</div>
+                    <div class="photoblocktext"><a href="/paintings/@(imagePage).html?gallery=@galleryPage">View Larger / Buy</a></div>
                 }
             </div>
         }

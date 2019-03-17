@@ -134,6 +134,8 @@ Pipelines.Add("BlogPosts",
 
 Pipelines.Add("BlogArchive",
   Paginate(blogPostPageSize, Documents("BlogPosts")),
+  Meta("Title", "Wax Works"),
+  Meta("Description", "An encaustic painter's blog by Marcia Streithorst"),
   Razor()
     .WithLayout("/_BlogIndexLayout.cshtml"),
   WriteFiles((doc, ctx) => doc.Get<int>("CurrentPage") <= 1 ? "blog/index.html" : $"blog/index-{doc["CurrentPage"]}.html")

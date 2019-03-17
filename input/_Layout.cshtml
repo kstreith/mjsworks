@@ -17,10 +17,12 @@
     string navigationTab = Model.String("NavigationTab") ?? "home";
     var pages = new []
     {
-        new { Title = "About", Key = "aboutme", Link = Context.GetLink("/about.html")},
-        new { Title = "Shop", Key = "paintings", Link = Context.GetLink("painting.html")},
+        new { Title = "Home", Key = "home", Link = Context.GetLink("/index.html")},
+        new { Title = "Shop", Key = "paintings", Link = Context.GetLink("/painting.html")},
         new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")},
-        new { Title = "Blog", Key = "blog", Link = Context.GetLink("/blog/index.html")}
+        new { Title = "Shows", Key = "shws", Link = Context.GetLink("/shows.html")},
+        new { Title = "Blog", Key = "blog", Link = Context.GetLink("/blog/index.html")},
+        new { Title = "About", Key = "aboutme", Link = Context.GetLink("/about.html")}
     };
     var pagesWithIndex = pages.Select((page, index) => new { Page = page, Index = index }).ToList();
     var matchedIndex = pagesWithIndex.
@@ -30,14 +32,14 @@
     string googleAnalyticsId = Model.String("MjsWorks-GoogleAnalyticsId");
 }
 <body class="">
-<div class="header">
+<header class="header" role="banner">
   <div class="socialIcons">
     <a href="mailto:info@mjsworks.com" aria-label="Contact Email Link"><i class="icon-mail"></i></a>
     <a href="https://www.instagram.com/mjsworks/" aria-label="Instagram Social Link"><i class="icon-instagram"></i></a>
     <a href="https://www.facebook.com/mjsworks" aria-label="Facebook Social Link"><i class="icon-facebook-official"></i></a>
     <a href="https://www.youtube.com/channel/UCaI98jFBed3dYzfLbfUJCmg" aria-label="Youtube Video Link"><i class="icon-youtube"></i></a>
   </div>
-  <div class="navigation large">
+  <nav class="navigation large" role="navigation">
     <ul>
 @{
     for(var i = 0; i < pagesWithIndex.Count; i++)
@@ -48,24 +50,26 @@
     }
 }
     </ul>
-  </div>
+  </nav>
   <div class="clearfix"></div>
   <div class="siteTitle"><a href="/">
   <span class="highlight">M</span>arcia <span class="highlight">J</span>o <span class="highlight">S</span>treithorst Encaustic <span class="highlight">Works</span>
   </a></div>  
-</div>
+</header>
 <div class="navigation-show-controls">
   <label class="nav-hamburger"><i class="icon-menu"></i></label>
 </div>
+<!--
 @if (siteMode != "prod") {
 <h1 class="staging-banner">NOT PRODUCTION SITE</h1>
 }
+-->
 <div class="clearfix"></div>
 <div class="banner"><div class="bannertext">@saleBanner</div></div>
 <main>
 @RenderBody()
 </main>
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="footerPolicy">
     <a href="/privacyPolicy.html">Privacy</a> | <a href="/faq.html">FAQ</a>
   </div>
