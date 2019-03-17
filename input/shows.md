@@ -4,33 +4,11 @@ Description: The artistic works of Marcia Jo Streithorst
 NavigationTab: shows
 ---
 
-<style>
-.eventInfo {
-    display: flex;
-}
-.eventSideBar {
-    width: 350px;
-    border-right-style: solid;
-    padding-right: 20px;
-    font-size: 0.8em;
-}
-.eventDetails {
-    padding-left: 20px;
-}
-
-.eventTitle {
-    font-weight: bold;
-    font-size: 1.17em;
-}
-</style>
-
 <div class="event">
 
   <div class="eventTitle">
 
-
 [Art in the Heart of Hillsborough](https://www.hillsboroughartscouncil.org/arts-and-crafts-show)
-
 
   </div>
 

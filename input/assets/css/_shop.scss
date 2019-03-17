@@ -1,0 +1,135 @@
+.photoinstruction {
+    font-size: 50%;
+}
+
+.photocontent {
+    padding-top: 30px;
+  }
+
+.photocontent .photoseriestitle {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+  
+.gallerylink {
+    font-size: 0.6em;
+    float: right;
+}
+
+.photoblock {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    font-size: .75em;
+    margin-bottom: 20px;
+}
+  
+.photoblock img {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.photoblocktext {
+    color: black;
+}
+  
+.photoblocktext.sold {
+    color: red;
+}
+  
+.photoblockcollectionbutton {
+    background-color: $highlight-color;
+    color: black;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+#prevGalleryImageLink {
+    float: left;
+}
+
+#nextGalleryImageLink {
+    float: right;
+}
+
+.gallerycontent {
+    text-align: center;
+}
+  
+.galleryimage {
+    display: block;
+}
+  
+.galleryimage > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.gallerynav a {
+    color: black;
+}
+
+.galleryimagetitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gallerycontent {
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sellPanel {
+    margin-top: 1em;
+    border: 5px ridge black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.sellFooter {
+    font-size: .7em;
+    margin-top: 1em;
+}
+  
+.disabledPurchase {
+    color: #721c24;
+    font-weight: bold;
+}
+  
+.originalPrice {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+$sell-panel-breakpoint: 75em;
+
+.sellUi {
+
+    .columnContainer {
+        @media screen and (min-width: $sell-panel-breakpoint) {
+            display: table;
+            table-layout: fixed;    
+            width: 100%;
+        }
+
+        .details {
+            @media screen and (min-width: $sell-panel-breakpoint) {
+                display: table-cell;
+                padding-right: 1em;
+                width: 75%;
+            }
+        }
+
+        .sellPanel {
+            @media screen and (min-width: $sell-panel-breakpoint) {
+                display: table-cell;
+                width: 25%;
+                vertical-align: top;
+            }
+        }
+    }
+}

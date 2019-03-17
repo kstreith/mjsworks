@@ -1,0 +1,90 @@
+/*
+for blog landing page
+and individual post pages
+*/
+
+@import 'mixins';
+
+.blogTitle {
+    text-align: center;
+    margin: 0px;
+    font-family: Merienda,cursive;
+    font-size: 32px;
+    color: $highlight-color;
+}
+
+.blogSubTitle {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.postLead {
+    padding-bottom: 20px;
+}
+
+.postTitle {
+  font-family: Merienda,cursive;
+  font-size: 1.5em;  
+}
+
+.postIndex {
+    hr {
+        margin-bottom: 20px;
+    }
+
+    .postTitle {
+        font-family: Merienda,cursive;
+        font-size: 1em;  
+    }
+
+    .actions {
+        list-style: none;
+    }
+}
+
+.postPic {
+    img {
+        max-width: 200px;
+    }
+}
+    
+.content.postArticle p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  
+.postSummary {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 700px) {
+    flex-wrap: nowrap;
+  }
+
+  h3 {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+}
+  
+.postPublication, .postAuthorBy {
+  font-size: 0.8em;
+}
+  
+.postSynopsis {
+  margin-left: 0px;
+  width: 100%;
+
+  @media screen and (min-width: 700px) {
+    margin-left: 20px;
+    width: auto;
+  }
+}
+  
+.postText {
+  margin-bottom: 20px;
+}
+
+  
