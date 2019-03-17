@@ -121,13 +121,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Blog Landing Page"
         name: "blog-landing-metadata"
-        file: "input/metadata/blog-landing.md"
+        file: "input/metadata/blog-landing.yml"
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Description", name: "Description", widget: "string" }
       - label: "Shop Landing Page"
         name: "shop-landing-metadata"
-        file: "input/metadata/shop-landing.md"
+        file: "input/metadata/shop-landing.yml"
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Description", name: "Description", widget: "string" }          
