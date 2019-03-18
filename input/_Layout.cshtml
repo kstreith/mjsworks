@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   @RenderSection("Metadata", false)
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/assets/css/all.min.css?2018031601">
+  <link rel="stylesheet" href="/assets/css/all.min.css?2018031701">
 </head>
 @{
     var siteMode = Model.String("MjsWorks-SiteMode");
@@ -59,11 +59,9 @@
 <div class="navigation-show-controls">
   <label class="nav-hamburger"><i class="icon-menu"></i></label>
 </div>
-<!--
 @if (siteMode != "prod") {
 <h1 class="staging-banner">NOT PRODUCTION SITE</h1>
 }
--->
 <div class="clearfix"></div>
 <div class="banner"><div class="bannertext">@saleBanner</div></div>
 <main>
