@@ -70,6 +70,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "painting"
         file: "input/painting.yml"
         fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }
           - label: "Galleries"
             name: "Galleries"
             widget: "list"
@@ -125,9 +127,3 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Description", name: "Description", widget: "string" }
-      - label: "Shop Landing Page"
-        name: "shop-landing-metadata"
-        file: "input/metadata/shop-landing.yml"
-        fields:
-          - { label: "Title", name: "Title", widget: "string" }
-          - { label: "Description", name: "Description", widget: "string" }          

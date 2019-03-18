@@ -16,12 +16,10 @@
 @{ IgnoreBody(); }
 
 <div class="content photocontent">
+    <h2 class="pageTitle">@title</h2>
     @if (textContent != null) {
         @Html.Raw(textContent)
         <br/>
-    } else {
-    <a class="gallerylink" href="/painting.html">All Collections</a>
-    <div class="photoseriestitle">@title</div>
     }
     <div>
         @foreach (var image in images) {
@@ -52,7 +50,7 @@
                     <div class="photoblocktext">@imageSize</div>
                 }
                 @if (imageForSale && !imageSold) {
-                    <div class="photoblocktext">Price: @imagePrice @if (imageOriginalPriceFormatted != null) {<span class="originalPrice">@imageOriginalPriceFormatted</span>}</div>
+                    <div class="photoblocktext">@imagePrice @if (imageOriginalPriceFormatted != null) {<span class="originalPrice">@imageOriginalPriceFormatted</span>}</div>
                     <div class="photoblocktext"><a href="/paintings/@(imagePage).html?gallery=@galleryPage">View Larger / Buy</a></div>
                 }
             </div>

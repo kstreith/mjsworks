@@ -1,9 +1,7 @@
 ---
-Title: FAQ - MJS Works
-Description: Frequently asked questions
+Title: Frequently Asked Questions
+Description: Find answers to common questions
 ---
-
-# Frequently Asked Questions
 
 * [About Encaustic Paintings](#about_paintings)
 * [How to care for Encaustic Paintings](#how_to_care)

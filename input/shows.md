@@ -1,6 +1,6 @@
 ---
-Title: Upcoming Shows - MJS Works
-Description: The artistic works of Marcia Jo Streithorst
+Title: Upcoming Shows
+Description: Find out where to view or purchase my work
 NavigationTab: shows
 ---
 

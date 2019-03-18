@@ -25,7 +25,8 @@ $event-respond-breakpoint: 800px;
     .eventSideBar {
         @media (min-width: $event-respond-breakpoint) {
             padding-right: 20px;
-            width: 350px;
+            min-width: 250px;
+            max-width: 250px;
             border-right-style: solid;
             font-size: 0.8em;
         }

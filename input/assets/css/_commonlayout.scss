@@ -49,6 +49,21 @@ body {
     }
 }
 
+.pageTitle {
+    text-align: center;
+    margin: 0px;
+    font-family: Merienda,cursive;
+    font-size: 32px;
+    color: $highlight-color;
+    text-shadow: 2px 2px black;
+    padding-bottom: 10px;
+}
+
+.pageSubTitle {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .inline-pic.small img {
     max-width: 240px;
     max-height: 240px;

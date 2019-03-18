@@ -1,26 +1,11 @@
-.photoinstruction {
-    font-size: 50%;
-}
-
 .photocontent {
     padding-top: 30px;
-  }
-
-.photocontent .photoseriestitle {
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
-}
-  
-.gallerylink {
-    font-size: 0.6em;
-    float: right;
 }
 
 .photoblock {
     display: inline-block;
     vertical-align: top;
     width: 270px;
-    font-size: .75em;
     margin-bottom: 20px;
 }
   
@@ -45,6 +30,7 @@
     padding: 6px 15px;
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
   
 #prevGalleryImageLink {

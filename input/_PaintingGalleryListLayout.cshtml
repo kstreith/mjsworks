@@ -15,7 +15,7 @@
 @{ IgnoreBody(); }
 
 <div class="content photocontent">
-    <div class="photoseriestitle">Collections</div>
+    <h2 class="pageTitle">@title</h2>
     @foreach (var gallery in galleries) {
         string galleryName = gallery.String("Gallery");
         string galleryTitle = gallery.String("Title");
@@ -29,8 +29,8 @@
             <a href="/gallery/@(galleryName)/index.html" title="@galleryTitle">
                 <img class="photo" src="@galleryThumbnailCoverImage" alt="@galleryTitle" />
             </a>
-            <div>@gallerySummary</div>
             <a class="photoblockcollectionbutton" href="/gallery/@(galleryName)/index.html" title="@galleryTitle">View Collection</a>
+            <div>@gallerySummary</div>
         </div>
     }
 </div>

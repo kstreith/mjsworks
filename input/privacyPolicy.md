@@ -1,9 +1,7 @@
 ---
-Title: Privacy Policy - MJS Works
-Description: Privacy Policy
+Title: Privacy Policy
+Description: Read the Privacy Policy
 ---
-
-# Privacy Policy
 
 Last updated: 11 February 2018
 
