@@ -42,6 +42,7 @@ collections: # A list of collections the CMS should be able to edit
     extension: "yml"
     fields:
       - {label: "Title", name: "title", widget: "string" }
+      - {label: "Summary", name: "summary", widget: "string" }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "galleriesWithDescription"
@@ -51,7 +52,8 @@ collections: # A list of collections the CMS should be able to edit
     extension: "md"
     fields:
       - {label: "Title", name: "title", widget: "string" }
-      - {label: "Description", name: "body", widget: "markdown" }
+      - {label: "Summary", name: "summary", widget: "string" }
+      - {label: "Description", name: "body", widget: "markdown", required: false }
       - {label: "Cover Image", name: "CoverImage", widget: "image" }
       - {label: "Images", name: "Images", widget: "list", fields: [{ label: "Image", name: "Image", widget: "image" }] }
   - name: "pages"
@@ -68,6 +70,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "painting"
         file: "input/painting.yml"
         fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }
           - label: "Galleries"
             name: "Galleries"
             widget: "list"
@@ -116,4 +120,10 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Description", name: "Description", widget: "string" }                            
-          - { label: "Body", name: "body", widget: "markdown" }          
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Blog Landing Page"
+        name: "blog-landing-metadata"
+        file: "input/metadata/blog-landing.yml"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }
