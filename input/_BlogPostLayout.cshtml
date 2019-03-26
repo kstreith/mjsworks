@@ -8,7 +8,7 @@
     string imageWidth = Model.String("BlogImageWidth");
     string imageHeight = Model.String("BlogImageHeight");
     string imageMimeType = Model.String("BlogImageMimeType");
-    var thumbnailImageFile = imageFile.Substring(0, imagePath.Length - 4);
+    var thumbnailImageFile = imagePath.Substring(0, imagePath.Length - 4);
     thumbnailImageFile = $"{thumbnailImageFile}-thumbnail.jpg";
 }
 

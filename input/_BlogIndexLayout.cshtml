@@ -20,7 +20,7 @@
         string postTitle = post.String("Title");
         DateTime published = post.Get<DateTime>("Published");
         string imagePath = post.String("Image");
-        var thumbnailImageFile = imageFile.Substring(0, imagePath.Length - 4);
+        var thumbnailImageFile = imagePath.Substring(0, imagePath.Length - 4);
         thumbnailImageFile = $"{thumbnailImageFile}-thumbnail.jpg";
         var relativeFilePathBase = post.String("RelativeFilePathBase");
         <div class="postSummary">
