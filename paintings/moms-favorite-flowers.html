@@ -75,8 +75,13 @@
       <div style="padding-top: 1em; padding-bottom: 1em">
         <div>Stretching, weaving and growing towards our light. This is the heart of this painting. Original encaustic painting on wood birch panel with wire hanger</div>
       </div>
-      <div style="padding-bottom: 1em">Purchase using your existing Amazon account</div>
-      <div id="AmazonPayButton"></div>  
+      <div id="failedPurchase" class="disabledPurchase" style="display:none; padding-bottom: 1em">
+        Checkout with PayPal failed, please retry.
+      </div>
+      <div id="processingPurchase" style="display:none; padding-bottom: 1em">
+        Processing with PayPal...
+      </div>
+      <div id="paypal-button-container"></div>
       <div class="sellFooter">
           <div>Details about <a href="/faq.html#about_paintings">encaustic paintings</a>, <a href="/faq.html#how_to_care">how to care</a>, and <a href="/faq.html#return_policy">return policy</a></div>
           <div>SKU #p17014e</div>    
@@ -140,12 +145,12 @@
     mjsworks.parentGalleries = {"flora":{"NextImage":"my-two-friends","PreviousImage":"blooming"}};
   </script> 
   <script src="/assets/js/paintingPage.min.js"></script>   
-  <script src="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AcX7Jjaz4VEpeNJXPzapxyBeke037mjxpjP8WqgfH2Pr92mHiyM-9sTRg6QPS4XeGhfVDtbx0VETC3aP"></script>
   <script type="text/javascript">
     var mjsworks = mjsworks || {};
     mjsworks.purchaseConfig = {"accessKey":"AKIAIM3SZ2U2PKXWGYYA","amount":"216.00","currencyCode":"USD","lwaClientId":"amzn1.application-oa2-client.094733663c3d46519ad829672b45a184","paymentAction":"Authorize","returnURL":"https://mjsworks.com/finalizedSale.html","sellerId":"A3IO5ZO9PFIM3P","sellerNote":"Original encaustic painting","sellerOrderId":"p17014e","shippingAddressRequired":"true","static_generation_signature":"eYLDgvq3+0r3fzb2Jl+Ug+rRSR4H+0OXbeEMLx9chGU="};
   </script>
-  <script src="/assets/js/awsPurchase.min.js"></script>
+  <script src="/assets/js/paypalPurchase.min.js"></script>
 
 </body>
 </html>
