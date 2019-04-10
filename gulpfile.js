@@ -40,6 +40,14 @@ gulp.task('default', function (done) {
         .pipe(concat('awsPurchase.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('input/assets/js/', { sourcemaps: true }));
+    gulp.src(['input/assets/js/paypalPurchase.js'], { sourcemaps: true })
+        .pipe(concat('paypalPurchase.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('input/assets/js/', { sourcemaps: true }));
+    gulp.src(['input/assets/js/finalizePaypalSale.js'], { sourcemaps: true })
+        .pipe(concat('finalizePaypalSale.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('input/assets/js/', { sourcemaps: true }));
     done();
 });
 

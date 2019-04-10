@@ -18,7 +18,8 @@ int blogPostPageSize = 10;
 Settings["LinkHideExtensions"] = false;
 Settings["LinkHideIndexPages"] = false;
 Settings["MjsWorks-SiteMode"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_MODE");
-Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
+//Settings["MjsWorks-AwsWidgetsUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_AWS_WIDGETS_URL");
+Settings["MjsWorks-PayPalUrl"] = Environment.GetEnvironmentVariable("MJS_WORKS_PAYPAL_URL");
 string signingKey = Environment.GetEnvironmentVariable("MJS_STATIC_GENERATION_SIGNING_KEY");
 string port = Environment.GetEnvironmentVariable("MJS_WORKS_PORT");
 Pipelines.Add("ContentPages",

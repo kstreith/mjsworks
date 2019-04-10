@@ -42,14 +42,14 @@ If your item is damaged, please contact us at [info@mjsworks.com](mailto:info@mj
 
 Thanks for shopping at MJS Works, LLC. If you are not entirely satisfied with your purchase, we're here to help. Please reach out to us at [info@mjsworks.com](mailto:info@mjsworks.com) and we'll happily assist you.
 
-### Amazon Payments A-Z Guarantee
-Your purchase is covered by the [Amazon Payments A-Z Guarantee](https://pay.amazon.com/us/help/201212420). You must first initiate a return under the below policy for MJS Works. But in the case of disputes, those can be escalated directly to [Amazon Payments](https://pay.amazon.com/us/help/201212420).
+### Paypal Purchase Protection
+Your purchase is covered by the [Paypal Purchase Protection](https://www.paypal.com/us/webapps/mpp/paypal-safety-and-security). You must first initiate a return under the below policy for MJS Works. But in the case of disputes, those can be escalated directly to [Paypal](https://www.paypal.com/us/webapps/mpp/security/seller-dispute-resolution).
 
 ### Returns
 You have 14 calendar days to return an item from the date you received it. To be eligible for a return, your item must be in the original packaging.
 
 ### Refunds
-Once we receive your item, we will inspect it and notify you that we have received your returned item and the status of your return. If your return is approved, we will refund the purchase amount to your credit card via Amazon Payments, subject to your card issuer's policies.
+Once we receive your item, we will inspect it and notify you that we have received your returned item and the status of your return. If your return is approved, we will refund the purchase amount to your credit card via Paypal, subject to your card issuer's policies.
 
 ### Shipping
 Shipping charges for all returns must be prepaid by you. Please contact us at [info@mjsworks.com](mailto:info@mjsworks.com) for the return address in North Carolina, US. The return will only be processed when the item is received by us. You are responsible for any loss or damage to the item during shipment.
