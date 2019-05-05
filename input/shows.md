@@ -44,7 +44,8 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-  [National Encaustic Exhibition](https://artgallery.stamford.uconn.edu/#)
+  [Front Porch art walk]
+(https://www.frontporchartwalk.org/)
 
   </h3>
 
@@ -52,17 +53,19 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  3/4/2019 - 4/11/2019
+  4/11/2019 - 4/11/2019
+    
 
-  University of Connecticut – Stamford  
-  One University Place  
-  Stamford, CT 06901 
+ Front porch art walk 
+  Raleigh Historic Mordecai/Oakwood Neighborhood 
 
+​
   </div>
 
   <div class="eventDetails">
 
-  My painting "Dream Hike" will be in this [juried show](https://artgallery.stamford.uconn.edu/#) that runs till the end of March.
+This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.  Come and see me and all the other talented artist. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
+
 
   <div class="eventPic">
 
