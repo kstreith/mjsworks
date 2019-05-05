@@ -8,7 +8,7 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-[Front Porch Art Walk](https://www.frontporchartwalk.org/)
+[Cary Lazy Daze](https://www.townofcary.org/recreation-enjoyment/events/festivals/lazy-daze-arts-and-crafts-festival)
 
   </h3>
 
@@ -16,21 +16,20 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  5/11/2019
 
-  Raleigh Historic Mordecai/Oakwood Neighborhood 
 
+ Sat, Aug 24 – Sun, Aug 25
+Town of Cary, 316 N Academy St
+Cary, NC
   </div>
 
   <div class="eventDetails">
 
-Come and see me and all the other talented artists. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
-
-This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.  
+  I will be selling and showing at this show. This will be my first time at [Lazy Daze](https://www.townofcary.org/recreation-enjoyment/events/festivals/lazy-daze-arts-and-crafts-festival).
 
   <div class="eventPic">
 
-   ![Early Morning](/assets/paintings/marcia-streithorst-early-spring-thumbnail.jpg)
+  ![Early Morning](/assets/paintings/img_6550-thumbnail.jpg)
 
   </div>
 
@@ -40,11 +39,13 @@ This is a great opportunity to purchase artwork from up and coming as well as lo
 
 </div>
 
+
 <div class="event">
 
   <h3 class="eventTitle">
 
-[Art in the Heart of Hillsborough](https://www.hillsboroughartscouncil.org/arts-and-crafts-show)
+  [Front Porch art walk]
+(https://www.frontporchartwalk.org/)
 
   </h3>
 
@@ -52,20 +53,23 @@ This is a great opportunity to purchase artwork from up and coming as well as lo
 
   <div class="eventSideBar">
 
-  4/27/2019
+  4/11/2019 - 4/11/2019
+    
 
-  102 North Churton Street  
-  Hillsborough NC 27278
+ Front porch art walk 
+  Raleigh Historic Mordecai/Oakwood Neighborhood 
 
+​
   </div>
 
   <div class="eventDetails">
 
-  I will be selling and showing at this show. This will be my first time at [Art in the Heart](https://www.hillsboroughartscouncil.org/arts-and-crafts-show).
+This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.  Come and see me and all the other talented artist. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
+
 
   <div class="eventPic">
 
-  ![Early Morning](/assets/paintings/IMG_6080-thumbnail.jpg)
+   ![Early Morning](/assets/paintings/img_6513-thumbnail.jpg)
 
   </div>
 
