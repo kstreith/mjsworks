@@ -44,8 +44,7 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-  [Front Porch art walk]
-(https://www.frontporchartwalk.org/)
+[Front Porch art walk](https://www.frontporchartwalk.org/)
 
   </h3>
 
@@ -53,19 +52,17 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  4/11/2019 - 4/11/2019
-    
+  5/11/2019
 
- Front porch art walk 
   Raleigh Historic Mordecai/Oakwood Neighborhood 
 
-​
   </div>
 
   <div class="eventDetails">
 
-This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.  Come and see me and all the other talented artist. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
+Come and see me and all the other talented artists. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
 
+This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.  
 
   <div class="eventPic">
 
