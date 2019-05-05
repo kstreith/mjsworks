@@ -8,43 +8,7 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-[Art in the Heart of Hillsborough](https://www.hillsboroughartscouncil.org/arts-and-crafts-show)
-
-  </h3>
-
-  <div class="eventInfo">
-
-  <div class="eventSideBar">
-
-  4/27/2019
-
-  102 North Churton Street  
-  Hillsborough NC 27278
-
-  </div>
-
-  <div class="eventDetails">
-
-  I will be selling and showing at this show. This will be my first time at [Art in the Heart](https://www.hillsboroughartscouncil.org/arts-and-crafts-show).
-
-  <div class="eventPic">
-
-  ![Early Morning](/assets/paintings/img_6550-thumbnail.jpg)
-
-  </div>
-
-  </div>
-
-  </div>
-
-</div>
-
-
-<div class="event">
-
-  <h3 class="eventTitle">
-
-[Front Porch art walk](https://www.frontporchartwalk.org/)
+[Front Porch Art Walk](https://www.frontporchartwalk.org/)
 
   </h3>
 
@@ -66,7 +30,42 @@ This is a great opportunity to purchase artwork from up and coming as well as lo
 
   <div class="eventPic">
 
-   ![Early Morning](/assets/paintings/img_6513-thumbnail.jpg)
+   ![Early Morning](/assets/paintings/marcia-streithorst-early-spring-thumbnail.jpg)
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="event">
+
+  <h3 class="eventTitle">
+
+[Art in the Heart of Hillsborough](https://www.hillsboroughartscouncil.org/arts-and-crafts-show)
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  4/27/2019
+
+  102 North Churton Street  
+  Hillsborough NC 27278
+
+  </div>
+
+  <div class="eventDetails">
+
+  I will be selling and showing at this show. This will be my first time at [Art in the Heart](https://www.hillsboroughartscouncil.org/arts-and-crafts-show).
+
+  <div class="eventPic">
+
+  ![Early Morning](/assets/paintings/IMG_6080-thumbnail.jpg)
 
   </div>
 
