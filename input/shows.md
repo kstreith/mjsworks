@@ -24,7 +24,7 @@ NavigationTab: shows
 
   <div class="eventDetails">
 
-Come and see me and all the other talented artists. Show starts at 10am and runs till 5pm. https://www.frontporchartwalk.org/ 
+Come and see me and all the other talented artists. [Front Porch Art Walk](https://www.frontporchartwalk.org/) starts at 10am and runs till 5pm.
 
 This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.
 
@@ -66,7 +66,7 @@ I will be selling and showing at this show. This will be my first time at [Lazy 
 
   <div class="eventPic">
 
-   ![Early Morning](/assets/paintings/IMG_6080-thumbnail.jpg)
+   ![Image of Painting](/assets/paintings/IMG_6080-thumbnail.jpg)
 
   </div>
 
