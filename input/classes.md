@@ -37,7 +37,7 @@ Do you love art but are completely out of wall space? Is your home small but you
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6469-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_20181207_192415~2-thumbnail.jpg)
 
   </div>
 
