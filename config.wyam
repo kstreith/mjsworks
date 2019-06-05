@@ -12,7 +12,7 @@
 Settings["Host"] = Environment.GetEnvironmentVariable("MJS_WORKS_SITE_DOMAIN");
 Settings["LinksUseHttps"] = Environment.GetEnvironmentVariable("MJS_WORKS_USE_HTTPS") == "false" ? false : true;
 Settings["MjsWorks-GoogleAnalyticsId"] = Environment.GetEnvironmentVariable("MJS_WORKS_GOOGLE_ANALYTICS_ID");
-Settings["MjsWorks-SaleBanner"] = null;
+Settings["MjsWorks-SaleBanner"] = null; 
 double? discount = null;
 int blogPostPageSize = 10;
 Settings["LinkHideExtensions"] = false;
