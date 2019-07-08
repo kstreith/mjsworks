@@ -3,7 +3,7 @@ title: A few of my favorite Art Supplies
 Lead: 'If you could only use 3 art supplies, what would they be?'
 Author: Marcia Streithorst
 Published: '2019-07-09'
-Image: /assets/paintings/2014-07-18-13.02.57.jpg
+Image: /assets/paintings/img_6540.jpg
 ---
 Everyone has their favorite art supplies, that one thing they can not live without. If you are new to encaustic painting I thought it might be helpful if I shared a few of my favorite art supplies with you.
 
