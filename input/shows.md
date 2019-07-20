@@ -8,43 +8,6 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-[Front Porch Art Walk](https://www.frontporchartwalk.org/)
-
-  </h3>
-
-  <div class="eventInfo">
-
-  <div class="eventSideBar">
-
-  5/11/2019
-
-  Raleigh Historic Mordecai/Oakwood Neighborhood 
-
-  </div>
-
-  <div class="eventDetails">
-
-Come and see me and all the other talented artists. [Front Porch Art Walk](https://www.frontporchartwalk.org/) starts at 10am and runs till 5pm.
-
-This is a great opportunity to purchase artwork from up and coming as well as long established local artists. Artwork will include hand crafted ceramics, photography, glass, jewelry, paintings, fiber arts, bath and body products, sculptures, metal works and more.
-
-  <div class="eventPic">
-
-  ![Image of Painting](/assets/paintings/marcia-streithorst-early-spring-thumbnail.jpg)
-
-  </div>
-
-  </div>
-
-  </div>
-
-</div>
-
-
-<div class="event">
-
-  <h3 class="eventTitle">
-
   [Cary Lazy Daze](https://www.townofcary.org/recreation-enjoyment/events/festivals/lazy-daze-arts-and-crafts-festival)
 
   </h3>
