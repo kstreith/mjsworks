@@ -1,9 +1,9 @@
 ---
-title: Wax, papers and paint oh my!
-Lead: 'If you could only use 3 art supplies, what would they be?'
+title: Encaustic Journaling
+Lead: 'Wax, papers and paint oh my!'
 Author: Marcia Streithorst
 Published: '2019-08-08'
-Image: /assets/paintings/img_6540.jpg
+Image: /assets/paintings/img_6664_2.jpg
 ---
 I have always loved to look at other people’s art journals. The way each page flows with color, the fun collages glued to the pages. I love the meaning of the art journal for the person who made it. I am for the record very bad at art journaling. I have started a few and if I’m being honest have never finished one. I find it hard to fill an entire book with small sketches, or written notes about my life.
 
