@@ -12,7 +12,7 @@ Come to one of my classes and interactively learn how to create your own encaust
   <h3 class="eventTitle">
 
 
-[Mixed Media Art Journaling](http://deborahsoulfulheart.com/classes/)
+Encaustic Box Class
 
   </h3>
 
@@ -20,25 +20,28 @@ Come to one of my classes and interactively learn how to create your own encaust
 
   <div class="eventSideBar">
 
-  8/31/2019  
+  9/22/2019  
+  1pm to 3pm
 
-  Soulful heART Studios  
-  507 East Young Street  
-  Rolesville, NC 27571  
+  Southern Home Crafts  
+  111 N. Salem Street  
+  Apex, NC 27502  
 
   </div>
 
   <div class="eventDetails">
 
-In this fun mixed media class, you will create your own mixed media art journal. We will start off creating an encaustic painting for the cover of our journal. Then we will cover the basics of print making, cover different types of papers you can use in your journal, and tips and tricks to bring your journal to life. All supplies are included, and you will walk away with your very own mixed media art journal!
+I will teach the ancient art of encaustic painting with a perfect mix of amazing talent and incredible patience.
+Perfect for those with some experience as well as beginners. 
+In this adventure, you’ll be taught to craft a mixed media project on an upcycled cigar box. 
 
-Class fee is $80
+Cost is $80. Limit 5 participants. All materials included, no experience necessary.
 
-  [Register](http://deborahsoulfulheart.com/classes/)
+To register, either call (919) 608-9935 or e-mail kim@southernhomecrafts.com
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_20190718_210911~2-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_20181207_192415~2-thumbnail.jpg)
 
   </div>
 
@@ -97,7 +100,7 @@ Class is $75 all supplies included, and you will walk away with all the paper yo
   <h3 class="eventTitle">
 
 
-[Encaustic Mermaid Painting](https://crafts.arts.ncsu.edu/classes-and-workshops/art-on-paper/)
+[Encaustic Mermaid Painting - Sold Out!](https://crafts.arts.ncsu.edu/classes-and-workshops/art-on-paper/)
 
   </h3>
 
@@ -136,8 +139,49 @@ Join me as I teach you all about encaustic painting while walking you though the
 
   <h3 class="eventTitle">
 
+Mermaid Canvas
 
-[Encaustic Memory Boxes](https://crafts.arts.ncsu.edu/classes-and-workshops/art-on-paper/)
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  10/9/2019  
+  6pm to 8pm
+
+  Southern Home Crafts  
+  111 N. Salem Street  
+  Apex, NC 27502  
+
+  </div>
+
+  <div class="eventDetails">
+
+Create your own magical version of my ever-popular Mermaids canvas. Your 5x7” painting is sure to be a splash on your wall, or as a special gift. On this special evening, you’ll paint on a birch wood panel using encaustic medium (e.g. wax with resin) and a heat gun. Learn how to safely use encaustic supplies (provided) to create smooth or textured surfaces and embed other mixed media materials into your work.
+
+Cost is $80. Limit 5 participants. All materials included, no experience necessary.
+
+To register, either call (919) 608-9935 or e-mail kim@southernhomecrafts.com
+
+  <div class="eventPic">
+
+  ![Painting](/assets/paintings/img_6540-thumbnail.jpg)
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="event">
+
+  <h3 class="eventTitle">
+
+
+[Encaustic Memory Boxes - Sold Out!](https://crafts.arts.ncsu.edu/classes-and-workshops/art-on-paper/)
 
   </h3>
 
@@ -163,6 +207,49 @@ Do you love art but are completely out of wall space? Is your home small but you
   <div class="eventPic">
 
   ![Painting](/assets/paintings/img_20181207_192415~2-thumbnail.jpg)
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="event">
+
+  <h3 class="eventTitle">
+
+Encaustic Collage
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  11/4/2019  
+  10am to 12pm
+
+  Southern Home Crafts  
+  111 N. Salem Street  
+  Apex, NC 27502  
+
+  </div>
+
+  <div class="eventDetails">
+
+Incorporate papers and other elements into a mixed media gem! In this class, I will share a brief history of printmaking, teach you how to make our own hand printed papers,
+and help you use gel plates to create mixed media collage paintings. Learn the basics of printmaking, layering multiple pulls, ghost prints and all the different kinds of paints and papers you can use on the plate. We will use stencils, stamps and
+other found objects to make patterns and designs on our plates, and talk about how to use different gel mediums in our work.  
+
+Cost is $80. Limit 5 participants. All materials included, no experience necessary.
+
+To register, either call (919) 608-9935 or e-mail kim@southernhomecrafts.com
+
+  <div class="eventPic">
+
+  ![Painting](/assets/paintings/img_6518-thumbnail.jpg)
 
   </div>
 
