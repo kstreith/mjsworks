@@ -3,7 +3,7 @@ title: Art Festivals
 Lead: 'Art festivals not just about making money'
 Author: Marcia Streithorst
 Published: '2019-10-10'
-Image: /assets/paintings/img_6603.jpg
+Image: /assets/paintings/img_6683.jpg
 ---
 I love art festivals, you love them, and maybe you want start selling at them. Here are a few of the things I love most about being a vendor at art festivals.
  
