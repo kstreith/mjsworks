@@ -12,6 +12,32 @@ Come to one of my classes and interactively learn how to create your own encaust
   <h3 class="eventTitle">
 
 
+Encaustic journaling workshop
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  9/22/2019  
+  6:30pm to 8:30pm
+
+  Soulful Heart Studio
+  507 East Young street  
+  Rolesville, NC 27571 
+
+  </div>
+
+  <div class="eventDetails">
+
+In this (hands on) class you will learn about the Encaustic medium and use this information to create a beautiful encaustic painting on the cover of your own art journal.  There will be demonstrations about printmaking techniques using paint, stencils, stamps, and different types of papers to create unique prints to use inside an art journal.   Art experience not necessary for this FUN and CREATIVE workshop.
+
+To register, http://deborahsoulfulheart.com/product/encaustic-painting-using-nature-with-marcia-streithorst/
+  <div class="eventPic">
+
+  ![Painting](/assets/paintings/img_6700-thumbnail.jpg)
+
 Encaustic Box Class
 
   </h3>
