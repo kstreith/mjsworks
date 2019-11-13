@@ -11,6 +11,33 @@ Come to one of my classes and interactively learn how to create your own encaust
 
   <h3 class="eventTitle">
 
+Photo transfer encaustic workshop
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  1/11/2020  
+  6:00pm to 8:00pm
+
+  Southern Home Crafts
+  111 N Salem St
+  Apex, NC 27502
+
+  </div>
+
+  <div class="eventDetails">
+
+Want to take you photography to the next level? Want to learn how to incorporate photographs into your work? Then join encaustic artist Marcia Streithorst as she teaches you all about encaustic painting while walking you though a photo transfer into your encaustic painting. You will paint on a wood box using encaustic medium (e.g. wax with resin) and a heat gun. In this workshop you will learn how to safely use encaustic supplies. You will also learn how to get a smooth or textured surface and how to incorporate photography and other mixed media materials in your work. Students will walk away with their completed painting on a keepsake box. Cost is $80 with all supplies included. 
+
+To register, To receive a class entry, kindly email kim@southernhomecrafts.com
+  <div class="eventPic">
+
+  ![Painting](/assets/paintings/img_6700-thumbnail.jpg)
+
+
 
 Encaustic journaling workshop
 
