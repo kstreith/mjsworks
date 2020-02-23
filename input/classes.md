@@ -10,32 +10,49 @@ Come to one of my classes and interactively learn how to create your own encaust
 <div class="event">
 
   <h3 class="eventTitle">
+<div class="eventPic">
 
-[Photo transfer encaustic workshop](https://checkout.square.site/buy/WFJHM6SEUJDDUA6DV4JSTFCE?fbclid=IwAR1-sKDb2kPSRqPTUD9-xY2jB0YT9bvIfbp-RS1tF22Q7xSfDp6oXChmPLg)
+  ![Painting](/assets/paintings/img_5578-thumbnail.jpg)
 
+[Photo transfer encaustic workshop]
   </h3>
 
   <div class="eventInfo">
 
   <div class="eventSideBar">
 
-  1/11/2020  
-  6:15pm to 8:30pm
+   3/27/2020  
+  6:30pm to 9:30pm
 
-  Southern Home Crafts
-  111 N Salem St
-  Apex, NC 27502
+  NC State University Crafts Center  
+  210 Jensen Dr  
+  Raleigh, NC 27607  
 
   </div>
 
   <div class="eventDetails">
 
-Want to take your photography to the next level? Want to learn how to incorporate photographs into your work? Then join me as I teach you all about encaustic painting while walking you though a photo transfer into your encaustic painting. You will paint on a wood box using encaustic medium (e.g. wax with resin) and a heat gun. In this workshop you will learn how to safely use encaustic supplies. You will also learn how to get a smooth or textured surface and how to incorporate photography and other mixed media materials in your work. Students will walk away with their completed painting on a keepsake box. Cost is $80 with all supplies included. 
+Want to take you photography to the next level? Want to learn how to incorporate photographs into your work? Then me as I teach you all about encaustic painting while walking you though a photo transfer into your encaustic painting. You will paint on a wood birch panel using encaustic medium [e.g. wax with resin] and a heat gun. In this workshop you will learn how to safely use encaustic supplies. You will also learn how to get a smooth or textured surface and how to incorporate photography and other mixed media materials in your work. Students will walk away with their completed 5x7 painting. A materials fee of $20 is payable to the instructor on the day of the workshop. This workshop is suited for all skill levels.
+
+To learn more about encaustic and Marcia’s work, please visit https://mjsworks.com/.
+[Register](https://crafts.arts.ncsu.edu/classes-and-workshops/)
+
+  
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
 
 
-Please [pay your workshop fee](https://checkout.square.site/buy/WFJHM6SEUJDDUA6DV4JSTFCE?fbclid=IwAR1-sKDb2kPSRqPTUD9-xY2jB0YT9bvIfbp-RS1tF22Q7xSfDp6oXChmPLg), or come by the shop with cash or check. *Note:  This workshop may be recorded and/or have photos added to social media.*
 
-  <div class="eventPic">
+  
+
+  </div>
+<div class="eventPic">
 
   ![Painting](/assets/paintings/img_6080-thumbnail.jpg)
 
@@ -51,7 +68,7 @@ Please [pay your workshop fee](https://checkout.square.site/buy/WFJHM6SEUJDDUA6D
 
   <h3 class="eventTitle">
 
-[Encaustic Mermaid Painting](https://crafts.arts.ncsu.edu/classes-and-workshops/)
+[Nature's call](https://crafts.arts.ncsu.edu/classes-and-workshops/)
 
   </h3>
 
@@ -59,18 +76,16 @@ Please [pay your workshop fee](https://checkout.square.site/buy/WFJHM6SEUJDDUA6D
 
   <div class="eventSideBar">
 
-  11/31/2019  
-  6:30pm to 9:30pm
+  02/28/2020  
+  6:30pm to 9:00pm
 
-  NC State University Crafts Center  
-  210 Jensen Dr  
-  Raleigh, NC 27607  
+  Soulful heART Studio, 507 East Young St, Rolesville, NC  27571 
 
   </div>
 
   <div class="eventDetails">
 
-Join me as I teach you all about encaustic painting while walking you though the steps to craft your very own mermaid painting. You will paint on a wood birch panel using encaustic medium [e.g. wax with resin] and a heat gun. In this workshop you will learn how to safely use encaustic supplies. You will also learn how to get a smooth or textured surface and how to embed other mixed media materials in your work. Students will walk away with their completed 5”x7” painting. A materials fee of $20 is payable to the instructor on the day of the workshop. This workshop is suited for all skill levels.
+Deborah Young at Soulful heART Studio will be hosting guest artist, Marcia Streithorst, for another one of her FABULOUS creative encaustic workshops.  She will teach us the basics of encaustic and how to safely setup an encaustic studio.  There will be a variety of substrates for participates to paint on and mixed media materials to use throughout the workshop. She’ll assist everyone in learning how to transfer images, get a smooth surface, embed different types of papers and other natural objects into wax, and finally add marks using encaustic tools and oil sticks.  If you have special papers, shells or feathers, etc., you would like to bring and use, please feel free to do so. Art experience not necessary to register for this CREATIVE workshop.
 
 To learn more about encaustic and Marcia’s work, please visit https://mjsworks.com/
 
@@ -78,7 +93,7 @@ To learn more about encaustic and Marcia’s work, please visit https://mjsworks
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6550-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_6080-thumbnail.jpg)
 
   </div>
 
@@ -100,7 +115,7 @@ To learn more about encaustic and Marcia’s work, please visit https://mjsworks
 
   <div class="eventSideBar">
 
-  2/21/2019  
+  2/21/2020  
   6:30pm to 9:30pm
 
   NC State University Crafts Center  
@@ -133,38 +148,5 @@ To learn more about encaustic and Marcia’s work, please visit https://mjsworks
 
   <h3 class="eventTitle">
 
-[Encaustic and Photography](https://crafts.arts.ncsu.edu/classes-and-workshops/)
 
-  </h3>
-
-  <div class="eventInfo">
-
-  <div class="eventSideBar">
-
-  3/27/2020  
-  6:30pm to 9:30pm
-
-  NC State University Crafts Center  
-  210 Jensen Dr  
-  Raleigh, NC 27607  
-
-  </div>
-
-  <div class="eventDetails">
-
-Want to take you photography to the next level? Want to learn how to incorporate photographs into your work? Then me as I teach you all about encaustic painting while walking you though a photo transfer into your encaustic painting. You will paint on a wood birch panel using encaustic medium [e.g. wax with resin] and a heat gun. In this workshop you will learn how to safely use encaustic supplies. You will also learn how to get a smooth or textured surface and how to incorporate photography and other mixed media materials in your work. Students will walk away with their completed 5x7 painting. A materials fee of $20 is payable to the instructor on the day of the workshop. This workshop is suited for all skill levels.
-
-To learn more about encaustic and Marcia’s work, please visit https://mjsworks.com/.
-[Register](https://crafts.arts.ncsu.edu/classes-and-workshops/)
-
-  <div class="eventPic">
-
-  ![Painting](/assets/paintings/img_5578-thumbnail.jpg)
-
-  </div>
-
-  </div>
-
-  </div>
-
-</div>
+  
