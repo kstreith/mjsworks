@@ -16,7 +16,7 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  5/2/2019 – 5/3/2019
+  5/2/2020 – 5/3/2020
 
   1301 Blanton Ave  
   Richmond, VA 23221
@@ -51,7 +51,7 @@ This will be my first show in Virgina and first time at [Arts in the Park](https
 
   <div class="eventSideBar">
 
-  4/25/2019
+  4/25/2020
 
   801 High House Rd  
   Cary, NC 27513
