@@ -141,7 +141,7 @@ To learn more about encaustic and Marcia’s work, please visit https://mjsworks
 
   <div class="eventSideBar">
 
-  3/27/2019  
+  3/27/2020  
   6:30pm to 9:30pm
 
   NC State University Crafts Center  
