@@ -3,7 +3,7 @@ title: "Birds of a feather"
 Lead: "Feathers? Wax? What happens next?"
 Author: Marcia Streithorst
 Published: '2020-04-22'
-Image: /assets/paintings/img_6196.jpg
+Image: /assets/paintings/IMG_6196.jpg
 ---
 
 Have you ever wondered if wax and feathers would be great friends? How would the vibrant blues, greens and reds of the feathers look next to the warm creamy color of the wax? This combination was just too dreamy to resist. So, challenge accepted!
