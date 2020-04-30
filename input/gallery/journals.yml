@@ -1,7 +1,6 @@
 title: Journals
-summary: Handmade encaustic journals, with a Coptic binding and handmade papers
-  for the signatures
-CoverImage: assets/paintings/img_6872.jpg
+summary: Handmade encaustic journals with a coptic binding and handmade papers.
+CoverImage: /assets/paintings/img_6872.jpg
 Images:
-  - Image: assets/paintings/img_6868.jpg
-  - Image: assets/paintings/img_6872.jpg
+  - Image: /assets/paintings/img_6868.jpg
+  - Image: /assets/paintings/img_6872.jpg
