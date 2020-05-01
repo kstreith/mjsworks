@@ -12,15 +12,21 @@
     string imageWidth = Model.String("PaintingImageWidth");
     string imageHeight = Model.String("PaintingImageHeight");
     string imageMimeType = Model.String("PaintingImageMimeType");
+    List<string> additionalImages = Model.Get<List<string>>("AdditionalImages");
+    bool? hasAdditionalImages = additionalImages?.Any();
     string price = $"{Model.Get<double>("Price"):C}";
     double? originalPrice = Model.Get<double?>("OriginalPrice");
     string originalPriceFormatted = null;
     if (originalPrice != null) 
     {
       originalPriceFormatted = $"{originalPrice:C}";
+    }    
+    string saleDescription = $"{description}";
+    if (sku.EndsWith("e")) {
+      saleDescription += " Original encaustic painting on wood birch panel with wire hanger";
     }
-    string saleDescription = $"{description} Original encaustic painting on wood birch panel with wire hanger";
     var parentGalleriesJson = Model.Get<string>("ParentGalleriesJson");
+    var salesImagesJson = Model.Get<string>("SalesImagesJson");
 }
 
 @section Metadata {
@@ -55,10 +61,17 @@
     <div class="sellPanel">
       <div>
         <div>Price: @price @if (originalPriceFormatted != null) {<span class="originalPrice">@originalPriceFormatted</span>}</div>
-        <div>Panel Size: @size</div>
+        <div>Size: @size</div>
         <div>Shipping: <a href="/faq.html#shipping_policy">Free</a></div>
         <div>Quantity: 1</div>
       </div>
+      @if (hasAdditionalImages == true) {
+      <div class="salesImageNav">
+        <span id="prevSalesImageLink" title="Previous Sales Image"><i class="icon-left-circled"></i></span>
+        <div>Image <span id="salesImageIndex">1</span> of @(additionalImages.Count + 1)</div>
+        <span id="nextSalesImageLink" title="Next Sales Image"><i class="icon-right-circled"></i></span>
+      </div>
+      }
       <div style="padding-top: 1em; padding-bottom: 1em">
         <div>@saleDescription</div>
       </div>
@@ -92,6 +105,7 @@
   <script type="text/javascript">
     var mjsworks = mjsworks || {};
     mjsworks.parentGalleries = @Html.Raw(parentGalleriesJson);
+    mjsworks.salesImages = @Html.Raw(salesImagesJson);
   </script> 
   <script src="/assets/js/paintingPage.min.js"></script>   
 @if (showSellUi)

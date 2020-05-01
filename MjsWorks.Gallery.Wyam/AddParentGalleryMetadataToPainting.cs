@@ -83,10 +83,19 @@ namespace MjsWorks.Gallery.Wyam
                         //System.Console.WriteLine($"parentGallery: {parentGalleryName} PrevImage: {prevImageFile} {prevImagePage}, NextImage: {nextImageFile} {nextImagePage}");
                     }
                 }
+                var salesImages = new List<string> {
+                    doc.String("File")
+                };
+                var additionalImages = doc.Get<string[]>("AdditionalImages");
+                if (additionalImages?.Any() == true) {
+                    salesImages.AddRange(additionalImages);
+                }
                 var parentGalleriesJson = JsonConvert.SerializeObject(parentGalleryNavigations);
+                var salesImagesJson = JsonConvert.SerializeObject(salesImages);
                 return context.GetDocument(doc, new Dictionary<string, object>
                 {
-                    ["ParentGalleriesJson"] = parentGalleriesJson
+                    ["ParentGalleriesJson"] = parentGalleriesJson,
+                    ["salesImagesJson"] = salesImagesJson
                 });
             });
         }
