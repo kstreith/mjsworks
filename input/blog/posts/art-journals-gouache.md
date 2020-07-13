@@ -1,6 +1,6 @@
 ---
 title: "Art Journals for fun with a purpose"
-Lead: "My learning with goauche"
+Lead: "Experimenting with goauche"
 Author: Marcia Streithorst
 Published: '2020-07-12'
 Image: /assets/paintings/IMG_6204.jpg
