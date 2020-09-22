@@ -1,7 +1,8 @@
 title: Beach Day
-Size: "3 in x 3 in"
+Size: 3 in x 3 in
 Price: 27
 Sku: p19090e
 Description: Small ocean painting with big colors.
-ForSale: true
+ForSale: false
+Sold: true
 File: /assets/paintings/img_6966_1.jpg
