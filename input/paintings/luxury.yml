@@ -2,6 +2,7 @@ title: Luxury
 Size: 3 in x 3 in
 Price: 27
 Sku: p19077e
-Description: "Brown feather, paper and ink mixed media painting."
-ForSale: true
+Description: Brown feather, paper and ink mixed media painting.
+ForSale: false
+Sold: true
 File: /assets/paintings/img_6975_1.jpg
