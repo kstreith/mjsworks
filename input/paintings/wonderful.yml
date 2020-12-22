@@ -2,9 +2,10 @@ title: Wonderful
 Size: 6 in x 9 in
 Price: 35
 Sku: p19061j
-Description: "Handmade encaustic journal with a coptic binding and handmade
-  papers. This journal has 100 pages."
-ForSale: true
+Description: Handmade encaustic journal with a coptic binding and handmade
+  papers. This journal has 100 pages.
+ForSale: false
+Sold: true
 File: /assets/paintings/img_6872.jpg
 AdditionalImages:
   - /assets/paintings/IMG_6880.JPG
