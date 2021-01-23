@@ -8,7 +8,7 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-  [Arts in the Park](https://richmondartsinthepark.com/)
+  [Cary Gallery Of Artists](https://www.carygalleryofartists.org/)
 
   </h3>
 
@@ -16,55 +16,23 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  5/2/2020 – 5/3/2020
+  2020 and 2021
 
-  1301 Blanton Ave  
-  Richmond, VA 23221
+  200 S Academy Street
+  Cary, NC 27511
 ​
   </div>
 
   <div class="eventDetails">
 
-This will be my first show in Virgina and first time at [Arts in the Park](https://richmondartsinthepark.com/). Come see my artwork and buy a piece or two to take home.
+I am part of the Cary Gallery of Artists and very pleased to exhibit and sell work at this gallery.
+ Come see my artwork and buy a piece or two to take home.
+
+You can also view [my dedicated page on their website](https://www.carygalleryofartists.org/copy-of-kathleen-dentinger)
 
   <div class="eventPic">
 
-   ![Image of Painting](/assets/paintings/img_6703-thumbnail.jpg)
-
-  </div>
-
-  </div>
-
-  </div>
-
-</div>
-
-<div class="event">
-
-  <h3 class="eventTitle">
-
-  [Cary Spring Daze](https://www.townofcary.org/recreation-enjoyment/events/festivals/spring-daze-arts-and-crafts-festival)
-
-  </h3>
-
-  <div class="eventInfo">
-
-  <div class="eventSideBar">
-
-  4/25/2020
-
-  801 High House Rd  
-  Cary, NC 27513
-​
-  </div>
-
-  <div class="eventDetails">
-
-This will be my first time at [Cary Spring Daze](https://www.townofcary.org/recreation-enjoyment/events/festivals/spring-daze-arts-and-crafts-festival). Come enjoy the park and take some of my artwork home with you.
-
-  <div class="eventPic">
-
-   ![Image of Painting](/assets/paintings/img_6716-thumbnail.jpg)
+   ![Image of Painting](/assets/paintings/img_6868-thumbnail.jpg)
 
   </div>
 

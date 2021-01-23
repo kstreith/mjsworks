@@ -5,5 +5,6 @@ Sku: p19058e
 Description: >-
   Waves rushing in all around. Sun glinting off the water, you peer into the
   deep end of the ocean.
-ForSale: true
+ForSale: false
+Sold: true
 File: /assets/paintings/img_6720_1.jpg
