@@ -2,12 +2,14 @@ title: Robins eggs
 Size: "7 in x 7 in x 3 in "
 Price: 40
 Sku: p19065b
-Description: Upcycled cigar box has been transformed into a beautiful box to store your belongings. The box has been covered with a hand-painted birds nest.
-ForSale: true
+Description: Upcycled cigar box has been transformed into a beautiful box to
+  store your belongings. The box has been covered with a hand-painted birds
+  nest.
+ForSale: false
+Sold: true
 File: /assets/paintings/img_6916.jpg
 AdditionalImages:
   - /assets/paintings/IMG_6920.JPG
   - /assets/paintings/IMG_6921.JPG
-  - /assets/paintings/IMG_6923.JPG  
-  - /assets/paintings/IMG_6926.JPG 
-
+  - /assets/paintings/IMG_6923.JPG
+  - /assets/paintings/IMG_6926.JPG
