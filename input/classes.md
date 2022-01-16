@@ -22,8 +22,8 @@ Come to one of my classes and interactively learn how to create your own encaust
   02/18/2022  
   6:30pm to 9:30pm
 
-  NC State Craft Center
-  210 Jensen Drive
+  NC State Craft Center  
+  210 Jensen Drive  
   Raleigh, NC  27605 
 
   </div>
@@ -42,7 +42,7 @@ Cost:
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6975_1-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_20181207_192415~2-thumbnail.jpg)
 
   </div>  
 
@@ -67,15 +67,15 @@ Cost:
   02/26/2022  
   6:30pm to 9:00pm
 
-  Soulful heART Studio at the Young Farm
-  507 East Young Street
+  Soulful heART Studio at the Young Farm  
+  507 East Young Street  
   Rolesville, NC 27571 
 
   </div>
 
   <div class="eventDetails">
 
-TBD
+Join encaustic artist Marcia Streithorst as she teaches you all about encaustic painting while walking you though the steps to craft your very own vibrant busy bee painting. In this workshop you will learn how to safely use encaustic supplies, how to get a smooth or textured surface. How to utilize art supplies you already own with encaustic as well as how to incorporate other mixed media materials in your work. All supplies are included, and you will walk away with a small mixed media painting. All supplies are included but if you have any paper of found objects you would like to incorporate into your project feel free to bring them, and if you have any questions about the workshop email Marcia Streithorst at Mstreithorst@yahoo.com. This workshop is suited for all skill levels.
 
 Cost:
  - Public - $75
@@ -84,7 +84,7 @@ Cost:
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6966_1-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_7274-thumbnail.jpg)
 
   </div>  
 
@@ -109,8 +109,8 @@ Cost:
   04/01/2022  
   6:30pm to 9:30pm
 
-  NC State Craft Center
-  210 Jensen Drive
+  NC State Craft Center  
+  210 Jensen Drive  
   Raleigh, NC  27605 
 
   </div>
@@ -129,7 +129,7 @@ Cost:
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6700-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_7276-thumbnail.jpg)
 
   </div>  
 
@@ -154,8 +154,8 @@ Cost:
   04/15/2022  
   6:30pm to 9:30pm
 
-  NC State Craft Center
-  210 Jensen Drive
+  NC State Craft Center  
+  210 Jensen Drive  
   Raleigh, NC  27605 
 
   </div>
@@ -174,7 +174,7 @@ Cost:
 
   <div class="eventPic">
 
-  ![Painting](/assets/paintings/img_6716-thumbnail.jpg)
+  ![Painting](/assets/paintings/img_6381-thumbnail.jpg)
 
   </div>  
 

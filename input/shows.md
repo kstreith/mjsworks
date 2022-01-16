@@ -69,7 +69,7 @@ Join me at Byrd Park for the 51st Annual Arts and Craft Show.  The two-day event
 
   <div class="eventPic">
 
-   ![Image of Painting](/assets/paintings/img_6672-thumbnail.jpg)
+   ![Image of Painting](/assets/paintings/img_7292-thumbnail.jpg)
 
   </div>
 
