@@ -1,18 +1,18 @@
 var gulp = require('gulp');
-//var autoprefixer = require('autoprefixer');
-//var cssnano = require('cssnano');
-//var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
+var postcss = require('gulp-postcss');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-//var sourcemaps = require('gulp-sourcemaps');
-//var sass = require('gulp-sass')
+var sourcemaps = require('gulp-sourcemaps');
+var sass = require('gulp-sass')(require('sass'));
 
-/*var sassOptions = {
+var sassOptions = {
   outputStyle: 'expanded'
-};*/
+};
 
 gulp.task('default', function (done) {
-    /*var cssplugins = [
+    var cssplugins = [
         autoprefixer(),
         cssnano()
     ];
@@ -23,7 +23,7 @@ gulp.task('default', function (done) {
         .pipe(concat('all.min.css'))
         .pipe(postcss(cssplugins))
         .pipe(sourcemaps.write('maps'))
-        .pipe(gulp.dest('input/assets/css/'));*/
+        .pipe(gulp.dest('input/assets/css/'));
     gulp.src(['input/assets/js/shared.js'], { sourcemaps: true })
         .pipe(concat('all.min.js'))
         .pipe(uglify())
