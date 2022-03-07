@@ -2,6 +2,7 @@ title: Foggy forest
 Size: 11 in x 14 in
 Price: 230
 Sku: p220003e
-Description: "Dream like landscape of a forest at night. "
-ForSale: true
-File: assets/paintings/img_7328.jpg
+Description: "Dream-like landscape of a forest at night."
+ForSale: false
+Sold: true
+File: /assets/paintings/img_7328.jpg
