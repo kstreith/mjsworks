@@ -4,5 +4,6 @@ Price: 270
 Sku: p220002e
 Description: A painting capturing the magic and whimsical feeling I had as a child
   when visiting my grandma's farm.
-ForSale: true
+ForSale: false
+Sold: true
 File: /assets/paintings/img_7320.jpg

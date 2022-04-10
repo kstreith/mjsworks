@@ -107,6 +107,7 @@ Pipelines.Add("PaintingGalleryList",
         .WithLayout("/_PaintingGalleryListLayout.cshtml"),
     WriteFiles()
 );
+
 Pipelines.Add("PaintingThumbnails",
     ReadFiles("assets/paintings/*"),
     ThumbnailImage(),

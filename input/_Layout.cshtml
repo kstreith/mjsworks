@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   @RenderSection("Metadata", false)
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/assets/css/all.min.css?20220116">
+  <link rel="stylesheet" href="/assets/css/all.min.css?20220410">
 </head>
 @{
     var siteMode = Model.String("MjsWorks-SiteMode");
@@ -22,6 +22,7 @@
         new { Title = "Classes", Key = "classes", Link = Context.GetLink("/classes.html")},
         new { Title = "Shows", Key = "shws", Link = Context.GetLink("/shows.html")},
         new { Title = "Blog", Key = "blog", Link = Context.GetLink("/blog/index.html")},
+        new { Title = "Portfolio", Key = "portfolio", Link = Context.GetLink("/gallery/portfolio/index.html")},
         new { Title = "About", Key = "aboutme", Link = Context.GetLink("/about.html")}
     };
     var pagesWithIndex = pages.Select((page, index) => new { Page = page, Index = index }).ToList();
