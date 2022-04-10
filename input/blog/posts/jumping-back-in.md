@@ -2,7 +2,7 @@
 title: "Jumping back in"
 Lead: "I'm excited about upcoming festivals"
 Author: Marcia Streithorst
-Published: '2022-04-10'
+Published: '2022-04-09'
 Image: /assets/paintings/img_7383.jpg
 ---
 
