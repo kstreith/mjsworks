@@ -51,7 +51,7 @@
 <main>
 
 
-<div class="content gallerycontent sellUi">
+<div class="content gallerycontent">
   <div class="gallerynav" style="display: none">
       <a id="prevGalleryImageLink" href="" title="Previous Image in Collection"><i class="icon-left-circled"></i></a>
       <a id="nextGalleryImageLink" href="" title="Next Image in Collection"><i class="icon-right-circled"></i></a>
@@ -66,27 +66,8 @@
         <img src="/assets/paintings/img_7316.jpg" alt="Lake day" />
       </div>
     </div>
-    <div class="sellPanel">
-      <div>
-        <div>Price: $525.00 </div>
-        <div>Size: 16 in x 20 in</div>
-        <div>Shipping: <a href="/faq.html#shipping_policy">Free</a></div>
-        <div>Quantity: 1</div>
-      </div>
-      <div style="padding-top: 1em; padding-bottom: 1em">
-        <div>Sitting by the sound listening to the water rock back and forth. Enjoying a cool breeze blow off the Carolina coastline. Original encaustic painting on wood birch panel with wire hanger</div>
-      </div>
-      <div id="failedPurchase" class="disabledPurchase" style="display:none; padding-bottom: 1em">
-        Checkout with PayPal failed, please retry.
-      </div>
-      <div id="processingPurchase" style="display:none; padding-bottom: 1em">
-        Processing with PayPal...
-      </div>
-      <div id="paypal-button-container"></div>
-      <div class="sellFooter">
-          <div>Details about <a href="/faq.html#about_paintings">encaustic paintings</a>, <a href="/faq.html#how_to_care">how to care</a>, and <a href="/faq.html#return_policy">return policy</a></div>
-          <div>SKU #p220004e</div>    
-      </div>
+    <div class="galleryimagedescription">
+      <div class="photoblocktext">16 in x 20 in</div>
     </div>
   </div>
 </div>
@@ -144,16 +125,10 @@
 
   <script type="text/javascript">
     var mjsworks = mjsworks || {};
-    mjsworks.parentGalleries = {"landscapes":{"NextImage":"dream-hike","PreviousImage":"light-my-way"}};
+    mjsworks.parentGalleries = {};
     mjsworks.salesImages = ["/assets/paintings/img_7316.jpg"];
   </script> 
   <script src="/assets/js/paintingPage.min.js"></script>   
-  <script src="https://www.paypal.com/sdk/js?client-id=AcX7Jjaz4VEpeNJXPzapxyBeke037mjxpjP8WqgfH2Pr92mHiyM-9sTRg6QPS4XeGhfVDtbx0VETC3aP"></script>
-  <script type="text/javascript">
-    var mjsworks = mjsworks || {};
-    mjsworks.purchaseConfig = {"accessKey":"AKIAIM3SZ2U2PKXWGYYA","amount":"525.00","currencyCode":"USD","lwaClientId":"amzn1.application-oa2-client.094733663c3d46519ad829672b45a184","paymentAction":"Authorize","returnURL":"https://mjsworks.com/finalizedSale.html","sellerId":"A3IO5ZO9PFIM3P","sellerNote":"Original encaustic painting","sellerOrderId":"p220004e","shippingAddressRequired":"true","static_generation_signature":"xyx6bYUIsg0d6d7sUfv2jdO3jQW6xWtPj4w1C0ivE54="};
-  </script>
-  <script src="/assets/js/paypalPurchase.min.js"></script>
 
 </body>
 </html>

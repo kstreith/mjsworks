@@ -51,7 +51,7 @@
 <main>
 
 
-<div class="content gallerycontent sellUi">
+<div class="content gallerycontent">
   <div class="gallerynav" style="display: none">
       <a id="prevGalleryImageLink" href="" title="Previous Image in Collection"><i class="icon-left-circled"></i></a>
       <a id="nextGalleryImageLink" href="" title="Next Image in Collection"><i class="icon-right-circled"></i></a>
@@ -66,27 +66,8 @@
         <img src="/assets/paintings/img_7383.jpg" alt="Spring Walk" />
       </div>
     </div>
-    <div class="sellPanel">
-      <div>
-        <div>Price: $130.00 </div>
-        <div>Size: 12 in x 6 in</div>
-        <div>Shipping: <a href="/faq.html#shipping_policy">Free</a></div>
-        <div>Quantity: 1</div>
-      </div>
-      <div style="padding-top: 1em; padding-bottom: 1em">
-        <div>Mixed media painting with bark and moss. Warm colors that make you feel like you are on a refreshing spring walk. Original encaustic painting on wood birch panel with wire hanger</div>
-      </div>
-      <div id="failedPurchase" class="disabledPurchase" style="display:none; padding-bottom: 1em">
-        Checkout with PayPal failed, please retry.
-      </div>
-      <div id="processingPurchase" style="display:none; padding-bottom: 1em">
-        Processing with PayPal...
-      </div>
-      <div id="paypal-button-container"></div>
-      <div class="sellFooter">
-          <div>Details about <a href="/faq.html#about_paintings">encaustic paintings</a>, <a href="/faq.html#how_to_care">how to care</a>, and <a href="/faq.html#return_policy">return policy</a></div>
-          <div>SKU #p2200026e</div>    
-      </div>
+    <div class="galleryimagedescription">
+      <div class="photoblocktext sold">Sold</div>
     </div>
   </div>
 </div>
@@ -144,16 +125,10 @@
 
   <script type="text/javascript">
     var mjsworks = mjsworks || {};
-    mjsworks.parentGalleries = {"landscapes":{"NextImage":"garden-party","PreviousImage":"light-and-shadows"}};
+    mjsworks.parentGalleries = {"portfolio":{"NextImage":"mapping-the-passage-of-time","PreviousImage":"bee-great"}};
     mjsworks.salesImages = ["/assets/paintings/img_7383.jpg"];
   </script> 
   <script src="/assets/js/paintingPage.min.js"></script>   
-  <script src="https://www.paypal.com/sdk/js?client-id=AcX7Jjaz4VEpeNJXPzapxyBeke037mjxpjP8WqgfH2Pr92mHiyM-9sTRg6QPS4XeGhfVDtbx0VETC3aP"></script>
-  <script type="text/javascript">
-    var mjsworks = mjsworks || {};
-    mjsworks.purchaseConfig = {"accessKey":"AKIAIM3SZ2U2PKXWGYYA","amount":"130.00","currencyCode":"USD","lwaClientId":"amzn1.application-oa2-client.094733663c3d46519ad829672b45a184","paymentAction":"Authorize","returnURL":"https://mjsworks.com/finalizedSale.html","sellerId":"A3IO5ZO9PFIM3P","sellerNote":"Original encaustic painting","sellerOrderId":"p2200026e","shippingAddressRequired":"true","static_generation_signature":"wJRuajkgsWRkM36RzOtSxvffO+wzSoV14jbXsIcpcGg="};
-  </script>
-  <script src="/assets/js/paypalPurchase.min.js"></script>
 
 </body>
 </html>
