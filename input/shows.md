@@ -8,6 +8,41 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
+  [NC Crafts Gallery](https://www.nccraftsgallery.com/about.shtml)
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  August 1st, 2022 - August 31st, 2022
+
+  212 W. Main St
+  Carrboro, NC 27510
+​
+  </div>
+
+  <div class="eventDetails">
+
+I am the featured artist for the [North Carolina Crafts Gallery](https://www.nccraftsgallery.com/about.shtml)
+
+  <div class="eventPic">
+
+   ![Image of Painting](/assets/paintings/img_7276-thumbnail.jpg)
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="event">
+
+  <h3 class="eventTitle">
+
   [Cary Gallery Of Artists](https://www.carygalleryofartists.org/)
 
   </h3>
@@ -33,43 +68,6 @@ You can also view [my dedicated page on their website](https://www.carygalleryof
   <div class="eventPic">
 
    ![Image of Painting](/assets/paintings/streithorst_marcia_mapping-the-passage-of-time-thumbnail.jpg)
-
-  </div>
-
-  </div>
-
-  </div>
-
-</div>
-
-<div class="event">
-
-  <h3 class="eventTitle">
-
-  [Arts In the Park VA](http://richmondartsinthepark.com/)
-
-  </h3>
-
-  <div class="eventInfo">
-
-  <div class="eventSideBar">
-
-  Saturday, April 30th, 2022 11am - 6pm  
-  Sunday, May 1st, 2022 11am - 5pm  
-
-  Byrd Park  
-  1301 Blanton Avenue 
-  Richmod, VA 23221  
-​
-  </div>
-
-  <div class="eventDetails">
-
-Join me at Byrd Park for the 51st Annual Arts and Craft Show.  The two-day event will feature over 350 artists and is a nationally-rated juried show. I've been waiting for 2 years to go to this show with previous Covid-19 cancellations. The event is free for the public.
-
-  <div class="eventPic">
-
-   ![Image of Painting](/assets/paintings/img_7292-thumbnail.jpg)
 
   </div>
 
