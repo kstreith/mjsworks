@@ -8,7 +8,7 @@ NavigationTab: shows
 
   <h3 class="eventTitle">
 
-  [NC Crafts Gallery](https://www.nccraftsgallery.com/about.shtml)
+  [Cary Spring Daze Arts and Crafts Festival](https://www.townofcary.org/recreation-enjoyment/events/festivals/spring-daze-arts-and-crafts-festival)
 
   </h3>
 
@@ -16,20 +16,57 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  August 1st, 2022 - August 31st, 2022
+  April 30th, 2023  
+  9am - 5pm
 
-  212 W. Main St
-  Carrboro, NC 27510
+  Bond Park  
+  801 High House Rd  
+  Cary, NC 27513
 ​
   </div>
 
   <div class="eventDetails">
 
-I am the featured artist for the [North Carolina Crafts Gallery](https://www.nccraftsgallery.com/about.shtml)
+I'm excited to be participating in the Spring Daze Arts and Crafts Festival in Cary, NC. Come enjoy the great event and purchase a piece of my artwork.
 
   <div class="eventPic">
 
    ![Image of Painting](/assets/paintings/img_7276-thumbnail.jpg)
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="event">
+
+  <h3 class="eventTitle">
+
+  [Arts in the Park](http://richmondartsinthepark.com/)
+
+  </h3>
+
+  <div class="eventInfo">
+
+  <div class="eventSideBar">
+
+  May 6th, 2023 - May 7th, 2023
+
+  1301 Blanton Ave.
+  Richmond, VA 23221
+​
+  </div>
+
+  <div class="eventDetails">
+
+This will be my second year at this great event which features lots of amazing artists. It was a great event last year and I'm looking forward to this one again.
+
+  <div class="eventPic">
+
+   ![Image of Painting](/assets/paintings/img_7395-thumbnail.jpg)
 
   </div>
 
@@ -51,7 +88,7 @@ I am the featured artist for the [North Carolina Crafts Gallery](https://www.ncc
 
   <div class="eventSideBar">
 
-  2022
+  2023
 
   200 S Academy Street
   Cary, NC 27511
