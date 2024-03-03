@@ -16,7 +16,7 @@ NavigationTab: shows
 
   <div class="eventSideBar">
 
-  April 30th, 2023  
+  April 31th, 2023  
   9am - 5pm
 
   Bond Park  
